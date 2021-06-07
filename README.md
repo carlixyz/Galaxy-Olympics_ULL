@@ -3,7 +3,7 @@ proyecto galaxy olympics: An old repository saved from the deeps of Google.code
 
 - proyecto-galaxy-olympics
 - A Master Finshing Project
-- Done in OpenGL
+- Done in C++, OpenGL and Bravery
 
 
 [![Everything Is AWESOME](https://github.com/carlixyz/Galaxy-Olympics_ULL/blob/master/proyecto-galaxy-olympics/GDD/VidCap.png)](https://www.youtube.com/watch?v=ytbU7QmolJo "Everything Is AWESOME")
