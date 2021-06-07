@@ -14,6 +14,8 @@ El jugador podrá escoger de un total de cinco disciplinas diferentes en las que
 
 ![Screenshot](https://github.com/carlixyz/Galaxy-Olympics_ULL/blob/master/proyecto-galaxy-olympics/GDD/sinerrgia_wire.jpg)
 
+![ScreenshotVid](https://github.com/carlixyz/Galaxy-Olympics_ULL/blob/master/proyecto-galaxy-olympics/GDD/ciclope.jpeg)](https://www.youtube.com/watch?v=0wrZ81wfw-w "ScreenshotVid")
+
 ![Screenshot](https://github.com/carlixyz/Galaxy-Olympics_ULL/blob/master/proyecto-galaxy-olympics/GDD/items_galaxy_1_.jpg)
 
 ![Screenshot](https://github.com/carlixyz/Galaxy-Olympics_ULL/blob/master/proyecto-galaxy-olympics/GDD/chatarra.jpg)
