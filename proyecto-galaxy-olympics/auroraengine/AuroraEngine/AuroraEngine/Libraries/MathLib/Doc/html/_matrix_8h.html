@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia del Archivo D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/Matrix.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia del Archivo D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/Matrix.h</h1><code>#include &quot;../Vec/VecLib.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_matrix_8h_source.html">Matrix44Col.h</a>&quot;</code><br/>
+
+<p><a href="_matrix_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Clases</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html">cMatrix</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Esta estructura representa una matriz de transformacion 4x4.  <a href="structc_matrix.html#_details">Más...</a><br/></td></tr>
+<tr><td colspan="2"><h2>Definiciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a7a716a4ec75cc786c9ad8527b0ba57eb">RIGHT_HAND_ROW_AXIS</a>&nbsp;&nbsp;&nbsp;(1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Left, Up, Front y Posicion en Filas.  <a href="#a7a716a4ec75cc786c9ad8527b0ba57eb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a035dead4452b2780520c14d5661cb3a8">RIGHT_HAND_COLUMN_AXIS</a>&nbsp;&nbsp;&nbsp;(2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Left, Up, Front y Posicion en Columnas.  <a href="#a035dead4452b2780520c14d5661cb3a8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a576a293e0686c10de57b0a014a902e62">LEFT_HAND_ROW_AXIS</a>&nbsp;&nbsp;&nbsp;(3)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Right, Up, Front y Posicion en Filas.  <a href="#a576a293e0686c10de57b0a014a902e62"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a59156b913dcd4b1f4d553d9a34667b58">LEFT_HAND_COLUMN_AXIS</a>&nbsp;&nbsp;&nbsp;(4)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Right, Up, Front y Posicion en Columnas.  <a href="#a59156b913dcd4b1f4d553d9a34667b58"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#affb51d87c1c7a9f710d92c2ee2c25c9c">MATRIX_CONFIGURATION</a>&nbsp;&nbsp;&nbsp;RIGHT_HAND_ROW_AXIS</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configuracion actual de matriz.  <a href="#affb51d87c1c7a9f710d92c2ee2c25c9c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a5d1d275cfec76197e014fe4d58f2e569">RIGHT_HAND</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#aeaa2e2c128d105e9a2d86d3ec4ba182d">ROW_AXIS</a></td></tr>
+<tr><td colspan="2"><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a8cde60fe2b302238b16a86c6295df215">operator==</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m1, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Comprueba si dos matrices son iguales, comparando componente a componente.  <a href="#a8cde60fe2b302238b16a86c6295df215"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#ac7536664da0dcce3b48d7ca2929acb81">operator!=</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m1, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Comprueba si al menos una componente de las dos matrices es distinto, comparando componente a componente.  <a href="#ac7536664da0dcce3b48d7ca2929acb81"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#ae43bee6380c84967cee8ec5fa3db10e9">operator+</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m1, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Suma dos matrices, componente a componente.  <a href="#ae43bee6380c84967cee8ec5fa3db10e9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872">operator-</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m1, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resta dos matrices, componente a componente.  <a href="#ab0dc69bc44c1feb0b0e1bf64465da872"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c">operator*</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m1, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;m2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiplica dos matrices.  <a href="#ae0a45cd33a3f8ce68d8cde19287ff74c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a83e808761a2feff5d19e5c5604af5a2b">operator*</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;other, float value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiplica todas las componentes de una matriz por un valor flotante.  <a href="#a83e808761a2feff5d19e5c5604af5a2b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a8c98dbbb151a657c553966208215b530">operator*</a> (float value, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;other)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiplica todas las componentes de una matriz por un valor flotante.  <a href="#a8c98dbbb151a657c553966208215b530"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a05a3ad681341b70bdef48c3ea1ccd3d2">operator/</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;other, float value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Divide todas las componentes de una matriz por un valor flotante.  <a href="#a05a3ad681341b70bdef48c3ea1ccd3d2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#af47c9a995fbf7e1738bfc86d453d1cbe">TransformPoint</a> (<a class="el" href="structc_vec3.html">cVec3</a> &amp;out, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;matrix, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;point)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transforma un punto aplicado una matriz de transformacion.  <a href="#af47c9a995fbf7e1738bfc86d453d1cbe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a97135878bf951ab80dd789735c8a3692">TransformNormal</a> (<a class="el" href="structc_vec3.html">cVec3</a> &amp;out, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;matrix, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;normal)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transforma una normal aplicado una matriz de transformacion.  <a href="#a97135878bf951ab80dd789735c8a3692"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a461c27de417441ff35d4f3418639121d">TransformCoords</a> (<a class="el" href="structc_vec4.html">cVec4</a> &amp;out, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;matrix, const <a class="el" href="structc_vec4.html">cVec4</a> &amp;coords)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion.  <a href="#a461c27de417441ff35d4f3418639121d"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentación de las definiciones</h2>
+<a class="anchor" id="a59156b913dcd4b1f4d553d9a34667b58"></a><!-- doxytag: member="Matrix.h::LEFT_HAND_COLUMN_AXIS" ref="a59156b913dcd4b1f4d553d9a34667b58" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEFT_HAND_COLUMN_AXIS&nbsp;&nbsp;&nbsp;(4)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Right, Up, Front y Posicion en Columnas. </p>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00014">14</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a576a293e0686c10de57b0a014a902e62"></a><!-- doxytag: member="Matrix.h::LEFT_HAND_ROW_AXIS" ref="a576a293e0686c10de57b0a014a902e62" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEFT_HAND_ROW_AXIS&nbsp;&nbsp;&nbsp;(3)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Right, Up, Front y Posicion en Filas. </p>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00012">12</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="affb51d87c1c7a9f710d92c2ee2c25c9c"></a><!-- doxytag: member="Matrix.h::MATRIX_CONFIGURATION" ref="affb51d87c1c7a9f710d92c2ee2c25c9c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATRIX_CONFIGURATION&nbsp;&nbsp;&nbsp;RIGHT_HAND_ROW_AXIS</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configuracion actual de matriz. </p>
+<p>Puede tener uno de los siguientes valores RIGHT_HAND_ROW_AXIS, RIGHT_HAND_COLUMN_AXIS, LEFT_HAND_ROW_AXIS, LEFT_HAND_COLUMN_AXIS </p>
+<dl class="see"><dt><b>Ver también:</b></dt><dd><a class="el" href="_matrix_8h.html#a7a716a4ec75cc786c9ad8527b0ba57eb" title="Left, Up, Front y Posicion en Filas.">RIGHT_HAND_ROW_AXIS</a> <a class="el" href="_matrix_8h.html#a035dead4452b2780520c14d5661cb3a8" title="Left, Up, Front y Posicion en Columnas.">RIGHT_HAND_COLUMN_AXIS</a> <a class="el" href="_matrix_8h.html#a576a293e0686c10de57b0a014a902e62" title="Right, Up, Front y Posicion en Filas.">LEFT_HAND_ROW_AXIS</a> <a class="el" href="_matrix_8h.html#a59156b913dcd4b1f4d553d9a34667b58" title="Right, Up, Front y Posicion en Columnas.">LEFT_HAND_COLUMN_AXIS</a> </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00020">20</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d1d275cfec76197e014fe4d58f2e569"></a><!-- doxytag: member="Matrix.h::RIGHT_HAND" ref="a5d1d275cfec76197e014fe4d58f2e569" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RIGHT_HAND</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00028">28</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a035dead4452b2780520c14d5661cb3a8"></a><!-- doxytag: member="Matrix.h::RIGHT_HAND_COLUMN_AXIS" ref="a035dead4452b2780520c14d5661cb3a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RIGHT_HAND_COLUMN_AXIS&nbsp;&nbsp;&nbsp;(2)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Left, Up, Front y Posicion en Columnas. </p>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00010">10</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a716a4ec75cc786c9ad8527b0ba57eb"></a><!-- doxytag: member="Matrix.h::RIGHT_HAND_ROW_AXIS" ref="a7a716a4ec75cc786c9ad8527b0ba57eb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RIGHT_HAND_ROW_AXIS&nbsp;&nbsp;&nbsp;(1)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Left, Up, Front y Posicion en Filas. </p>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00008">8</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeaa2e2c128d105e9a2d86d3ec4ba182d"></a><!-- doxytag: member="Matrix.h::ROW_AXIS" ref="aeaa2e2c128d105e9a2d86d3ec4ba182d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROW_AXIS</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00029">29</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="ac7536664da0dcce3b48d7ca2929acb81"></a><!-- doxytag: member="Matrix.h::operator!=" ref="ac7536664da0dcce3b48d7ca2929acb81" args="(const cMatrix &amp;m1, const cMatrix &amp;m2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Comprueba si al menos una componente de las dos matrices es distinto, comparando componente a componente. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>m1</em>&nbsp;</td><td>Operando 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>m2</em>&nbsp;</td><td>Operando 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve si la condicion es cierta </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00483">483</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c98dbbb151a657c553966208215b530"></a><!-- doxytag: member="Matrix.h::operator*" ref="a8c98dbbb151a657c553966208215b530" args="(float value, const cMatrix &amp;other)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>other</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiplica todas las componentes de una matriz por un valor flotante. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Valor Flotante </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>Matriz </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la matriz resultante </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00512">512</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83e808761a2feff5d19e5c5604af5a2b"></a><!-- doxytag: member="Matrix.h::operator*" ref="a83e808761a2feff5d19e5c5604af5a2b" args="(const cMatrix &amp;other, float value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiplica todas las componentes de una matriz por un valor flotante. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>Matriz </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Valor Flotante </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la matriz resultante </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00506">506</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0a45cd33a3f8ce68d8cde19287ff74c"></a><!-- doxytag: member="Matrix.h::operator*" ref="ae0a45cd33a3f8ce68d8cde19287ff74c" args="(const cMatrix &amp;m1, const cMatrix &amp;m2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiplica dos matrices. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>m1</em>&nbsp;</td><td>Operando 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>m2</em>&nbsp;</td><td>Operando 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la matriz resultante </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00500">500</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae43bee6380c84967cee8ec5fa3db10e9"></a><!-- doxytag: member="Matrix.h::operator+" ref="ae43bee6380c84967cee8ec5fa3db10e9" args="(const cMatrix &amp;m1, const cMatrix &amp;m2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Suma dos matrices, componente a componente. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>m1</em>&nbsp;</td><td>Operando 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>m2</em>&nbsp;</td><td>Operando 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la matriz resultante </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00488">488</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0dc69bc44c1feb0b0e1bf64465da872"></a><!-- doxytag: member="Matrix.h::operator&#45;" ref="ab0dc69bc44c1feb0b0e1bf64465da872" args="(const cMatrix &amp;m1, const cMatrix &amp;m2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Resta dos matrices, componente a componente. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>m1</em>&nbsp;</td><td>Operando 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>m2</em>&nbsp;</td><td>Operando 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la matriz resultante </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00494">494</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05a3ad681341b70bdef48c3ea1ccd3d2"></a><!-- doxytag: member="Matrix.h::operator/" ref="a05a3ad681341b70bdef48c3ea1ccd3d2" args="(const cMatrix &amp;other, float value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Divide todas las componentes de una matriz por un valor flotante. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>Matriz </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Valor Flotante </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la matriz resultante </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00518">518</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cde60fe2b302238b16a86c6295df215"></a><!-- doxytag: member="Matrix.h::operator==" ref="a8cde60fe2b302238b16a86c6295df215" args="(const cMatrix &amp;m1, const cMatrix &amp;m2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Comprueba si dos matrices son iguales, comparando componente a componente. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>m1</em>&nbsp;</td><td>Operando 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>m2</em>&nbsp;</td><td>Operando 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve si la condicion es cierta </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00478">478</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a461c27de417441ff35d4f3418639121d"></a><!-- doxytag: member="Matrix.h::TransformCoords" ref="a461c27de417441ff35d4f3418639121d" args="(cVec4 &amp;out, const cMatrix &amp;matrix, const cVec4 &amp;coords)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformCoords </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coords</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Vec4 resultante ya transformado </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>coords</em>&nbsp;</td><td>Vec4 que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz de transformacion</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion.</p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Vector resultante de la transformacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>coords</em>&nbsp;</td><td>Vector que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz que define la transformacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00199">199</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97135878bf951ab80dd789735c8a3692"></a><!-- doxytag: member="Matrix.h::TransformNormal" ref="a97135878bf951ab80dd789735c8a3692" args="(cVec3 &amp;out, const cMatrix &amp;matrix, const cVec3 &amp;normal)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>normal</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Transforma una normal aplicado una matriz de transformacion. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Normal resultante ya transformado </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>normal</em>&nbsp;</td><td>Normal que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz de transformacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af47c9a995fbf7e1738bfc86d453d1cbe"></a><!-- doxytag: member="Matrix.h::TransformPoint" ref="af47c9a995fbf7e1738bfc86d453d1cbe" args="(cVec3 &amp;out, const cMatrix &amp;matrix, const cVec3 &amp;point)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>point</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Transforma un punto aplicado una matriz de transformacion. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Punto resultante ya transformado </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>point</em>&nbsp;</td><td>Punto que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz de transformacion</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Transforma un punto aplicado una matriz de transformacion.</p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Vector resultante de la transformacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>point</em>&nbsp;</td><td>Punto que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz que define la transformacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00173">173</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

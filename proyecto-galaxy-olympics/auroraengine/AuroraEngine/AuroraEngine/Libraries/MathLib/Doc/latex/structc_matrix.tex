@@ -1,0 +1,676 @@
+\hypertarget{structc_matrix}{
+\section{Referencia de la Estructura cMatrix}
+\label{structc_matrix}\index{cMatrix@{cMatrix}}
+}
+
+
+Esta estructura representa una matriz de transformacion 4x4.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structc_matrix_ac0f1436a8717bf1befb1101884272450}{cMatrix} (void)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. NO inicializa la matrix a la identidad. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix_a7222b8d70f30b08c4682afc5a0a3fc59}{cMatrix} (float value)
+\begin{DoxyCompactList}\small\item\em Constructor. Inicializa toda la matriz al valor pasado. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix_a21c4a2f302922d3952ffe7bc2bd75a8b}{cMatrix} (const \hyperlink{structc_vec4}{cVec4} \&v0, const \hyperlink{structc_vec4}{cVec4} \&v1, const \hyperlink{structc_vec4}{cVec4} \&v2, const \hyperlink{structc_vec4}{cVec4} \&v3)
+\begin{DoxyCompactList}\small\item\em Constructor. Inicializa la matriz con los vectores que se le pasa. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_matrix_aa28e4b69e8c6a58014ff87376fb551fe}{operator\mbox{[}$\,$\mbox{]}} (unsigned index)
+\begin{DoxyCompactList}\small\item\em Permite acceder a los vectores que componen la matriz. \item\end{DoxyCompactList}\item 
+const \hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_matrix_a5d529a4adf998626edabb11f0de2ee62}{operator\mbox{[}$\,$\mbox{]}} (unsigned index) const 
+\begin{DoxyCompactList}\small\item\em Permite acceder a los vectores que componen la matriz. \item\end{DoxyCompactList}\item 
+float \& \hyperlink{structc_matrix_a0652aa099dd1919d4512b4c97be41425}{operator()} (unsigned i, unsigned j=1)
+\begin{DoxyCompactList}\small\item\em Permite acceder al elemento (i,j) de la matriz. \item\end{DoxyCompactList}\item 
+const float \& \hyperlink{structc_matrix_a0131ee8f492249f4c67be517d0f7af50}{operator()} (unsigned i, unsigned j=1) const 
+\begin{DoxyCompactList}\small\item\em Permite acceder al elemento (i,j) de la matriz. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_ae3f42b32fc083297663f1850ba5deabe}{operator+=} (const \hyperlink{structc_matrix}{cMatrix} \&other)
+\begin{DoxyCompactList}\small\item\em Suma casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_abbd4cf1577c196a68fbbe9768f0a2f97}{operator-\/=} (const \hyperlink{structc_matrix}{cMatrix} \&other)
+\begin{DoxyCompactList}\small\item\em Resta casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_afa4c4793ed27a15f77b2eef4c7b2ecd8}{operator$\ast$=} (float value)
+\begin{DoxyCompactList}\small\item\em Multiplica todos los componentes de la matriz por un numero. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a5a8babd4c56bb6c9b0f2b2eab27c2c40}{operator/=} (float value)
+\begin{DoxyCompactList}\small\item\em Divide todos los componentes de la matriz por un numero. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a3c6d5913bfa189bab32934e804aeda0b}{operator$\ast$=} (const \hyperlink{structc_matrix}{cMatrix} \&other)
+\begin{DoxyCompactList}\small\item\em Multiplica las dos matrices. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a80c11b80d73859af260ca4fec8fa4dbe}{Transpose} (void)
+\begin{DoxyCompactList}\small\item\em Traspone la matriz actual. Si la matriz solo tiene rotacion, la traspuesta y la inversa es la misma matriz, por lo que se puede usar esta funcion para calcular una inversa muy rapida. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_ac41ca7fc346d8d5765f630ba9aecd2ac}{Invert} (void)
+\begin{DoxyCompactList}\small\item\em Invierte la matriz actual. Esta operacion es costosa, si la matriz solo tiene rotacion esta operacion se puede reemplazar por la de transposicion. \item\end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{structc_matrix_a03742812d4cb9da9274140a805e70350}{AsFloatPointer} ()
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero a la memoria de la matriz. \item\end{DoxyCompactList}\item 
+const float $\ast$ \hyperlink{structc_matrix_accfc5fda68722da3a2ab1a2a4a7560ad}{AsFloatPointer} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero a la memoria de la matriz. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a3164627fbbf0fa0576cd738856894480}{LoadIdentity} (void)
+\begin{DoxyCompactList}\small\item\em Carga la identidad en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_aefc98b3f40021a9522d802bb0ba51894}{LoadTranslation} (const \hyperlink{structc_vec3}{cVec3} \&translation)
+\begin{DoxyCompactList}\small\item\em Carga una matriz de traslacion en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a5c74d50a5999a394594899d11757c28e}{LoadScale} (float scale)
+\begin{DoxyCompactList}\small\item\em Carga una matriz de escalado en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a8a6fb0609df4b3a902537d140dc1b072}{LoadScale} (const \hyperlink{structc_vec3}{cVec3} \&scale)
+\begin{DoxyCompactList}\small\item\em Carga una matriz de escalado en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a56404b5ad0a0793a47c5ef40923cb9c3}{LoadRotation} (const \hyperlink{structc_vec3}{cVec3} \&axis, float rad)
+\begin{DoxyCompactList}\small\item\em Carga una matriz de rotacion en la matriz actual. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a2edce675be0ebd52bf723cf20c4617e1}{LoadPerpective} (float fovy\_\-rad, float aspect, float znear, float zfar)
+\begin{DoxyCompactList}\small\item\em Genera una matriz de proyeccion en perspectiva basada en un campo de vista. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_a5c3acbe66d8112c9bbd49ba98b4109fd}{LoadOrtho} (float left, float right, float bottom, float top, float znear, float zfar)
+\begin{DoxyCompactList}\small\item\em Genera una matriz de proyeccion ortogonal. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \& \hyperlink{structc_matrix_aaec6ac6bfe4f4357350df96c9b1707bd}{LoadLookAt} (const \hyperlink{structc_vec3}{cVec3} \&position, const \hyperlink{structc_vec3}{cVec3} \&target, const \hyperlink{structc_vec3}{cVec3} \&upWorld=\hyperlink{structc_vec3}{cVec3}(0, 1, 0))
+\begin{DoxyCompactList}\small\item\em Genera una matriz de vista (enfoque). \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec3}{cVec3} \hyperlink{structc_matrix_ae0012f3235e3456bd69ac0a057da1f12}{GetPosition} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la posicion de la matriz. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec3}{cVec3} \hyperlink{structc_matrix_a55cbb8656cea32ea8f5aa831ff724dbe}{GetFront} () const 
+\item 
+\hyperlink{structc_vec3}{cVec3} \hyperlink{structc_matrix_af2f9e30012925add8c58ff112e7eb0df}{GetUp} () const 
+\item 
+\hyperlink{structc_vec3}{cVec3} \hyperlink{structc_matrix_ac69f03b002f37e05982fedcb85aa2518}{GetLeft} () const 
+\item 
+\hyperlink{structc_vec3}{cVec3} \hyperlink{structc_matrix_a3b44bc8430bd2da2d0fb6809861c982f}{GetRight} () const 
+\item 
+void \hyperlink{structc_matrix_a4520cd4a6d52e21828700ebccca51633}{SetPosition} (const \hyperlink{structc_vec3}{cVec3} \&pos)
+\begin{DoxyCompactList}\small\item\em Permite cambiar la posicion de la matriz. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_matrix_a871726c99275d2643eacf78e86563b65}{SetAxisLeftUpFront} (const \hyperlink{structc_vec3}{cVec3} \&left, const \hyperlink{structc_vec3}{cVec3} \&up, const \hyperlink{structc_vec3}{cVec3} \&front)
+\begin{DoxyCompactList}\small\item\em Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_matrix_a786451360806d1dd9cdf3d3e541b04ac}{setAxisRightUpFront} (const \hyperlink{structc_vec3}{cVec3} \&right, const \hyperlink{structc_vec3}{cVec3} \&up, const \hyperlink{structc_vec3}{cVec3} \&front)
+\begin{DoxyCompactList}\small\item\em Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{structc_matrix_af65b7c82e3ace6aa8b0e6d8c3a1e6288}{rows} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Esta estructura representa una matriz de transformacion 4x4. 
+
+Definición en la línea 42 del archivo Matrix.h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{structc_matrix_ac0f1436a8717bf1befb1101884272450}{
+\index{cMatrix@{cMatrix}!cMatrix@{cMatrix}}
+\index{cMatrix@{cMatrix}!cMatrix@{cMatrix}}
+\subsubsection[{cMatrix}]{\setlength{\rightskip}{0pt plus 5cm}cMatrix::cMatrix (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_ac0f1436a8717bf1befb1101884272450}
+
+
+Constructor por defecto. NO inicializa la matrix a la identidad. 
+
+
+
+Definición en la línea 46 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a7222b8d70f30b08c4682afc5a0a3fc59}{
+\index{cMatrix@{cMatrix}!cMatrix@{cMatrix}}
+\index{cMatrix@{cMatrix}!cMatrix@{cMatrix}}
+\subsubsection[{cMatrix}]{\setlength{\rightskip}{0pt plus 5cm}cMatrix::cMatrix (float {\em value})}}
+\label{structc_matrix_a7222b8d70f30b08c4682afc5a0a3fc59}
+
+
+Constructor. Inicializa toda la matriz al valor pasado. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor al que se va a inicializar la matriz \end{DoxyParams}
+
+
+Definición en la línea 4 del archivo Matrix.cpp.
+
+\hypertarget{structc_matrix_a21c4a2f302922d3952ffe7bc2bd75a8b}{
+\index{cMatrix@{cMatrix}!cMatrix@{cMatrix}}
+\index{cMatrix@{cMatrix}!cMatrix@{cMatrix}}
+\subsubsection[{cMatrix}]{\setlength{\rightskip}{0pt plus 5cm}cMatrix::cMatrix (const {\bf cVec4} \& {\em v0}, \/  const {\bf cVec4} \& {\em v1}, \/  const {\bf cVec4} \& {\em v2}, \/  const {\bf cVec4} \& {\em v3})}}
+\label{structc_matrix_a21c4a2f302922d3952ffe7bc2bd75a8b}
+
+
+Constructor. Inicializa la matriz con los vectores que se le pasa. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em v0}]Vector 0 de la matriz. Consultar MATRIX\_\-CONFIGURATION para saber a que corresponde. \item[{\em v1}]Vector 1 de la matriz. Consultar MATRIX\_\-CONFIGURATION para saber a que corresponde. \item[{\em v2}]Vector 2 de la matriz. Consultar MATRIX\_\-CONFIGURATION para saber a que corresponde. \item[{\em v3}]Vector 3 de la matriz. Consultar MATRIX\_\-CONFIGURATION para saber a que corresponde. \end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{_matrix_8h_affb51d87c1c7a9f710d92c2ee2c25c9c}{MATRIX\_\-CONFIGURATION} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 11 del archivo Matrix.cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{structc_matrix_accfc5fda68722da3a2ab1a2a4a7560ad}{
+\index{cMatrix@{cMatrix}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cMatrix@{cMatrix}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ cMatrix::AsFloatPointer () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_accfc5fda68722da3a2ab1a2a4a7560ad}
+
+
+Devuelve un puntero a la memoria de la matriz. 
+
+\begin{DoxyReturn}{Devuelve}
+Puntero a la memoria 
+\end{DoxyReturn}
+
+
+Definición en la línea 143 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a03742812d4cb9da9274140a805e70350}{
+\index{cMatrix@{cMatrix}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cMatrix@{cMatrix}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ cMatrix::AsFloatPointer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a03742812d4cb9da9274140a805e70350}
+
+
+Devuelve un puntero a la memoria de la matriz. 
+
+\begin{DoxyReturn}{Devuelve}
+Puntero a la memoria 
+\end{DoxyReturn}
+
+
+Definición en la línea 138 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a55cbb8656cea32ea8f5aa831ff724dbe}{
+\index{cMatrix@{cMatrix}!GetFront@{GetFront}}
+\index{GetFront@{GetFront}!cMatrix@{cMatrix}}
+\subsubsection[{GetFront}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec3} cMatrix::GetFront () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a55cbb8656cea32ea8f5aa831ff724dbe}
+Devuelve el vector front resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector front seria igual a la direccion a la que apuntaria Z una vez transformada.
+
+\begin{DoxyReturn}{Devuelve}
+Vector front de la matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 111 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_ac69f03b002f37e05982fedcb85aa2518}{
+\index{cMatrix@{cMatrix}!GetLeft@{GetLeft}}
+\index{GetLeft@{GetLeft}!cMatrix@{cMatrix}}
+\subsubsection[{GetLeft}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec3} cMatrix::GetLeft () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_ac69f03b002f37e05982fedcb85aa2518}
+Devuelve el vector left resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector left seria igual a la direccion a la que apuntaria X una vez transformada (o -\/X dependiendo si las matrices son left hand or right hand).
+
+\begin{DoxyReturn}{Devuelve}
+Vector left de la matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 120 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_ae0012f3235e3456bd69ac0a057da1f12}{
+\index{cMatrix@{cMatrix}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!cMatrix@{cMatrix}}
+\subsubsection[{GetPosition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec3} cMatrix::GetPosition () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_ae0012f3235e3456bd69ac0a057da1f12}
+
+
+Devuelve la posicion de la matriz. 
+
+\begin{DoxyReturn}{Devuelve}
+Posicion de la matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 107 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a3b44bc8430bd2da2d0fb6809861c982f}{
+\index{cMatrix@{cMatrix}!GetRight@{GetRight}}
+\index{GetRight@{GetRight}!cMatrix@{cMatrix}}
+\subsubsection[{GetRight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec3} cMatrix::GetRight () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a3b44bc8430bd2da2d0fb6809861c982f}
+Devuelve el vector right resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector right seria igual a la direccion a la que apuntaria -\/X una vez transformada (o X dependiendo si las matrices son left hand or right hand).
+
+\begin{DoxyReturn}{Devuelve}
+Vector right de la matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 129 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_af2f9e30012925add8c58ff112e7eb0df}{
+\index{cMatrix@{cMatrix}!GetUp@{GetUp}}
+\index{GetUp@{GetUp}!cMatrix@{cMatrix}}
+\subsubsection[{GetUp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec3} cMatrix::GetUp () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_af2f9e30012925add8c58ff112e7eb0df}
+Devuelve el vector up resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector up seria igual a la direccion a la que apuntaria Y una vez transformada.
+
+\begin{DoxyReturn}{Devuelve}
+Vector up de la matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 115 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_ac41ca7fc346d8d5765f630ba9aecd2ac}{
+\index{cMatrix@{cMatrix}!Invert@{Invert}}
+\index{Invert@{Invert}!cMatrix@{cMatrix}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::Invert (void)}}
+\label{structc_matrix_ac41ca7fc346d8d5765f630ba9aecd2ac}
+
+
+Invierte la matriz actual. Esta operacion es costosa, si la matriz solo tiene rotacion esta operacion se puede reemplazar por la de transposicion. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{structc_matrix_a80c11b80d73859af260ca4fec8fa4dbe}{Transpose} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 36 del archivo Matrix.cpp.
+
+\hypertarget{structc_matrix_a3164627fbbf0fa0576cd738856894480}{
+\index{cMatrix@{cMatrix}!LoadIdentity@{LoadIdentity}}
+\index{LoadIdentity@{LoadIdentity}!cMatrix@{cMatrix}}
+\subsubsection[{LoadIdentity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadIdentity (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a3164627fbbf0fa0576cd738856894480}
+
+
+Carga la identidad en la matriz actual. 
+
+\begin{DoxyReturn}{Devuelve}
+Referencia a la matriz actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 444 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_aaec6ac6bfe4f4357350df96c9b1707bd}{
+\index{cMatrix@{cMatrix}!LoadLookAt@{LoadLookAt}}
+\index{LoadLookAt@{LoadLookAt}!cMatrix@{cMatrix}}
+\subsubsection[{LoadLookAt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadLookAt (const {\bf cVec3} \& {\em position}, \/  const {\bf cVec3} \& {\em target}, \/  const {\bf cVec3} \& {\em upWorld} = {\ttfamily {\bf cVec3}(0,1,0)})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_aaec6ac6bfe4f4357350df96c9b1707bd}
+
+
+Genera una matriz de vista (enfoque). 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em position}]Posicion de la camara. \item[{\em target}]Posicion a la que apunta la camara. \item[{\em upWorld}]Direccion vertical del mundo actual. Normalmente es (0,1,0) \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la propia matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 73 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a5c3acbe66d8112c9bbd49ba98b4109fd}{
+\index{cMatrix@{cMatrix}!LoadOrtho@{LoadOrtho}}
+\index{LoadOrtho@{LoadOrtho}!cMatrix@{cMatrix}}
+\subsubsection[{LoadOrtho}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadOrtho (float {\em left}, \/  float {\em right}, \/  float {\em bottom}, \/  float {\em top}, \/  float {\em znear}, \/  float {\em zfar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a5c3acbe66d8112c9bbd49ba98b4109fd}
+
+
+Genera una matriz de proyeccion ortogonal. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em left}]Valor minimo de x del volumen de vista. \item[{\em right}]Valor maximo de x del volumen de vista. \item[{\em bottom}]Valor minimo de y del volumen de vista. \item[{\em top}]Valor maximo de y del volumen de vista. \item[{\em znear}]Valor minimo de z del volumen de vista. \item[{\em zfar}]Valor maximo de z del volumen de vista. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la propia matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 40 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a2edce675be0ebd52bf723cf20c4617e1}{
+\index{cMatrix@{cMatrix}!LoadPerpective@{LoadPerpective}}
+\index{LoadPerpective@{LoadPerpective}!cMatrix@{cMatrix}}
+\subsubsection[{LoadPerpective}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadPerpective (float {\em fovy\_\-rad}, \/  float {\em aspect}, \/  float {\em znear}, \/  float {\em zfar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a2edce675be0ebd52bf723cf20c4617e1}
+
+
+Genera una matriz de proyeccion en perspectiva basada en un campo de vista. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em fovy\_\-rad}]Campo de vista en la direccion de y, en radianes. \item[{\em aspect}]Relacion de aspecto, que se define como el ancho del espacio de la vista dividido por el alto. \item[{\em znear}]Valor z del plano de vista proximo. \item[{\em zfar}]Valor z del plano de vista lejano. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la propia matriz 
+\end{DoxyReturn}
+
+
+Definición en la línea 6 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a56404b5ad0a0793a47c5ef40923cb9c3}{
+\index{cMatrix@{cMatrix}!LoadRotation@{LoadRotation}}
+\index{LoadRotation@{LoadRotation}!cMatrix@{cMatrix}}
+\subsubsection[{LoadRotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadRotation (const {\bf cVec3} \& {\em axis}, \/  float {\em rad})}}
+\label{structc_matrix_a56404b5ad0a0793a47c5ef40923cb9c3}
+
+
+Carga una matriz de rotacion en la matriz actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em axis}]Eje sobre el que se quiere realizar la rotacion \item[{\em rad}]Grados que se quiere que la matriz rote \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia a la matriz actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 113 del archivo Matrix.cpp.
+
+\hypertarget{structc_matrix_a8a6fb0609df4b3a902537d140dc1b072}{
+\index{cMatrix@{cMatrix}!LoadScale@{LoadScale}}
+\index{LoadScale@{LoadScale}!cMatrix@{cMatrix}}
+\subsubsection[{LoadScale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadScale (const {\bf cVec3} \& {\em scale})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a8a6fb0609df4b3a902537d140dc1b072}
+
+
+Carga una matriz de escalado en la matriz actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em scale}]Escala que se quiere usar para componer la matriz. El valor X corresponde a la escala en el eje X, el valor Y corresponde a la escala en el eje Y y el valor Z corresponde a la escala en el eje Z \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia a la matriz actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 467 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a5c74d50a5999a394594899d11757c28e}{
+\index{cMatrix@{cMatrix}!LoadScale@{LoadScale}}
+\index{LoadScale@{LoadScale}!cMatrix@{cMatrix}}
+\subsubsection[{LoadScale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadScale (float {\em scale})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a5c74d50a5999a394594899d11757c28e}
+
+
+Carga una matriz de escalado en la matriz actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em scale}]Escala que se quiere usar para componer la matriz. La escala es uniforme en los 3 ejes \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia a la matriz actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 458 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_aefc98b3f40021a9522d802bb0ba51894}{
+\index{cMatrix@{cMatrix}!LoadTranslation@{LoadTranslation}}
+\index{LoadTranslation@{LoadTranslation}!cMatrix@{cMatrix}}
+\subsubsection[{LoadTranslation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::LoadTranslation (const {\bf cVec3} \& {\em translation})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_aefc98b3f40021a9522d802bb0ba51894}
+
+
+Carga una matriz de traslacion en la matriz actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em translation}]Traslacion que se quiere usar para componer la matriz \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia a la matriz actual 
+\end{DoxyReturn}
+
+
+Definición en la línea 452 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a0131ee8f492249f4c67be517d0f7af50}{
+\index{cMatrix@{cMatrix}!operator()@{operator()}}
+\index{operator()@{operator()}!cMatrix@{cMatrix}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}const float \& cMatrix::operator() (unsigned {\em i}, \/  unsigned {\em j} = {\ttfamily 1}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a0131ee8f492249f4c67be517d0f7af50}
+
+
+Permite acceder al elemento (i,j) de la matriz. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em i}]indice i al que se desea acceder. Los indices empiezan en 1. \item[{\em j}]indice j al que se desea acceder. Los indices empiezan en 1. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el valor solicitado 
+\end{DoxyReturn}
+
+
+Definición en la línea 385 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a0652aa099dd1919d4512b4c97be41425}{
+\index{cMatrix@{cMatrix}!operator()@{operator()}}
+\index{operator()@{operator()}!cMatrix@{cMatrix}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}float \& cMatrix::operator() (unsigned {\em i}, \/  unsigned {\em j} = {\ttfamily 1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a0652aa099dd1919d4512b4c97be41425}
+
+
+Permite acceder al elemento (i,j) de la matriz. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em i}]indice i al que se desea acceder. Los indices empiezan en 1. \item[{\em j}]indice j al que se desea acceder. Los indices empiezan en 1. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el valor solicitado 
+\end{DoxyReturn}
+
+
+Definición en la línea 379 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a3c6d5913bfa189bab32934e804aeda0b}{
+\index{cMatrix@{cMatrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cMatrix@{cMatrix}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::operator$\ast$= (const {\bf cMatrix} \& {\em other})}}
+\label{structc_matrix_a3c6d5913bfa189bab32934e804aeda0b}
+
+
+Multiplica las dos matrices. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Matriz por la que se va a multiplicar \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea 19 del archivo Matrix.cpp.
+
+\hypertarget{structc_matrix_afa4c4793ed27a15f77b2eef4c7b2ecd8}{
+\index{cMatrix@{cMatrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cMatrix@{cMatrix}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::operator$\ast$= (float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_afa4c4793ed27a15f77b2eef4c7b2ecd8}
+
+
+Multiplica todos los componentes de la matriz por un numero. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor por el que se multiplicara cada componente \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea 407 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_ae3f42b32fc083297663f1850ba5deabe}{
+\index{cMatrix@{cMatrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!cMatrix@{cMatrix}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::operator+= (const {\bf cMatrix} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_ae3f42b32fc083297663f1850ba5deabe}
+
+
+Suma casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Matriz con la que se opera. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea 391 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_abbd4cf1577c196a68fbbe9768f0a2f97}{
+\index{cMatrix@{cMatrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!cMatrix@{cMatrix}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::operator-\/= (const {\bf cMatrix} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_abbd4cf1577c196a68fbbe9768f0a2f97}
+
+
+Resta casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Matriz con la que se opera. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea 399 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a5a8babd4c56bb6c9b0f2b2eab27c2c40}{
+\index{cMatrix@{cMatrix}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!cMatrix@{cMatrix}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::operator/= (float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a5a8babd4c56bb6c9b0f2b2eab27c2c40}
+
+
+Divide todos los componentes de la matriz por un numero. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor por el que se dividira cada componente \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+
+
+Definición en la línea 415 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a5d529a4adf998626edabb11f0de2ee62}{
+\index{cMatrix@{cMatrix}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!cMatrix@{cMatrix}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cVec4} \& cMatrix::operator\mbox{[}$\,$\mbox{]} (unsigned {\em index}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a5d529a4adf998626edabb11f0de2ee62}
+
+
+Permite acceder a los vectores que componen la matriz. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em index}]indice del vector al que se quiere acceder. Los indices empiezan en 0. \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el vector solicitado 
+\end{DoxyReturn}
+
+
+Definición en la línea 374 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_aa28e4b69e8c6a58014ff87376fb551fe}{
+\index{cMatrix@{cMatrix}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!cMatrix@{cMatrix}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} \& cMatrix::operator\mbox{[}$\,$\mbox{]} (unsigned {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_aa28e4b69e8c6a58014ff87376fb551fe}
+
+
+Permite acceder a los vectores que componen la matriz. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em index}]Indice del vector al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el vector solicitado 
+\end{DoxyReturn}
+
+
+Definición en la línea 369 del archivo Matrix.h.
+
+\hypertarget{structc_matrix_a871726c99275d2643eacf78e86563b65}{
+\index{cMatrix@{cMatrix}!SetAxisLeftUpFront@{SetAxisLeftUpFront}}
+\index{SetAxisLeftUpFront@{SetAxisLeftUpFront}!cMatrix@{cMatrix}}
+\subsubsection[{SetAxisLeftUpFront}]{\setlength{\rightskip}{0pt plus 5cm}void cMatrix::SetAxisLeftUpFront (const {\bf cVec3} \& {\em left}, \/  const {\bf cVec3} \& {\em up}, \/  const {\bf cVec3} \& {\em front})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a871726c99275d2643eacf78e86563b65}
+
+
+Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em left}]Nuevo vector left de la matriz \item[{\em up}]Nuevo vector up de la matriz \item[{\em front}]Nuevo vector front de la matriz \end{DoxyParams}
+
+
+Definición en la línea 145 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a786451360806d1dd9cdf3d3e541b04ac}{
+\index{cMatrix@{cMatrix}!setAxisRightUpFront@{setAxisRightUpFront}}
+\index{setAxisRightUpFront@{setAxisRightUpFront}!cMatrix@{cMatrix}}
+\subsubsection[{setAxisRightUpFront}]{\setlength{\rightskip}{0pt plus 5cm}void cMatrix::setAxisRightUpFront (const {\bf cVec3} \& {\em right}, \/  const {\bf cVec3} \& {\em up}, \/  const {\bf cVec3} \& {\em front})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a786451360806d1dd9cdf3d3e541b04ac}
+
+
+Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em right}]Nuevo vector left de la matriz \item[{\em up}]Nuevo vector up de la matriz \item[{\em front}]Nuevo vector front de la matriz \end{DoxyParams}
+
+
+Definición en la línea 156 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a4520cd4a6d52e21828700ebccca51633}{
+\index{cMatrix@{cMatrix}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!cMatrix@{cMatrix}}
+\subsubsection[{SetPosition}]{\setlength{\rightskip}{0pt plus 5cm}void cMatrix::SetPosition (const {\bf cVec3} \& {\em pos})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a4520cd4a6d52e21828700ebccca51633}
+
+
+Permite cambiar la posicion de la matriz. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em pos}]Posicion que se quiere establecer en la matriz \end{DoxyParams}
+
+
+Definición en la línea 138 del archivo Matrix44Col.h.
+
+\hypertarget{structc_matrix_a80c11b80d73859af260ca4fec8fa4dbe}{
+\index{cMatrix@{cMatrix}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!cMatrix@{cMatrix}}
+\subsubsection[{Transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} \& cMatrix::Transpose (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_matrix_a80c11b80d73859af260ca4fec8fa4dbe}
+
+
+Traspone la matriz actual. Si la matriz solo tiene rotacion, la traspuesta y la inversa es la misma matriz, por lo que se puede usar esta funcion para calcular una inversa muy rapida. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia a la matriz actual. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{structc_matrix_ac41ca7fc346d8d5765f630ba9aecd2ac}{Invert} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 427 del archivo Matrix.h.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{structc_matrix_af65b7c82e3ace6aa8b0e6d8c3a1e6288}{
+\index{cMatrix@{cMatrix}!rows@{rows}}
+\index{rows@{rows}!cMatrix@{cMatrix}}
+\subsubsection[{rows}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} {\bf cMatrix::rows}\mbox{[}4\mbox{]}}}
+\label{structc_matrix_af65b7c82e3ace6aa8b0e6d8c3a1e6288}
+
+
+Definición en la línea 43 del archivo Matrix.h.
+
+
+
+La documentación para esta estructura fue generada a partir de los siguientes ficheros:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/\hyperlink{_matrix_8h}{Matrix.h}\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/\hyperlink{_matrix_8cpp}{Matrix.cpp}\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/\hyperlink{_matrix44_col_8h}{Matrix44Col.h}\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/\hyperlink{_matrix44_row_8h}{Matrix44Row.h}\end{DoxyCompactItemize}

@@ -1,0 +1,504 @@
+\hypertarget{structc_quaternion}{
+\section{Referencia de la Estructura cQuaternion}
+\label{structc_quaternion}\index{cQuaternion@{cQuaternion}}
+}
+
+
+Esta estructura representa un quaternion.  
+
+
+
+
+{\ttfamily \#include $<$Quaternion.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structc_quaternion_a292fa3b73dacce52ec5319be85b897fb}{cQuaternion} (void)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. NO inicializa el Quaternion a la identidad. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion_a8fea08dea5a49c167806cc6d3b98e38b}{cQuaternion} (float newx, float newy, float newz, float neww)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structc_quaternion_ab435325d97290d0488b3f92123c46402}{operator==} (const \hyperlink{structc_quaternion}{cQuaternion} \&other) const 
+\begin{DoxyCompactList}\small\item\em Compara si dos quaterniones son iguales. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structc_quaternion_ac9aafef68862e68107f8cad3e07aed15}{operator!=} (const \hyperlink{structc_quaternion}{cQuaternion} \&other) const 
+\begin{DoxyCompactList}\small\item\em Compara si dos quaterniones son distintos. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a9e7e105cafdaa6e75ab6618fae2df376}{operator+=} (const \hyperlink{structc_quaternion}{cQuaternion} \&other)
+\begin{DoxyCompactList}\small\item\em Suma dos Quaterniones. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a6efbe83b0ff46fa6608ced1225a8a6f7}{operator-\/=} (const \hyperlink{structc_quaternion}{cQuaternion} \&other)
+\begin{DoxyCompactList}\small\item\em Resta dos Quaterniones. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a8d93f8a08d0425c4a06eca325cc7c968}{operator$\ast$=} (const \hyperlink{structc_quaternion}{cQuaternion} \&other)
+\begin{DoxyCompactList}\small\item\em Multiplica dos Quaterniones. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a80f0ed9b1c1733779190c7ed12009872}{operator/=} (float scalar)
+\begin{DoxyCompactList}\small\item\em Divide las componentes del quaternion por un valor. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a99165a12ba4f4a5e450447be9978311e}{operator$\ast$=} (float scalar)
+\begin{DoxyCompactList}\small\item\em Multiplica las componentes del quaternion por un valor. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a8fd403063e1dc4e8b5fc09bf194d7416}{LoadIdentity} ()
+\begin{DoxyCompactList}\small\item\em Carga la identidad en el quaternion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_ae0b2a28cf1484a3f42c62ace23cb6233}{LoadRotationEuler} (float yaw, float pitch, float roll)
+\begin{DoxyCompactList}\small\item\em Crea un quaternion usando angulos de Euler. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a602bf50e49f245eccb540e3ace4ace5a}{LoadRotationAxis} (const \hyperlink{structc_vec3}{cVec3} \&axis, float angle\_\-rad)
+\begin{DoxyCompactList}\small\item\em Crea un quaternion usando notacion Eje y Rotacion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_abba925f9fa730b5263bae726c449b5b7}{Set} (float newx, float newy, float newz, float neww)
+\begin{DoxyCompactList}\small\item\em Permite cambiar las componentes del quaternion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_a5927294d06a34ec6888f5e212386ab4c}{Normalize} (void)
+\begin{DoxyCompactList}\small\item\em Normaliza el quaternion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_aa353ee85a2f5832ab15db7a0a2a7a83c}{Conjugate} ()
+\begin{DoxyCompactList}\small\item\em Crea el quaternion conjugado del quaternion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \& \hyperlink{structc_quaternion_af43966f8f41b23fd31838cf04ad0ebed}{Invert} ()
+\begin{DoxyCompactList}\small\item\em Crea el quaternion inverso del quaternion. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_quaternion_ac7e25e6ab6eb1e2cf20b7365f7f4ada3}{LengthSqr} (void) const 
+\begin{DoxyCompactList}\small\item\em Calcula la longitud al cuadrado del quaternion. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_quaternion_ac658da329b3e2dddd5dd86c1c210eb5b}{Length} (void) const 
+\begin{DoxyCompactList}\small\item\em Calcula la longitud del quaternion. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_quaternion_a1104eb04e46597bfa6bfaa13d7d947bd}{AsMatrix} (\hyperlink{structc_matrix}{cMatrix} \&matrix) const 
+\begin{DoxyCompactList}\small\item\em Devuelve la matriz de rotacion equivalente al quaternion. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_quaternion_a2737011acd238789a3c81212f8ce2e4f}{AsAxis} (\hyperlink{structc_vec3}{cVec3} \&axis, float \&angle) const 
+\begin{DoxyCompactList}\small\item\em Devuelve el eje y angulo equivalente al quaternion. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_quaternion_a40079e9508f1d35b43053f85e9e5e205}{AsEuler} (float \&yaw, float \&pitch, float \&roll) const 
+\begin{DoxyCompactList}\small\item\em Devuelve los angulos de euler equivalentes al quaternion. \item\end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{structc_quaternion_a2c1246276dd255d42c9ed443e126e4e4}{AsFloatPointer} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el quaternion como un array de flotantes. \item\end{DoxyCompactList}\item 
+const float $\ast$ \hyperlink{structc_quaternion_a4abb85f02f59ba6cb09692da5f2ba124}{AsFloatPointer} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el quaternion como un array de flotantes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structc_quaternion_ae9d38f2dff8865de112c2573cd14a16f}{x}
+\item 
+float \hyperlink{structc_quaternion_a597f81d5bb8b45db94feecda6665b943}{y}
+\item 
+float \hyperlink{structc_quaternion_a9693b661a38913251604d96b4ab3b0c6}{z}
+\item 
+float \hyperlink{structc_quaternion_adac004127cac4aeb0a0d5e8772317997}{w}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Esta estructura representa un quaternion. 
+
+Definición en la línea 8 del archivo Quaternion.h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{structc_quaternion_a292fa3b73dacce52ec5319be85b897fb}{
+\index{cQuaternion@{cQuaternion}!cQuaternion@{cQuaternion}}
+\index{cQuaternion@{cQuaternion}!cQuaternion@{cQuaternion}}
+\subsubsection[{cQuaternion}]{\setlength{\rightskip}{0pt plus 5cm}cQuaternion::cQuaternion (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a292fa3b73dacce52ec5319be85b897fb}
+
+
+Constructor por defecto. NO inicializa el Quaternion a la identidad. 
+
+
+
+Definición en la línea 13 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a8fea08dea5a49c167806cc6d3b98e38b}{
+\index{cQuaternion@{cQuaternion}!cQuaternion@{cQuaternion}}
+\index{cQuaternion@{cQuaternion}!cQuaternion@{cQuaternion}}
+\subsubsection[{cQuaternion}]{\setlength{\rightskip}{0pt plus 5cm}cQuaternion::cQuaternion (float {\em newx}, \/  float {\em newy}, \/  float {\em newz}, \/  float {\em neww})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a8fea08dea5a49c167806cc6d3b98e38b}
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em newx}]Componente X del quaternion \item[{\em newy}]Componente Y del quaternion \item[{\em newz}]Componente Z del quaternion \item[{\em neww}]Componente W del quaternion \end{DoxyParams}
+
+
+Definición en la línea 22 del archivo Quaternion.h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{structc_quaternion_a2737011acd238789a3c81212f8ce2e4f}{
+\index{cQuaternion@{cQuaternion}!AsAxis@{AsAxis}}
+\index{AsAxis@{AsAxis}!cQuaternion@{cQuaternion}}
+\subsubsection[{AsAxis}]{\setlength{\rightskip}{0pt plus 5cm}void cQuaternion::AsAxis ({\bf cVec3} \& {\em axis}, \/  float \& {\em angle}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a2737011acd238789a3c81212f8ce2e4f}
+
+
+Devuelve el eje y angulo equivalente al quaternion. 
+
+Devuelve el eje y angulo equivalente al quaternion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em axis}]Devuelve el eje de rotacion equivalente al quaternion \item[{\em angle}]Devuelve el angulo de rotacion equivalente al quaternion (en radianes). \end{DoxyParams}
+
+
+Definición en la línea 352 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a40079e9508f1d35b43053f85e9e5e205}{
+\index{cQuaternion@{cQuaternion}!AsEuler@{AsEuler}}
+\index{AsEuler@{AsEuler}!cQuaternion@{cQuaternion}}
+\subsubsection[{AsEuler}]{\setlength{\rightskip}{0pt plus 5cm}void cQuaternion::AsEuler (float \& {\em yaw}, \/  float \& {\em pitch}, \/  float \& {\em roll}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a40079e9508f1d35b43053f85e9e5e205}
+
+
+Devuelve los angulos de euler equivalentes al quaternion. 
+
+Devuelve los angulos de euler equivalentes al quaternion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em yaw}]Devuelve el angulo yaw equivalente al quaternion \item[{\em pitch}]Devuelve el angulo pitch equivalente al quaternion (en radianes). \item[{\em roll}]Devuelve el angulo roll equivalente al quaternion (en radianes). \end{DoxyParams}
+
+
+Definición en la línea 369 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a4abb85f02f59ba6cb09692da5f2ba124}{
+\index{cQuaternion@{cQuaternion}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cQuaternion@{cQuaternion}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ cQuaternion::AsFloatPointer () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a4abb85f02f59ba6cb09692da5f2ba124}
+
+
+Devuelve el quaternion como un array de flotantes. 
+
+Devuelve el quaternion como un array de flotantes \begin{DoxyReturn}{Devuelve}
+Devuelve un puntero a la memoria utilizada por el quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 162 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a2c1246276dd255d42c9ed443e126e4e4}{
+\index{cQuaternion@{cQuaternion}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cQuaternion@{cQuaternion}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ cQuaternion::AsFloatPointer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a2c1246276dd255d42c9ed443e126e4e4}
+
+
+Devuelve el quaternion como un array de flotantes. 
+
+Devuelve el quaternion como un array de flotantes \begin{DoxyReturn}{Devuelve}
+Devuelve un puntero a la memoria utilizada por el quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 156 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a1104eb04e46597bfa6bfaa13d7d947bd}{
+\index{cQuaternion@{cQuaternion}!AsMatrix@{AsMatrix}}
+\index{AsMatrix@{AsMatrix}!cQuaternion@{cQuaternion}}
+\subsubsection[{AsMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void cQuaternion::AsMatrix ({\bf cMatrix} \& {\em matrix}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a1104eb04e46597bfa6bfaa13d7d947bd}
+
+
+Devuelve la matriz de rotacion equivalente al quaternion. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em matrix}]Devuelve la matriz de rotacion equivalente al quaternion \end{DoxyParams}
+
+
+Definición en la línea 338 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_aa353ee85a2f5832ab15db7a0a2a7a83c}{
+\index{cQuaternion@{cQuaternion}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!cQuaternion@{cQuaternion}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::Conjugate ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_aa353ee85a2f5832ab15db7a0a2a7a83c}
+
+
+Crea el quaternion conjugado del quaternion. 
+
+Crea el quaternion conjugado del quaternion \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 315 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_af43966f8f41b23fd31838cf04ad0ebed}{
+\index{cQuaternion@{cQuaternion}!Invert@{Invert}}
+\index{Invert@{Invert}!cQuaternion@{cQuaternion}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::Invert (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_af43966f8f41b23fd31838cf04ad0ebed}
+
+
+Crea el quaternion inverso del quaternion. 
+
+Crea el quaternion inverso del quaternion \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 322 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_ac658da329b3e2dddd5dd86c1c210eb5b}{
+\index{cQuaternion@{cQuaternion}!Length@{Length}}
+\index{Length@{Length}!cQuaternion@{cQuaternion}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float cQuaternion::Length (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_ac658da329b3e2dddd5dd86c1c210eb5b}
+
+
+Calcula la longitud del quaternion. 
+
+Calcula la longitud del quaternion \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 333 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_ac7e25e6ab6eb1e2cf20b7365f7f4ada3}{
+\index{cQuaternion@{cQuaternion}!LengthSqr@{LengthSqr}}
+\index{LengthSqr@{LengthSqr}!cQuaternion@{cQuaternion}}
+\subsubsection[{LengthSqr}]{\setlength{\rightskip}{0pt plus 5cm}float cQuaternion::LengthSqr (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_ac7e25e6ab6eb1e2cf20b7365f7f4ada3}
+
+
+Calcula la longitud al cuadrado del quaternion. 
+
+Calcula la longitud al cuadrado del quaternion \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 329 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a8fd403063e1dc4e8b5fc09bf194d7416}{
+\index{cQuaternion@{cQuaternion}!LoadIdentity@{LoadIdentity}}
+\index{LoadIdentity@{LoadIdentity}!cQuaternion@{cQuaternion}}
+\subsubsection[{LoadIdentity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::LoadIdentity (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a8fd403063e1dc4e8b5fc09bf194d7416}
+
+
+Carga la identidad en el quaternion. 
+
+Carga la identidad en el quaternion \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 275 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a602bf50e49f245eccb540e3ace4ace5a}{
+\index{cQuaternion@{cQuaternion}!LoadRotationAxis@{LoadRotationAxis}}
+\index{LoadRotationAxis@{LoadRotationAxis}!cQuaternion@{cQuaternion}}
+\subsubsection[{LoadRotationAxis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::LoadRotationAxis (const {\bf cVec3} \& {\em axis}, \/  float {\em angle\_\-rad})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a602bf50e49f245eccb540e3ace4ace5a}
+
+
+Crea un quaternion usando notacion Eje y Rotacion. 
+
+Crea un quaternion usando notacion Eje y Rotacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em axis}]Eje de rotacion \item[{\em angle\_\-rad}]angulo de rotacion en radianes \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 295 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_ae0b2a28cf1484a3f42c62ace23cb6233}{
+\index{cQuaternion@{cQuaternion}!LoadRotationEuler@{LoadRotationEuler}}
+\index{LoadRotationEuler@{LoadRotationEuler}!cQuaternion@{cQuaternion}}
+\subsubsection[{LoadRotationEuler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::LoadRotationEuler (float {\em yaw}, \/  float {\em pitch}, \/  float {\em roll})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_ae0b2a28cf1484a3f42c62ace23cb6233}
+
+
+Crea un quaternion usando angulos de Euler. 
+
+Crea un quaternion usando angulos de Euler 
+\begin{DoxyParams}{Parámetros}
+\item[{\em yaw}]angulo Yaw \item[{\em pitch}]angulo Pitch \item[{\em roll}]angulo Roll \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 280 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a5927294d06a34ec6888f5e212386ab4c}{
+\index{cQuaternion@{cQuaternion}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!cQuaternion@{cQuaternion}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::Normalize (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a5927294d06a34ec6888f5e212386ab4c}
+
+
+Normaliza el quaternion. 
+
+Normaliza el quaternion \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 309 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_ac9aafef68862e68107f8cad3e07aed15}{
+\index{cQuaternion@{cQuaternion}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool cQuaternion::operator!= (const {\bf cQuaternion} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_ac9aafef68862e68107f8cad3e07aed15}
+
+
+Compara si dos quaterniones son distintos. 
+
+Compara si dos quaterniones son distintos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Quaternion con el que se compara \end{DoxyParams}
+
+
+Definición en la línea 227 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a99165a12ba4f4a5e450447be9978311e}{
+\index{cQuaternion@{cQuaternion}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::operator$\ast$= (float {\em scalar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a99165a12ba4f4a5e450447be9978311e}
+
+
+Multiplica las componentes del quaternion por un valor. 
+
+Multiplica las componentes del quaternion por un valor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em scalar}]Valor por el que se multiplicara el quaternion \end{DoxyParams}
+
+
+Definición en la línea 265 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a8d93f8a08d0425c4a06eca325cc7c968}{
+\index{cQuaternion@{cQuaternion}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::operator$\ast$= (const {\bf cQuaternion} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a8d93f8a08d0425c4a06eca325cc7c968}
+
+
+Multiplica dos Quaterniones. 
+
+Multiplica dos Quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Quaternion con el que se opera \end{DoxyParams}
+
+
+Definición en la línea 247 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a9e7e105cafdaa6e75ab6618fae2df376}{
+\index{cQuaternion@{cQuaternion}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::operator+= (const {\bf cQuaternion} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a9e7e105cafdaa6e75ab6618fae2df376}
+
+
+Suma dos Quaterniones. 
+
+Suma dos Quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Quaternion con el que se opera \end{DoxyParams}
+
+
+Definición en la línea 231 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a6efbe83b0ff46fa6608ced1225a8a6f7}{
+\index{cQuaternion@{cQuaternion}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::operator-\/= (const {\bf cQuaternion} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a6efbe83b0ff46fa6608ced1225a8a6f7}
+
+
+Resta dos Quaterniones. 
+
+Resta dos Quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Quaternion con el que se opera \end{DoxyParams}
+
+
+Definición en la línea 239 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a80f0ed9b1c1733779190c7ed12009872}{
+\index{cQuaternion@{cQuaternion}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::operator/= (float {\em scalar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_a80f0ed9b1c1733779190c7ed12009872}
+
+
+Divide las componentes del quaternion por un valor. 
+
+Divide las componentes del quaternion por un valor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em scalar}]Valor por el que se dividira el quaternion \end{DoxyParams}
+
+
+Definición en la línea 255 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_ab435325d97290d0488b3f92123c46402}{
+\index{cQuaternion@{cQuaternion}!operator==@{operator==}}
+\index{operator==@{operator==}!cQuaternion@{cQuaternion}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool cQuaternion::operator== (const {\bf cQuaternion} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_ab435325d97290d0488b3f92123c46402}
+
+
+Compara si dos quaterniones son iguales. 
+
+Compara si dos quaterniones son iguales 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Quaternion con el que se compara \end{DoxyParams}
+
+
+Definición en la línea 223 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_abba925f9fa730b5263bae726c449b5b7}{
+\index{cQuaternion@{cQuaternion}!Set@{Set}}
+\index{Set@{Set}!cQuaternion@{cQuaternion}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} \& cQuaternion::Set (float {\em newx}, \/  float {\em newy}, \/  float {\em newz}, \/  float {\em neww})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_quaternion_abba925f9fa730b5263bae726c449b5b7}
+
+
+Permite cambiar las componentes del quaternion. 
+
+Permite cambiar las componentes del quaternion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em newx}]Componente X del quaternion \item[{\em newy}]Componente Y del quaternion \item[{\em newz}]Componente Z del quaternion \item[{\em neww}]Componente W del quaternion \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al quaternion 
+\end{DoxyReturn}
+
+
+Definición en la línea 301 del archivo Quaternion.h.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{structc_quaternion_adac004127cac4aeb0a0d5e8772317997}{
+\index{cQuaternion@{cQuaternion}!w@{w}}
+\index{w@{w}!cQuaternion@{cQuaternion}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cQuaternion::w}}}
+\label{structc_quaternion_adac004127cac4aeb0a0d5e8772317997}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_ae9d38f2dff8865de112c2573cd14a16f}{
+\index{cQuaternion@{cQuaternion}!x@{x}}
+\index{x@{x}!cQuaternion@{cQuaternion}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cQuaternion::x}}}
+\label{structc_quaternion_ae9d38f2dff8865de112c2573cd14a16f}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a597f81d5bb8b45db94feecda6665b943}{
+\index{cQuaternion@{cQuaternion}!y@{y}}
+\index{y@{y}!cQuaternion@{cQuaternion}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cQuaternion::y}}}
+\label{structc_quaternion_a597f81d5bb8b45db94feecda6665b943}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+\hypertarget{structc_quaternion_a9693b661a38913251604d96b4ab3b0c6}{
+\index{cQuaternion@{cQuaternion}!z@{z}}
+\index{z@{z}!cQuaternion@{cQuaternion}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cQuaternion::z}}}
+\label{structc_quaternion_a9693b661a38913251604d96b4ab3b0c6}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/\hyperlink{_quaternion_8h}{Quaternion.h}\end{DoxyCompactItemize}

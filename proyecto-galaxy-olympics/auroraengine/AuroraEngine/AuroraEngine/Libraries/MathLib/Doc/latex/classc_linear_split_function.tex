@@ -1,0 +1,148 @@
+\hypertarget{classc_linear_split_function}{
+\section{Referencia de la plantilla de la Clase cLinearSplitFunction$<$ NPoints $>$}
+\label{classc_linear_split_function}\index{cLinearSplitFunction@{cLinearSplitFunction}}
+}
+
+
+Representa una funcion a trozos.  
+
+
+
+
+{\ttfamily \#include $<$LinearSplitFunction.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_linear_split_function_a343d682ba5deb3d540e53e5b4b5d89cc}{Init} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa la clase. \item\end{DoxyCompactList}\item 
+void \hyperlink{classc_linear_split_function_ad1d97bafbc5db2a88d2d7a2795dabb9c}{Add} (float lfX, float lfY)
+\begin{DoxyCompactList}\small\item\em A�ade un punto a la clase. \item\end{DoxyCompactList}\item 
+void \hyperlink{classc_linear_split_function_a961b19b470f70c1ed2d1e9361c974993}{Add} (\hyperlink{structc_vec2}{cVec2} lfPoint)
+\begin{DoxyCompactList}\small\item\em A�ade un punto a la clase. \item\end{DoxyCompactList}\item 
+void \hyperlink{classc_linear_split_function_aef51aa1ae6e4a3b107b6dff9efdfb389}{Add} (\hyperlink{structc_vec2}{cVec2} $\ast$lafPoints, unsigned luiNumPoints)
+\begin{DoxyCompactList}\small\item\em A�ade un array de puntos a la clase. \item\end{DoxyCompactList}\item 
+float \hyperlink{classc_linear_split_function_a7ff160394977a786de0d4f7bda9b0e8f}{Eval} (float lfX)
+\begin{DoxyCompactList}\small\item\em Evalua el punto en la funcion a trozos. \item\end{DoxyCompactList}\item 
+float \hyperlink{classc_linear_split_function_a7d00fd7b0d8ce306e4ae037b404818ba}{CoherentEval} (float lfX)
+\begin{DoxyCompactList}\small\item\em Evalua el punto en la funcion a trozos utilizando una evaluacion anterior. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$unsigned NPoints$>$ class cLinearSplitFunction$<$ NPoints $>$}
+
+Representa una funcion a trozos. Representa una funcion a trozos. Dados una serie de puntos, se crea una funcion a trozos que se puede evaluar para todo numero flotante.
+
+f0 = Y1 si x $<$= X1 f1 = Lineal(Y1, Y2) si X1 $<$ x $<$= X2 f2 = Lineal(Y2, Y3) si X2 $<$ x $<$= X3 ... fn-\/1 = Lineal(Yn-\/1, Yn) si Xn-\/1 $<$ x $<$= Xn fn = Yn si Xn $<$ x
+
+NPoints es el numero de puntos que se va a usar para definir la funcion a trozos 
+
+Definición en la línea 21 del archivo LinearSplitFunction.h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classc_linear_split_function_aef51aa1ae6e4a3b107b6dff9efdfb389}{
+\index{cLinearSplitFunction@{cLinearSplitFunction}!Add@{Add}}
+\index{Add@{Add}!cLinearSplitFunction@{cLinearSplitFunction}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned NPoints$>$ void {\bf cLinearSplitFunction}$<$ NPoints $>$::Add ({\bf cVec2} $\ast$ {\em lafPoints}, \/  unsigned {\em luiNumPoints})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_split_function_aef51aa1ae6e4a3b107b6dff9efdfb389}
+
+
+A�ade un array de puntos a la clase. 
+
+A�ade un array de puntos a la clase para crear la funcion lineal 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lafPoints}]Array de puntos \item[{\em luiNumPoints}]Numero de puntos en el array \end{DoxyParams}
+
+
+Definición en la línea 100 del archivo LinearSplitFunction.h.
+
+\hypertarget{classc_linear_split_function_a961b19b470f70c1ed2d1e9361c974993}{
+\index{cLinearSplitFunction@{cLinearSplitFunction}!Add@{Add}}
+\index{Add@{Add}!cLinearSplitFunction@{cLinearSplitFunction}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned NPoints$>$ void {\bf cLinearSplitFunction}$<$ NPoints $>$::Add ({\bf cVec2} {\em lfPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_split_function_a961b19b470f70c1ed2d1e9361c974993}
+
+
+A�ade un punto a la clase. 
+
+A�ade un punto a la clase para crear la funcion lineal 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lfPoint}]Punto a a�adir \end{DoxyParams}
+
+
+Definición en la línea 85 del archivo LinearSplitFunction.h.
+
+\hypertarget{classc_linear_split_function_ad1d97bafbc5db2a88d2d7a2795dabb9c}{
+\index{cLinearSplitFunction@{cLinearSplitFunction}!Add@{Add}}
+\index{Add@{Add}!cLinearSplitFunction@{cLinearSplitFunction}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned NPoints$>$ void {\bf cLinearSplitFunction}$<$ NPoints $>$::Add (float {\em lfX}, \/  float {\em lfY})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_split_function_ad1d97bafbc5db2a88d2d7a2795dabb9c}
+
+
+A�ade un punto a la clase. 
+
+A�ade un punto a la clase para crear la funcion lineal 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lfX}]Componente X del punto a a�adir \item[{\em lfY}]Componente Y del punto a a�adir \end{DoxyParams}
+
+
+Definición en la línea 79 del archivo LinearSplitFunction.h.
+
+\hypertarget{classc_linear_split_function_a7d00fd7b0d8ce306e4ae037b404818ba}{
+\index{cLinearSplitFunction@{cLinearSplitFunction}!CoherentEval@{CoherentEval}}
+\index{CoherentEval@{CoherentEval}!cLinearSplitFunction@{cLinearSplitFunction}}
+\subsubsection[{CoherentEval}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned NPoints$>$ float {\bf cLinearSplitFunction}$<$ NPoints $>$::CoherentEval (float {\em lfX})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_split_function_a7d00fd7b0d8ce306e4ae037b404818ba}
+
+
+Evalua el punto en la funcion a trozos utilizando una evaluacion anterior. 
+
+Evalua el punto en la funcion a trozos asumiendo que existe una cierta continuidad con el valor evaluado anteriormente. Esta funcion sera mas rapida que la anterior si el valor evaluado es muy cercano al ultimo valor evaluado. De lo contrario puede ser mas ineficiente. 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lfX}]Punto que se desea evaluar \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor Y correspondiente al punto evaluado 
+\end{DoxyReturn}
+
+
+Definición en la línea 161 del archivo LinearSplitFunction.h.
+
+\hypertarget{classc_linear_split_function_a7ff160394977a786de0d4f7bda9b0e8f}{
+\index{cLinearSplitFunction@{cLinearSplitFunction}!Eval@{Eval}}
+\index{Eval@{Eval}!cLinearSplitFunction@{cLinearSplitFunction}}
+\subsubsection[{Eval}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned NPoints$>$ float {\bf cLinearSplitFunction}$<$ NPoints $>$::Eval (float {\em lfX})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_split_function_a7ff160394977a786de0d4f7bda9b0e8f}
+
+
+Evalua el punto en la funcion a trozos. 
+
+Evalua el punto en la funcion a trozos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lfX}]Punto que se desea evaluar \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor Y correspondiente al punto evaluado 
+\end{DoxyReturn}
+
+
+Definición en la línea 110 del archivo LinearSplitFunction.h.
+
+\hypertarget{classc_linear_split_function_a343d682ba5deb3d540e53e5b4b5d89cc}{
+\index{cLinearSplitFunction@{cLinearSplitFunction}!Init@{Init}}
+\index{Init@{Init}!cLinearSplitFunction@{cLinearSplitFunction}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned NPoints$>$ void {\bf cLinearSplitFunction}$<$ NPoints $>$::Init (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_split_function_a343d682ba5deb3d540e53e5b4b5d89cc}
+
+
+Inicializa la clase. 
+
+Inicializa la clase 
+
+Definición en la línea 72 del archivo LinearSplitFunction.h.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/MathUtils/\hyperlink{_linear_split_function_8h}{LinearSplitFunction.h}\end{DoxyCompactItemize}

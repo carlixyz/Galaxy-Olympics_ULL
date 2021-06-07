@@ -1,0 +1,351 @@
+\hypertarget{_matrix_8h}{
+\section{Referencia del Archivo D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/Matrix.h}
+\label{_matrix_8h}\index{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/Matrix.h@{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Matrix/Matrix.h}}
+}
+{\ttfamily \#include \char`\"{}../Vec/VecLib.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Matrix44Col.h\char`\"{}}\par
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structc_matrix}{cMatrix}
+\begin{DoxyCompactList}\small\item\em Esta estructura representa una matriz de transformacion 4x4. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Definiciones}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_matrix_8h_a7a716a4ec75cc786c9ad8527b0ba57eb}{RIGHT\_\-HAND\_\-ROW\_\-AXIS}~(1)
+\begin{DoxyCompactList}\small\item\em Left, Up, Front y Posicion en Filas. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_matrix_8h_a035dead4452b2780520c14d5661cb3a8}{RIGHT\_\-HAND\_\-COLUMN\_\-AXIS}~(2)
+\begin{DoxyCompactList}\small\item\em Left, Up, Front y Posicion en Columnas. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_matrix_8h_a576a293e0686c10de57b0a014a902e62}{LEFT\_\-HAND\_\-ROW\_\-AXIS}~(3)
+\begin{DoxyCompactList}\small\item\em Right, Up, Front y Posicion en Filas. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_matrix_8h_a59156b913dcd4b1f4d553d9a34667b58}{LEFT\_\-HAND\_\-COLUMN\_\-AXIS}~(4)
+\begin{DoxyCompactList}\small\item\em Right, Up, Front y Posicion en Columnas. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_matrix_8h_affb51d87c1c7a9f710d92c2ee2c25c9c}{MATRIX\_\-CONFIGURATION}~RIGHT\_\-HAND\_\-ROW\_\-AXIS
+\begin{DoxyCompactList}\small\item\em Configuracion actual de matriz. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{_matrix_8h_a5d1d275cfec76197e014fe4d58f2e569}{RIGHT\_\-HAND}
+\item 
+\#define \hyperlink{_matrix_8h_aeaa2e2c128d105e9a2d86d3ec4ba182d}{ROW\_\-AXIS}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_matrix_8h_a8cde60fe2b302238b16a86c6295df215}{operator==} (const \hyperlink{structc_matrix}{cMatrix} \&m1, const \hyperlink{structc_matrix}{cMatrix} \&m2)
+\begin{DoxyCompactList}\small\item\em Comprueba si dos matrices son iguales, comparando componente a componente. \item\end{DoxyCompactList}\item 
+bool \hyperlink{_matrix_8h_ac7536664da0dcce3b48d7ca2929acb81}{operator!=} (const \hyperlink{structc_matrix}{cMatrix} \&m1, const \hyperlink{structc_matrix}{cMatrix} \&m2)
+\begin{DoxyCompactList}\small\item\em Comprueba si al menos una componente de las dos matrices es distinto, comparando componente a componente. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \hyperlink{_matrix_8h_ae43bee6380c84967cee8ec5fa3db10e9}{operator+} (const \hyperlink{structc_matrix}{cMatrix} \&m1, const \hyperlink{structc_matrix}{cMatrix} \&m2)
+\begin{DoxyCompactList}\small\item\em Suma dos matrices, componente a componente. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \hyperlink{_matrix_8h_ab0dc69bc44c1feb0b0e1bf64465da872}{operator-\/} (const \hyperlink{structc_matrix}{cMatrix} \&m1, const \hyperlink{structc_matrix}{cMatrix} \&m2)
+\begin{DoxyCompactList}\small\item\em Resta dos matrices, componente a componente. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \hyperlink{_matrix_8h_ae0a45cd33a3f8ce68d8cde19287ff74c}{operator$\ast$} (const \hyperlink{structc_matrix}{cMatrix} \&m1, const \hyperlink{structc_matrix}{cMatrix} \&m2)
+\begin{DoxyCompactList}\small\item\em Multiplica dos matrices. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \hyperlink{_matrix_8h_a83e808761a2feff5d19e5c5604af5a2b}{operator$\ast$} (const \hyperlink{structc_matrix}{cMatrix} \&other, float value)
+\begin{DoxyCompactList}\small\item\em Multiplica todas las componentes de una matriz por un valor flotante. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \hyperlink{_matrix_8h_a8c98dbbb151a657c553966208215b530}{operator$\ast$} (float value, const \hyperlink{structc_matrix}{cMatrix} \&other)
+\begin{DoxyCompactList}\small\item\em Multiplica todas las componentes de una matriz por un valor flotante. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_matrix}{cMatrix} \hyperlink{_matrix_8h_a05a3ad681341b70bdef48c3ea1ccd3d2}{operator/} (const \hyperlink{structc_matrix}{cMatrix} \&other, float value)
+\begin{DoxyCompactList}\small\item\em Divide todas las componentes de una matriz por un valor flotante. \item\end{DoxyCompactList}\item 
+void \hyperlink{_matrix_8h_af47c9a995fbf7e1738bfc86d453d1cbe}{TransformPoint} (\hyperlink{structc_vec3}{cVec3} \&out, const \hyperlink{structc_matrix}{cMatrix} \&matrix, const \hyperlink{structc_vec3}{cVec3} \&point)
+\begin{DoxyCompactList}\small\item\em Transforma un punto aplicado una matriz de transformacion. \item\end{DoxyCompactList}\item 
+void \hyperlink{_matrix_8h_a97135878bf951ab80dd789735c8a3692}{TransformNormal} (\hyperlink{structc_vec3}{cVec3} \&out, const \hyperlink{structc_matrix}{cMatrix} \&matrix, const \hyperlink{structc_vec3}{cVec3} \&normal)
+\begin{DoxyCompactList}\small\item\em Transforma una normal aplicado una matriz de transformacion. \item\end{DoxyCompactList}\item 
+void \hyperlink{_matrix_8h_a461c27de417441ff35d4f3418639121d}{TransformCoords} (\hyperlink{structc_vec4}{cVec4} \&out, const \hyperlink{structc_matrix}{cMatrix} \&matrix, const \hyperlink{structc_vec4}{cVec4} \&coords)
+\begin{DoxyCompactList}\small\item\em Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las definiciones}
+\hypertarget{_matrix_8h_a59156b913dcd4b1f4d553d9a34667b58}{
+\index{Matrix.h@{Matrix.h}!LEFT\_\-HAND\_\-COLUMN\_\-AXIS@{LEFT\_\-HAND\_\-COLUMN\_\-AXIS}}
+\index{LEFT\_\-HAND\_\-COLUMN\_\-AXIS@{LEFT\_\-HAND\_\-COLUMN\_\-AXIS}!Matrix.h@{Matrix.h}}
+\subsubsection[{LEFT\_\-HAND\_\-COLUMN\_\-AXIS}]{\setlength{\rightskip}{0pt plus 5cm}\#define LEFT\_\-HAND\_\-COLUMN\_\-AXIS~(4)}}
+\label{_matrix_8h_a59156b913dcd4b1f4d553d9a34667b58}
+
+
+Right, Up, Front y Posicion en Columnas. 
+
+
+
+Definición en la línea 14 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a576a293e0686c10de57b0a014a902e62}{
+\index{Matrix.h@{Matrix.h}!LEFT\_\-HAND\_\-ROW\_\-AXIS@{LEFT\_\-HAND\_\-ROW\_\-AXIS}}
+\index{LEFT\_\-HAND\_\-ROW\_\-AXIS@{LEFT\_\-HAND\_\-ROW\_\-AXIS}!Matrix.h@{Matrix.h}}
+\subsubsection[{LEFT\_\-HAND\_\-ROW\_\-AXIS}]{\setlength{\rightskip}{0pt plus 5cm}\#define LEFT\_\-HAND\_\-ROW\_\-AXIS~(3)}}
+\label{_matrix_8h_a576a293e0686c10de57b0a014a902e62}
+
+
+Right, Up, Front y Posicion en Filas. 
+
+
+
+Definición en la línea 12 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_affb51d87c1c7a9f710d92c2ee2c25c9c}{
+\index{Matrix.h@{Matrix.h}!MATRIX\_\-CONFIGURATION@{MATRIX\_\-CONFIGURATION}}
+\index{MATRIX\_\-CONFIGURATION@{MATRIX\_\-CONFIGURATION}!Matrix.h@{Matrix.h}}
+\subsubsection[{MATRIX\_\-CONFIGURATION}]{\setlength{\rightskip}{0pt plus 5cm}\#define MATRIX\_\-CONFIGURATION~RIGHT\_\-HAND\_\-ROW\_\-AXIS}}
+\label{_matrix_8h_affb51d87c1c7a9f710d92c2ee2c25c9c}
+
+
+Configuracion actual de matriz. 
+
+Puede tener uno de los siguientes valores RIGHT\_\-HAND\_\-ROW\_\-AXIS, RIGHT\_\-HAND\_\-COLUMN\_\-AXIS, LEFT\_\-HAND\_\-ROW\_\-AXIS, LEFT\_\-HAND\_\-COLUMN\_\-AXIS \begin{DoxySeeAlso}{Ver también}
+\hyperlink{_matrix_8h_a7a716a4ec75cc786c9ad8527b0ba57eb}{RIGHT\_\-HAND\_\-ROW\_\-AXIS} \hyperlink{_matrix_8h_a035dead4452b2780520c14d5661cb3a8}{RIGHT\_\-HAND\_\-COLUMN\_\-AXIS} \hyperlink{_matrix_8h_a576a293e0686c10de57b0a014a902e62}{LEFT\_\-HAND\_\-ROW\_\-AXIS} \hyperlink{_matrix_8h_a59156b913dcd4b1f4d553d9a34667b58}{LEFT\_\-HAND\_\-COLUMN\_\-AXIS} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 20 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a5d1d275cfec76197e014fe4d58f2e569}{
+\index{Matrix.h@{Matrix.h}!RIGHT\_\-HAND@{RIGHT\_\-HAND}}
+\index{RIGHT\_\-HAND@{RIGHT\_\-HAND}!Matrix.h@{Matrix.h}}
+\subsubsection[{RIGHT\_\-HAND}]{\setlength{\rightskip}{0pt plus 5cm}\#define RIGHT\_\-HAND}}
+\label{_matrix_8h_a5d1d275cfec76197e014fe4d58f2e569}
+
+
+Definición en la línea 28 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a035dead4452b2780520c14d5661cb3a8}{
+\index{Matrix.h@{Matrix.h}!RIGHT\_\-HAND\_\-COLUMN\_\-AXIS@{RIGHT\_\-HAND\_\-COLUMN\_\-AXIS}}
+\index{RIGHT\_\-HAND\_\-COLUMN\_\-AXIS@{RIGHT\_\-HAND\_\-COLUMN\_\-AXIS}!Matrix.h@{Matrix.h}}
+\subsubsection[{RIGHT\_\-HAND\_\-COLUMN\_\-AXIS}]{\setlength{\rightskip}{0pt plus 5cm}\#define RIGHT\_\-HAND\_\-COLUMN\_\-AXIS~(2)}}
+\label{_matrix_8h_a035dead4452b2780520c14d5661cb3a8}
+
+
+Left, Up, Front y Posicion en Columnas. 
+
+
+
+Definición en la línea 10 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a7a716a4ec75cc786c9ad8527b0ba57eb}{
+\index{Matrix.h@{Matrix.h}!RIGHT\_\-HAND\_\-ROW\_\-AXIS@{RIGHT\_\-HAND\_\-ROW\_\-AXIS}}
+\index{RIGHT\_\-HAND\_\-ROW\_\-AXIS@{RIGHT\_\-HAND\_\-ROW\_\-AXIS}!Matrix.h@{Matrix.h}}
+\subsubsection[{RIGHT\_\-HAND\_\-ROW\_\-AXIS}]{\setlength{\rightskip}{0pt plus 5cm}\#define RIGHT\_\-HAND\_\-ROW\_\-AXIS~(1)}}
+\label{_matrix_8h_a7a716a4ec75cc786c9ad8527b0ba57eb}
+
+
+Left, Up, Front y Posicion en Filas. 
+
+
+
+Definición en la línea 8 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_aeaa2e2c128d105e9a2d86d3ec4ba182d}{
+\index{Matrix.h@{Matrix.h}!ROW\_\-AXIS@{ROW\_\-AXIS}}
+\index{ROW\_\-AXIS@{ROW\_\-AXIS}!Matrix.h@{Matrix.h}}
+\subsubsection[{ROW\_\-AXIS}]{\setlength{\rightskip}{0pt plus 5cm}\#define ROW\_\-AXIS}}
+\label{_matrix_8h_aeaa2e2c128d105e9a2d86d3ec4ba182d}
+
+
+Definición en la línea 29 del archivo Matrix.h.
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{_matrix_8h_ac7536664da0dcce3b48d7ca2929acb81}{
+\index{Matrix.h@{Matrix.h}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (const {\bf cMatrix} \& {\em m1}, \/  const {\bf cMatrix} \& {\em m2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_ac7536664da0dcce3b48d7ca2929acb81}
+
+
+Comprueba si al menos una componente de las dos matrices es distinto, comparando componente a componente. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em m1}]Operando 1 \item[{\em m2}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve si la condicion es cierta 
+\end{DoxyReturn}
+
+
+Definición en la línea 483 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a8c98dbbb151a657c553966208215b530}{
+\index{Matrix.h@{Matrix.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} operator$\ast$ (float {\em value}, \/  const {\bf cMatrix} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_a8c98dbbb151a657c553966208215b530}
+
+
+Multiplica todas las componentes de una matriz por un valor flotante. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor Flotante \item[{\em other}]Matriz \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la matriz resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 512 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a83e808761a2feff5d19e5c5604af5a2b}{
+\index{Matrix.h@{Matrix.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} operator$\ast$ (const {\bf cMatrix} \& {\em other}, \/  float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_a83e808761a2feff5d19e5c5604af5a2b}
+
+
+Multiplica todas las componentes de una matriz por un valor flotante. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Matriz \item[{\em value}]Valor Flotante \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la matriz resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 506 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_ae0a45cd33a3f8ce68d8cde19287ff74c}{
+\index{Matrix.h@{Matrix.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} operator$\ast$ (const {\bf cMatrix} \& {\em m1}, \/  const {\bf cMatrix} \& {\em m2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_ae0a45cd33a3f8ce68d8cde19287ff74c}
+
+
+Multiplica dos matrices. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em m1}]Operando 1 \item[{\em m2}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la matriz resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 500 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_ae43bee6380c84967cee8ec5fa3db10e9}{
+\index{Matrix.h@{Matrix.h}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} operator+ (const {\bf cMatrix} \& {\em m1}, \/  const {\bf cMatrix} \& {\em m2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_ae43bee6380c84967cee8ec5fa3db10e9}
+
+
+Suma dos matrices, componente a componente. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em m1}]Operando 1 \item[{\em m2}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la matriz resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 488 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_ab0dc69bc44c1feb0b0e1bf64465da872}{
+\index{Matrix.h@{Matrix.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} operator-\/ (const {\bf cMatrix} \& {\em m1}, \/  const {\bf cMatrix} \& {\em m2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_ab0dc69bc44c1feb0b0e1bf64465da872}
+
+
+Resta dos matrices, componente a componente. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em m1}]Operando 1 \item[{\em m2}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la matriz resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 494 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a05a3ad681341b70bdef48c3ea1ccd3d2}{
+\index{Matrix.h@{Matrix.h}!operator/@{operator/}}
+\index{operator/@{operator/}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cMatrix} operator/ (const {\bf cMatrix} \& {\em other}, \/  float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_a05a3ad681341b70bdef48c3ea1ccd3d2}
+
+
+Divide todas las componentes de una matriz por un valor flotante. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Matriz \item[{\em value}]Valor Flotante \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la matriz resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 518 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a8cde60fe2b302238b16a86c6295df215}{
+\index{Matrix.h@{Matrix.h}!operator==@{operator==}}
+\index{operator==@{operator==}!Matrix.h@{Matrix.h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (const {\bf cMatrix} \& {\em m1}, \/  const {\bf cMatrix} \& {\em m2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_a8cde60fe2b302238b16a86c6295df215}
+
+
+Comprueba si dos matrices son iguales, comparando componente a componente. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em m1}]Operando 1 \item[{\em m2}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve si la condicion es cierta 
+\end{DoxyReturn}
+
+
+Definición en la línea 478 del archivo Matrix.h.
+
+\hypertarget{_matrix_8h_a461c27de417441ff35d4f3418639121d}{
+\index{Matrix.h@{Matrix.h}!TransformCoords@{TransformCoords}}
+\index{TransformCoords@{TransformCoords}!Matrix.h@{Matrix.h}}
+\subsubsection[{TransformCoords}]{\setlength{\rightskip}{0pt plus 5cm}void TransformCoords ({\bf cVec4} \& {\em out}, \/  const {\bf cMatrix} \& {\em matrix}, \/  const {\bf cVec4} \& {\em coords})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_a461c27de417441ff35d4f3418639121d}
+
+
+Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Vec4 resultante ya transformado \item[{\em coords}]Vec4 que se desea transformar \item[{\em matrix}]Matriz de transformacion\end{DoxyParams}
+Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion.
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Vector resultante de la transformacion \item[{\em coords}]Vector que se desea transformar \item[{\em matrix}]Matriz que define la transformacion \end{DoxyParams}
+
+
+Definición en la línea 199 del archivo Matrix44Col.h.
+
+\hypertarget{_matrix_8h_a97135878bf951ab80dd789735c8a3692}{
+\index{Matrix.h@{Matrix.h}!TransformNormal@{TransformNormal}}
+\index{TransformNormal@{TransformNormal}!Matrix.h@{Matrix.h}}
+\subsubsection[{TransformNormal}]{\setlength{\rightskip}{0pt plus 5cm}void TransformNormal ({\bf cVec3} \& {\em out}, \/  const {\bf cMatrix} \& {\em matrix}, \/  const {\bf cVec3} \& {\em normal})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_a97135878bf951ab80dd789735c8a3692}
+
+
+Transforma una normal aplicado una matriz de transformacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Normal resultante ya transformado \item[{\em normal}]Normal que se desea transformar \item[{\em matrix}]Matriz de transformacion \end{DoxyParams}
+\hypertarget{_matrix_8h_af47c9a995fbf7e1738bfc86d453d1cbe}{
+\index{Matrix.h@{Matrix.h}!TransformPoint@{TransformPoint}}
+\index{TransformPoint@{TransformPoint}!Matrix.h@{Matrix.h}}
+\subsubsection[{TransformPoint}]{\setlength{\rightskip}{0pt plus 5cm}void TransformPoint ({\bf cVec3} \& {\em out}, \/  const {\bf cMatrix} \& {\em matrix}, \/  const {\bf cVec3} \& {\em point})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_matrix_8h_af47c9a995fbf7e1738bfc86d453d1cbe}
+
+
+Transforma un punto aplicado una matriz de transformacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Punto resultante ya transformado \item[{\em point}]Punto que se desea transformar \item[{\em matrix}]Matriz de transformacion\end{DoxyParams}
+Transforma un punto aplicado una matriz de transformacion.
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Vector resultante de la transformacion \item[{\em point}]Punto que se desea transformar \item[{\em matrix}]Matriz que define la transformacion \end{DoxyParams}
+
+
+Definición en la línea 173 del archivo Matrix44Col.h.
+

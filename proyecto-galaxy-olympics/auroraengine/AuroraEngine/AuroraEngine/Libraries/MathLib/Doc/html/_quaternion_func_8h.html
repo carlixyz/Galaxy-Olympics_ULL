@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia del Archivo D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Quaternion/QuaternionFunc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia del Archivo D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Quaternion/QuaternionFunc.h</h1><code>#include &quot;<a class="el" href="_quaternion_8h_source.html">Quaternion.h</a>&quot;</code><br/>
+
+<p><a href="_quaternion_func_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quaternion_func_8h.html#a35a6192b816742192912c6706fac76e0">TransformPoint</a> (<a class="el" href="structc_vec3.html">cVec3</a> &amp;out, const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;q, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transforma un punto por un quaternion.  <a href="#a35a6192b816742192912c6706fac76e0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quaternion_func_8h.html#a67e97f9c1eee8a290e58517227b7677a">Dot</a> (const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;first, const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;second)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcula el producto escalar de dos quaterniones.  <a href="#a67e97f9c1eee8a290e58517227b7677a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quaternion_func_8h.html#ae8df146659e7dbbacefefc860d2d0514">Lerp</a> (<a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;out, const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;from, const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;To, float t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcula la interpolacion lineal de dos quaterniones.  <a href="#ae8df146659e7dbbacefefc860d2d0514"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quaternion_func_8h.html#a3a28dfea1c36b6b2e012a919a3b5d7d1">Slerp</a> (<a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;out, const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;from, const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;To, float t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcula la interpolacion esferica de dos quaterniones.  <a href="#a3a28dfea1c36b6b2e012a919a3b5d7d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quaternion_func_8h.html#a1270147c25a12b9f097c4fd73657b364">RotationArc</a> (<a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;out, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;v0, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;v1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Genera el quaternion resultante de rotar un vector hasta el otro.  <a href="#a1270147c25a12b9f097c4fd73657b364"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="a67e97f9c1eee8a290e58517227b7677a"></a><!-- doxytag: member="QuaternionFunc.h::Dot" ref="a67e97f9c1eee8a290e58517227b7677a" args="(const cQuaternion &amp;first, const cQuaternion &amp;second)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>second</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcula el producto escalar de dos quaterniones. </p>
+<p>Calcula el producto escalar de dos quaterniones </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>first</em>&nbsp;</td><td>Primer operando </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>second</em>&nbsp;</td><td>Segundo operando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Resultado del producto escalar </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_quaternion_func_8h_source.html#l00066">66</a> del archivo <a class="el" href="_quaternion_func_8h_source.html">QuaternionFunc.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8df146659e7dbbacefefc860d2d0514"></a><!-- doxytag: member="QuaternionFunc.h::Lerp" ref="ae8df146659e7dbbacefefc860d2d0514" args="(cQuaternion &amp;out, const cQuaternion &amp;from, const cQuaternion &amp;To, float t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Lerp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>To</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>t</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcula la interpolacion lineal de dos quaterniones. </p>
+<p>Calcula la interpolacion lineal de dos quaterniones </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Quaternion resultante </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>from</em>&nbsp;</td><td>Primer operando </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>To</em>&nbsp;</td><td>Segundo operando </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>t</em>&nbsp;</td><td>Factor de interpolacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_quaternion_func_8h_source.html#l00070">70</a> del archivo <a class="el" href="_quaternion_func_8h_source.html">QuaternionFunc.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1270147c25a12b9f097c4fd73657b364"></a><!-- doxytag: member="QuaternionFunc.h::RotationArc" ref="a1270147c25a12b9f097c4fd73657b364" args="(cQuaternion &amp;out, const cVec3 &amp;v0, const cVec3 &amp;v1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RotationArc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Genera el quaternion resultante de rotar un vector hasta el otro. </p>
+<p>Genera el quaternion resultante de rotar un vector hasta el otro </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Quaternion resultante </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v0</em>&nbsp;</td><td>Primer vector </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v1</em>&nbsp;</td><td>Primer vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_quaternion_func_8h_source.html#l00075">75</a> del archivo <a class="el" href="_quaternion_func_8h_source.html">QuaternionFunc.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a28dfea1c36b6b2e012a919a3b5d7d1"></a><!-- doxytag: member="QuaternionFunc.h::Slerp" ref="a3a28dfea1c36b6b2e012a919a3b5d7d1" args="(cQuaternion &amp;out, const cQuaternion &amp;from, const cQuaternion &amp;To, float t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slerp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>To</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>t</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcula la interpolacion esferica de dos quaterniones. </p>
+<p>Calcula la interpolacion esferica de dos quaterniones </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Quaternion resultante </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>from</em>&nbsp;</td><td>Primer operando </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>To</em>&nbsp;</td><td>Segundo operando </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>t</em>&nbsp;</td><td>Factor de interpolacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_quaternion_func_8cpp_source.html#l00003">3</a> del archivo <a class="el" href="_quaternion_func_8cpp_source.html">QuaternionFunc.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35a6192b816742192912c6706fac76e0"></a><!-- doxytag: member="QuaternionFunc.h::TransformPoint" ref="a35a6192b816742192912c6706fac76e0" args="(cVec3 &amp;out, const cQuaternion &amp;q, const cVec3 &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_quaternion.html">cQuaternion</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Transforma un punto por un quaternion. </p>
+<p>Transforma un punto por un quaternion </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Punto resultante de la transformacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>q</em>&nbsp;</td><td>Quaternion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v</em>&nbsp;</td><td>Punto a transformar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_quaternion_func_8h_source.html#l00051">51</a> del archivo <a class="el" href="_quaternion_func_8h_source.html">QuaternionFunc.h</a>.</p>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

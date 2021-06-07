@@ -1,0 +1,1147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia de la Estructura cMatrix</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la Estructura cMatrix</h1><!-- doxytag: class="cMatrix" -->
+<p>Esta estructura representa una matriz de transformacion 4x4.  
+<a href="#_details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_matrix_8h_source.html">Matrix.h</a>&gt;</code></p>
+
+<p><a href="structc_matrix-members.html">Lista de todos los miembros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#ac0f1436a8717bf1befb1101884272450">cMatrix</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor por defecto. NO inicializa la matrix a la identidad.  <a href="#ac0f1436a8717bf1befb1101884272450"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a7222b8d70f30b08c4682afc5a0a3fc59">cMatrix</a> (float value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor. Inicializa toda la matriz al valor pasado.  <a href="#a7222b8d70f30b08c4682afc5a0a3fc59"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a21c4a2f302922d3952ffe7bc2bd75a8b">cMatrix</a> (const <a class="el" href="structc_vec4.html">cVec4</a> &amp;v0, const <a class="el" href="structc_vec4.html">cVec4</a> &amp;v1, const <a class="el" href="structc_vec4.html">cVec4</a> &amp;v2, const <a class="el" href="structc_vec4.html">cVec4</a> &amp;v3)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor. Inicializa la matriz con los vectores que se le pasa.  <a href="#a21c4a2f302922d3952ffe7bc2bd75a8b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#aa28e4b69e8c6a58014ff87376fb551fe">operator[]</a> (unsigned index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite acceder a los vectores que componen la matriz.  <a href="#aa28e4b69e8c6a58014ff87376fb551fe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a5d529a4adf998626edabb11f0de2ee62">operator[]</a> (unsigned index) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite acceder a los vectores que componen la matriz.  <a href="#a5d529a4adf998626edabb11f0de2ee62"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a0652aa099dd1919d4512b4c97be41425">operator()</a> (unsigned i, unsigned j=1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite acceder al elemento (i,j) de la matriz.  <a href="#a0652aa099dd1919d4512b4c97be41425"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a0131ee8f492249f4c67be517d0f7af50">operator()</a> (unsigned i, unsigned j=1) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite acceder al elemento (i,j) de la matriz.  <a href="#a0131ee8f492249f4c67be517d0f7af50"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#ae3f42b32fc083297663f1850ba5deabe">operator+=</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;other)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Suma casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual.  <a href="#ae3f42b32fc083297663f1850ba5deabe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#abbd4cf1577c196a68fbbe9768f0a2f97">operator-=</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;other)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resta casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual.  <a href="#abbd4cf1577c196a68fbbe9768f0a2f97"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#afa4c4793ed27a15f77b2eef4c7b2ecd8">operator*=</a> (float value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiplica todos los componentes de la matriz por un numero.  <a href="#afa4c4793ed27a15f77b2eef4c7b2ecd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a5a8babd4c56bb6c9b0f2b2eab27c2c40">operator/=</a> (float value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Divide todos los componentes de la matriz por un numero.  <a href="#a5a8babd4c56bb6c9b0f2b2eab27c2c40"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a3c6d5913bfa189bab32934e804aeda0b">operator*=</a> (const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;other)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiplica las dos matrices.  <a href="#a3c6d5913bfa189bab32934e804aeda0b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a80c11b80d73859af260ca4fec8fa4dbe">Transpose</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Traspone la matriz actual. Si la matriz solo tiene rotacion, la traspuesta y la inversa es la misma matriz, por lo que se puede usar esta funcion para calcular una inversa muy rapida.  <a href="#a80c11b80d73859af260ca4fec8fa4dbe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#ac41ca7fc346d8d5765f630ba9aecd2ac">Invert</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Invierte la matriz actual. Esta operacion es costosa, si la matriz solo tiene rotacion esta operacion se puede reemplazar por la de transposicion.  <a href="#ac41ca7fc346d8d5765f630ba9aecd2ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a03742812d4cb9da9274140a805e70350">AsFloatPointer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Devuelve un puntero a la memoria de la matriz.  <a href="#a03742812d4cb9da9274140a805e70350"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#accfc5fda68722da3a2ab1a2a4a7560ad">AsFloatPointer</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Devuelve un puntero a la memoria de la matriz.  <a href="#accfc5fda68722da3a2ab1a2a4a7560ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a3164627fbbf0fa0576cd738856894480">LoadIdentity</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga la identidad en la matriz actual.  <a href="#a3164627fbbf0fa0576cd738856894480"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#aefc98b3f40021a9522d802bb0ba51894">LoadTranslation</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;translation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga una matriz de traslacion en la matriz actual.  <a href="#aefc98b3f40021a9522d802bb0ba51894"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a5c74d50a5999a394594899d11757c28e">LoadScale</a> (float scale)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga una matriz de escalado en la matriz actual.  <a href="#a5c74d50a5999a394594899d11757c28e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a8a6fb0609df4b3a902537d140dc1b072">LoadScale</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;scale)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga una matriz de escalado en la matriz actual.  <a href="#a8a6fb0609df4b3a902537d140dc1b072"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a56404b5ad0a0793a47c5ef40923cb9c3">LoadRotation</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;axis, float rad)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Carga una matriz de rotacion en la matriz actual.  <a href="#a56404b5ad0a0793a47c5ef40923cb9c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a2edce675be0ebd52bf723cf20c4617e1">LoadPerpective</a> (float fovy_rad, float aspect, float znear, float zfar)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Genera una matriz de proyeccion en perspectiva basada en un campo de vista.  <a href="#a2edce675be0ebd52bf723cf20c4617e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a5c3acbe66d8112c9bbd49ba98b4109fd">LoadOrtho</a> (float left, float right, float bottom, float top, float znear, float zfar)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Genera una matriz de proyeccion ortogonal.  <a href="#a5c3acbe66d8112c9bbd49ba98b4109fd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#aaec6ac6bfe4f4357350df96c9b1707bd">LoadLookAt</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;position, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;target, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;upWorld=<a class="el" href="structc_vec3.html">cVec3</a>(0, 1, 0))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Genera una matriz de vista (enfoque).  <a href="#aaec6ac6bfe4f4357350df96c9b1707bd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec3.html">cVec3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#ae0012f3235e3456bd69ac0a057da1f12">GetPosition</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Devuelve la posicion de la matriz.  <a href="#ae0012f3235e3456bd69ac0a057da1f12"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec3.html">cVec3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a55cbb8656cea32ea8f5aa831ff724dbe">GetFront</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec3.html">cVec3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#af2f9e30012925add8c58ff112e7eb0df">GetUp</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec3.html">cVec3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#ac69f03b002f37e05982fedcb85aa2518">GetLeft</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec3.html">cVec3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a3b44bc8430bd2da2d0fb6809861c982f">GetRight</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a4520cd4a6d52e21828700ebccca51633">SetPosition</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;pos)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite cambiar la posicion de la matriz.  <a href="#a4520cd4a6d52e21828700ebccca51633"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a871726c99275d2643eacf78e86563b65">SetAxisLeftUpFront</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;left, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;up, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;front)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados.  <a href="#a871726c99275d2643eacf78e86563b65"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#a786451360806d1dd9cdf3d3e541b04ac">setAxisRightUpFront</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;right, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;up, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;front)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados.  <a href="#a786451360806d1dd9cdf3d3e541b04ac"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Atributos públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_vec4.html">cVec4</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a> [4]</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descripción detallada</h2>
+<p>Esta estructura representa una matriz de transformacion 4x4. </p>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00042">42</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+<hr/><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="ac0f1436a8717bf1befb1101884272450"></a><!-- doxytag: member="cMatrix::cMatrix" ref="ac0f1436a8717bf1befb1101884272450" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cMatrix::cMatrix </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor por defecto. NO inicializa la matrix a la identidad. </p>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00046">46</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7222b8d70f30b08c4682afc5a0a3fc59"></a><!-- doxytag: member="cMatrix::cMatrix" ref="a7222b8d70f30b08c4682afc5a0a3fc59" args="(float value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cMatrix::cMatrix </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. Inicializa toda la matriz al valor pasado. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Valor al que se va a inicializar la matriz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8cpp_source.html#l00004">4</a> del archivo <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21c4a2f302922d3952ffe7bc2bd75a8b"></a><!-- doxytag: member="cMatrix::cMatrix" ref="a21c4a2f302922d3952ffe7bc2bd75a8b" args="(const cVec4 &amp;v0, const cVec4 &amp;v1, const cVec4 &amp;v2, const cVec4 &amp;v3)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cMatrix::cMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v3</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. Inicializa la matriz con los vectores que se le pasa. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>v0</em>&nbsp;</td><td>Vector 0 de la matriz. Consultar MATRIX_CONFIGURATION para saber a que corresponde. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v1</em>&nbsp;</td><td>Vector 1 de la matriz. Consultar MATRIX_CONFIGURATION para saber a que corresponde. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v2</em>&nbsp;</td><td>Vector 2 de la matriz. Consultar MATRIX_CONFIGURATION para saber a que corresponde. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>v3</em>&nbsp;</td><td>Vector 3 de la matriz. Consultar MATRIX_CONFIGURATION para saber a que corresponde. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Ver también:</b></dt><dd><a class="el" href="_matrix_8h.html#affb51d87c1c7a9f710d92c2ee2c25c9c" title="Configuracion actual de matriz.">MATRIX_CONFIGURATION</a> </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8cpp_source.html#l00011">11</a> del archivo <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="accfc5fda68722da3a2ab1a2a4a7560ad"></a><!-- doxytag: member="cMatrix::AsFloatPointer" ref="accfc5fda68722da3a2ab1a2a4a7560ad" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float* cMatrix::AsFloatPointer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Devuelve un puntero a la memoria de la matriz. </p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Puntero a la memoria </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00143">143</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03742812d4cb9da9274140a805e70350"></a><!-- doxytag: member="cMatrix::AsFloatPointer" ref="a03742812d4cb9da9274140a805e70350" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* cMatrix::AsFloatPointer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Devuelve un puntero a la memoria de la matriz. </p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Puntero a la memoria </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00138">138</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55cbb8656cea32ea8f5aa831ff724dbe"></a><!-- doxytag: member="cMatrix::GetFront" ref="a55cbb8656cea32ea8f5aa831ff724dbe" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec3.html">cVec3</a> cMatrix::GetFront </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Devuelve el vector front resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector front seria igual a la direccion a la que apuntaria Z una vez transformada.</p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Vector front de la matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00111">111</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac69f03b002f37e05982fedcb85aa2518"></a><!-- doxytag: member="cMatrix::GetLeft" ref="ac69f03b002f37e05982fedcb85aa2518" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec3.html">cVec3</a> cMatrix::GetLeft </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Devuelve el vector left resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector left seria igual a la direccion a la que apuntaria X una vez transformada (o -X dependiendo si las matrices son left hand or right hand).</p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Vector left de la matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00120">120</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0012f3235e3456bd69ac0a057da1f12"></a><!-- doxytag: member="cMatrix::GetPosition" ref="ae0012f3235e3456bd69ac0a057da1f12" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec3.html">cVec3</a> cMatrix::GetPosition </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Devuelve la posicion de la matriz. </p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Posicion de la matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00107">107</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b44bc8430bd2da2d0fb6809861c982f"></a><!-- doxytag: member="cMatrix::GetRight" ref="a3b44bc8430bd2da2d0fb6809861c982f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec3.html">cVec3</a> cMatrix::GetRight </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Devuelve el vector right resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector right seria igual a la direccion a la que apuntaria -X una vez transformada (o X dependiendo si las matrices son left hand or right hand).</p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Vector right de la matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00129">129</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2f9e30012925add8c58ff112e7eb0df"></a><!-- doxytag: member="cMatrix::GetUp" ref="af2f9e30012925add8c58ff112e7eb0df" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec3.html">cVec3</a> cMatrix::GetUp </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Devuelve el vector up resultante de la transformacion de la matriz Si tuvieramos unos ejes XYZ y le aplicaramos la transformacion de esta matriz, el vector up seria igual a la direccion a la que apuntaria Y una vez transformada.</p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Vector up de la matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00115">115</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac41ca7fc346d8d5765f630ba9aecd2ac"></a><!-- doxytag: member="cMatrix::Invert" ref="ac41ca7fc346d8d5765f630ba9aecd2ac" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::Invert </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Invierte la matriz actual. Esta operacion es costosa, si la matriz solo tiene rotacion esta operacion se puede reemplazar por la de transposicion. </p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+<dl class="see"><dt><b>Ver también:</b></dt><dd><a class="el" href="structc_matrix.html#a80c11b80d73859af260ca4fec8fa4dbe" title="Traspone la matriz actual. Si la matriz solo tiene rotacion, la traspuesta y la inversa...">Transpose</a> </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8cpp_source.html#l00036">36</a> del archivo <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3164627fbbf0fa0576cd738856894480"></a><!-- doxytag: member="cMatrix::LoadIdentity" ref="a3164627fbbf0fa0576cd738856894480" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadIdentity </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Carga la identidad en la matriz actual. </p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Referencia a la matriz actual </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00444">444</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaec6ac6bfe4f4357350df96c9b1707bd"></a><!-- doxytag: member="cMatrix::LoadLookAt" ref="aaec6ac6bfe4f4357350df96c9b1707bd" args="(const cVec3 &amp;position, const cVec3 &amp;target, const cVec3 &amp;upWorld=cVec3(0, 1, 0))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadLookAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>upWorld</em> = <code><a class="el" href="structc_vec3.html">cVec3</a>(0,1,0)</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Genera una matriz de vista (enfoque). </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position</em>&nbsp;</td><td>Posicion de la camara. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>target</em>&nbsp;</td><td>Posicion a la que apunta la camara. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>upWorld</em>&nbsp;</td><td>Direccion vertical del mundo actual. Normalmente es (0,1,0) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la propia matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00073">73</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c3acbe66d8112c9bbd49ba98b4109fd"></a><!-- doxytag: member="cMatrix::LoadOrtho" ref="a5c3acbe66d8112c9bbd49ba98b4109fd" args="(float left, float right, float bottom, float top, float znear, float zfar)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadOrtho </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>bottom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>znear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>zfar</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Genera una matriz de proyeccion ortogonal. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>left</em>&nbsp;</td><td>Valor minimo de x del volumen de vista. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>right</em>&nbsp;</td><td>Valor maximo de x del volumen de vista. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bottom</em>&nbsp;</td><td>Valor minimo de y del volumen de vista. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>top</em>&nbsp;</td><td>Valor maximo de y del volumen de vista. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>znear</em>&nbsp;</td><td>Valor minimo de z del volumen de vista. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>zfar</em>&nbsp;</td><td>Valor maximo de z del volumen de vista. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la propia matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00040">40</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2edce675be0ebd52bf723cf20c4617e1"></a><!-- doxytag: member="cMatrix::LoadPerpective" ref="a2edce675be0ebd52bf723cf20c4617e1" args="(float fovy_rad, float aspect, float znear, float zfar)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadPerpective </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fovy_rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>aspect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>znear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>zfar</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Genera una matriz de proyeccion en perspectiva basada en un campo de vista. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fovy_rad</em>&nbsp;</td><td>Campo de vista en la direccion de y, en radianes. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>aspect</em>&nbsp;</td><td>Relacion de aspecto, que se define como el ancho del espacio de la vista dividido por el alto. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>znear</em>&nbsp;</td><td>Valor z del plano de vista proximo. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>zfar</em>&nbsp;</td><td>Valor z del plano de vista lejano. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la propia matriz </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00006">6</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56404b5ad0a0793a47c5ef40923cb9c3"></a><!-- doxytag: member="cMatrix::LoadRotation" ref="a56404b5ad0a0793a47c5ef40923cb9c3" args="(const cVec3 &amp;axis, float rad)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadRotation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>rad</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Carga una matriz de rotacion en la matriz actual. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>axis</em>&nbsp;</td><td>Eje sobre el que se quiere realizar la rotacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rad</em>&nbsp;</td><td>Grados que se quiere que la matriz rote </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Referencia a la matriz actual </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8cpp_source.html#l00113">113</a> del archivo <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a6fb0609df4b3a902537d140dc1b072"></a><!-- doxytag: member="cMatrix::LoadScale" ref="a8a6fb0609df4b3a902537d140dc1b072" args="(const cVec3 &amp;scale)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadScale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>scale</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Carga una matriz de escalado en la matriz actual. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>scale</em>&nbsp;</td><td>Escala que se quiere usar para componer la matriz. El valor X corresponde a la escala en el eje X, el valor Y corresponde a la escala en el eje Y y el valor Z corresponde a la escala en el eje Z </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Referencia a la matriz actual </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00467">467</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c74d50a5999a394594899d11757c28e"></a><!-- doxytag: member="cMatrix::LoadScale" ref="a5c74d50a5999a394594899d11757c28e" args="(float scale)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadScale </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>scale</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Carga una matriz de escalado en la matriz actual. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>scale</em>&nbsp;</td><td>Escala que se quiere usar para componer la matriz. La escala es uniforme en los 3 ejes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Referencia a la matriz actual </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00458">458</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefc98b3f40021a9522d802bb0ba51894"></a><!-- doxytag: member="cMatrix::LoadTranslation" ref="aefc98b3f40021a9522d802bb0ba51894" args="(const cVec3 &amp;translation)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::LoadTranslation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>translation</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Carga una matriz de traslacion en la matriz actual. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>translation</em>&nbsp;</td><td>Traslacion que se quiere usar para componer la matriz </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Referencia a la matriz actual </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00452">452</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0131ee8f492249f4c67be517d0f7af50"></a><!-- doxytag: member="cMatrix::operator()" ref="a0131ee8f492249f4c67be517d0f7af50" args="(unsigned i, unsigned j=1) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float &amp; cMatrix::operator() </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>j</em> = <code>1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite acceder al elemento (i,j) de la matriz. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i</em>&nbsp;</td><td>indice i al que se desea acceder. Los indices empiezan en 1. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>j</em>&nbsp;</td><td>indice j al que se desea acceder. Los indices empiezan en 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve el valor solicitado </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00385">385</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0652aa099dd1919d4512b4c97be41425"></a><!-- doxytag: member="cMatrix::operator()" ref="a0652aa099dd1919d4512b4c97be41425" args="(unsigned i, unsigned j=1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float &amp; cMatrix::operator() </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>j</em> = <code>1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite acceder al elemento (i,j) de la matriz. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i</em>&nbsp;</td><td>indice i al que se desea acceder. Los indices empiezan en 1. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>j</em>&nbsp;</td><td>indice j al que se desea acceder. Los indices empiezan en 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve el valor solicitado </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00379">379</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c6d5913bfa189bab32934e804aeda0b"></a><!-- doxytag: member="cMatrix::operator*=" ref="a3c6d5913bfa189bab32934e804aeda0b" args="(const cMatrix &amp;other)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>other</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiplica las dos matrices. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>Matriz por la que se va a multiplicar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8cpp_source.html#l00019">19</a> del archivo <a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa4c4793ed27a15f77b2eef4c7b2ecd8"></a><!-- doxytag: member="cMatrix::operator*=" ref="afa4c4793ed27a15f77b2eef4c7b2ecd8" args="(float value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Multiplica todos los componentes de la matriz por un numero. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Valor por el que se multiplicara cada componente </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00407">407</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3f42b32fc083297663f1850ba5deabe"></a><!-- doxytag: member="cMatrix::operator+=" ref="ae3f42b32fc083297663f1850ba5deabe" args="(const cMatrix &amp;other)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>other</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Suma casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>Matriz con la que se opera. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00391">391</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbd4cf1577c196a68fbbe9768f0a2f97"></a><!-- doxytag: member="cMatrix::operator&#45;=" ref="abbd4cf1577c196a68fbbe9768f0a2f97" args="(const cMatrix &amp;other)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>other</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Resta casilla a casilla todos los componentes de la matriz y lo guarda en la matriz actual. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>other</em>&nbsp;</td><td>Matriz con la que se opera. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00399">399</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a8babd4c56bb6c9b0f2b2eab27c2c40"></a><!-- doxytag: member="cMatrix::operator/=" ref="a5a8babd4c56bb6c9b0f2b2eab27c2c40" args="(float value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Divide todos los componentes de la matriz por un numero. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Valor por el que se dividira cada componente </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00415">415</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d529a4adf998626edabb11f0de2ee62"></a><!-- doxytag: member="cMatrix::operator[]" ref="a5d529a4adf998626edabb11f0de2ee62" args="(unsigned index) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structc_vec4.html">cVec4</a> &amp; cMatrix::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite acceder a los vectores que componen la matriz. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>indice del vector al que se quiere acceder. Los indices empiezan en 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve el vector solicitado </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00374">374</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa28e4b69e8c6a58014ff87376fb551fe"></a><!-- doxytag: member="cMatrix::operator[]" ref="aa28e4b69e8c6a58014ff87376fb551fe" args="(unsigned index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec4.html">cVec4</a> &amp; cMatrix::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite acceder a los vectores que componen la matriz. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>Indice del vector al que se quiere acceder </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve el vector solicitado </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00369">369</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a871726c99275d2643eacf78e86563b65"></a><!-- doxytag: member="cMatrix::SetAxisLeftUpFront" ref="a871726c99275d2643eacf78e86563b65" args="(const cVec3 &amp;left, const cVec3 &amp;up, const cVec3 &amp;front)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cMatrix::SetAxisLeftUpFront </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>up</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>front</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>left</em>&nbsp;</td><td>Nuevo vector left de la matriz </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>up</em>&nbsp;</td><td>Nuevo vector up de la matriz </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>front</em>&nbsp;</td><td>Nuevo vector front de la matriz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00145">145</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a786451360806d1dd9cdf3d3e541b04ac"></a><!-- doxytag: member="cMatrix::setAxisRightUpFront" ref="a786451360806d1dd9cdf3d3e541b04ac" args="(const cVec3 &amp;right, const cVec3 &amp;up, const cVec3 &amp;front)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cMatrix::setAxisRightUpFront </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>up</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>front</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite cambiar los vectores de rotacion de la matriz. Los vectores deben ser perpendiculares entre si. Para representar una rotacion, los vectores deben estar normalizados. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>right</em>&nbsp;</td><td>Nuevo vector left de la matriz </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>up</em>&nbsp;</td><td>Nuevo vector up de la matriz </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>front</em>&nbsp;</td><td>Nuevo vector front de la matriz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00156">156</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4520cd4a6d52e21828700ebccca51633"></a><!-- doxytag: member="cMatrix::SetPosition" ref="a4520cd4a6d52e21828700ebccca51633" args="(const cVec3 &amp;pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cMatrix::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pos</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Permite cambiar la posicion de la matriz. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>Posicion que se quiere establecer en la matriz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00138">138</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80c11b80d73859af260ca4fec8fa4dbe"></a><!-- doxytag: member="cMatrix::Transpose" ref="a80c11b80d73859af260ca4fec8fa4dbe" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_matrix.html">cMatrix</a> &amp; cMatrix::Transpose </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Traspone la matriz actual. Si la matriz solo tiene rotacion, la traspuesta y la inversa es la misma matriz, por lo que se puede usar esta funcion para calcular una inversa muy rapida. </p>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve una referencia a la matriz actual. </dd></dl>
+<dl class="see"><dt><b>Ver también:</b></dt><dd><a class="el" href="structc_matrix.html#ac41ca7fc346d8d5765f630ba9aecd2ac" title="Invierte la matriz actual. Esta operacion es costosa, si la matriz solo tiene rotacion...">Invert</a> </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00427">427</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="af65b7c82e3ace6aa8b0e6d8c3a1e6288"></a><!-- doxytag: member="cMatrix::rows" ref="af65b7c82e3ace6aa8b0e6d8c3a1e6288" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc_vec4.html">cVec4</a> <a class="el" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">cMatrix::rows</a>[4]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_matrix_8h_source.html#l00043">43</a> del archivo <a class="el" href="_matrix_8h_source.html">Matrix.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta estructura fue generada a partir de los siguientes ficheros:<ul>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/<a class="el" href="_matrix_8h_source.html">Matrix.h</a></li>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/<a class="el" href="_matrix_8cpp_source.html">Matrix.cpp</a></li>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/<a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a></li>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/<a class="el" href="_matrix44_row_8h_source.html">Matrix44Row.h</a></li>
+</ul>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:13 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

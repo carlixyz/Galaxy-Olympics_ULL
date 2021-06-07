@@ -1,0 +1,186 @@
+\hypertarget{_vec4_8h}{
+\section{Referencia del Archivo D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/Vec4.h}
+\label{_vec4_8h}\index{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/Vec4.h@{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/Vec4.h}}
+}
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$cassert$>$}\par
+{\ttfamily \#include \char`\"{}../MathConst.h\char`\"{}}\par
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structc_vec4}{cVec4}
+\begin{DoxyCompactList}\small\item\em Esta estructura representa un vector de tama�o 3. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_vec4_8h_af5531ab28bf7a588449e4f4084150731}{operator==} (const \hyperlink{structc_vec4}{cVec4} \&v1, const \hyperlink{structc_vec4}{cVec4} \&v2)
+\begin{DoxyCompactList}\small\item\em Comprueba si dos vectores son iguales. \item\end{DoxyCompactList}\item 
+bool \hyperlink{_vec4_8h_a2766699878f5c93147b5e70ac792626f}{operator!=} (const \hyperlink{structc_vec4}{cVec4} \&v1, const \hyperlink{structc_vec4}{cVec4} \&v2)
+\begin{DoxyCompactList}\small\item\em Comprueba si dos vectores son distintos. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{_vec4_8h_af87635f91cc109c39400f5765bf933af}{operator-\/} (const \hyperlink{structc_vec4}{cVec4} \&v1)
+\begin{DoxyCompactList}\small\item\em Niega un vector. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{_vec4_8h_ab27db547a3164ad4e3235058919fddbb}{operator+} (const \hyperlink{structc_vec4}{cVec4} \&v1, const \hyperlink{structc_vec4}{cVec4} \&v2)
+\begin{DoxyCompactList}\small\item\em Suma dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{_vec4_8h_a6b727172b8f0a70325dffff1b8d5afae}{operator-\/} (const \hyperlink{structc_vec4}{cVec4} \&v1, const \hyperlink{structc_vec4}{cVec4} \&v2)
+\begin{DoxyCompactList}\small\item\em Resta dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{_vec4_8h_a9dabc867c8f1a31191d43a07f557491e}{operator$\ast$} (const \hyperlink{structc_vec4}{cVec4} \&v1, float value)
+\begin{DoxyCompactList}\small\item\em Multiplica un vector por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{_vec4_8h_a52f721355af1bd02762d46544da0f2eb}{operator$\ast$} (float value, const \hyperlink{structc_vec4}{cVec4} \&v1)
+\begin{DoxyCompactList}\small\item\em Multiplica un vector por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \hyperlink{_vec4_8h_a0a26952401eafd991c77445f8832fe8e}{operator/} (const \hyperlink{structc_vec4}{cVec4} \&v1, float value)
+\begin{DoxyCompactList}\small\item\em Divide un vector por un escalar. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{_vec4_8h_a2766699878f5c93147b5e70ac792626f}{
+\index{Vec4.h@{Vec4.h}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (const {\bf cVec4} \& {\em v1}, \/  const {\bf cVec4} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_a2766699878f5c93147b5e70ac792626f}
+
+
+Comprueba si dos vectores son distintos. 
+
+Comprueba si dos vectores son Distintos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 337 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_a52f721355af1bd02762d46544da0f2eb}{
+\index{Vec4.h@{Vec4.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} operator$\ast$ (float {\em value}, \/  const {\bf cVec4} \& {\em v1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_a52f721355af1bd02762d46544da0f2eb}
+
+
+Multiplica un vector por un escalar. 
+
+Multiplica un vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor \item[{\em v1}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 357 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_a9dabc867c8f1a31191d43a07f557491e}{
+\index{Vec4.h@{Vec4.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} operator$\ast$ (const {\bf cVec4} \& {\em v1}, \/  float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_a9dabc867c8f1a31191d43a07f557491e}
+
+
+Multiplica un vector por un escalar. 
+
+Multiplica un vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em value}]Valor \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 353 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_ab27db547a3164ad4e3235058919fddbb}{
+\index{Vec4.h@{Vec4.h}!operator+@{operator+}}
+\index{operator+@{operator+}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} operator+ (const {\bf cVec4} \& {\em v1}, \/  const {\bf cVec4} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_ab27db547a3164ad4e3235058919fddbb}
+
+
+Suma dos vectores. 
+
+Suma dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 345 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_a6b727172b8f0a70325dffff1b8d5afae}{
+\index{Vec4.h@{Vec4.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} operator-\/ (const {\bf cVec4} \& {\em v1}, \/  const {\bf cVec4} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_a6b727172b8f0a70325dffff1b8d5afae}
+
+
+Resta dos vectores. 
+
+Resta dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 349 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_af87635f91cc109c39400f5765bf933af}{
+\index{Vec4.h@{Vec4.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} operator-\/ (const {\bf cVec4} \& {\em v1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_af87635f91cc109c39400f5765bf933af}
+
+
+Niega un vector. 
+
+Niega un vector 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 341 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_a0a26952401eafd991c77445f8832fe8e}{
+\index{Vec4.h@{Vec4.h}!operator/@{operator/}}
+\index{operator/@{operator/}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} operator/ (const {\bf cVec4} \& {\em v1}, \/  float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_a0a26952401eafd991c77445f8832fe8e}
+
+
+Divide un vector por un escalar. 
+
+Divide un vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor \item[{\em v1}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 361 del archivo Vec4.h.
+
+\hypertarget{_vec4_8h_af5531ab28bf7a588449e4f4084150731}{
+\index{Vec4.h@{Vec4.h}!operator==@{operator==}}
+\index{operator==@{operator==}!Vec4.h@{Vec4.h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (const {\bf cVec4} \& {\em v1}, \/  const {\bf cVec4} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec4_8h_af5531ab28bf7a588449e4f4084150731}
+
+
+Comprueba si dos vectores son iguales. 
+
+Comprueba si dos vectores son iguales 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 333 del archivo Vec4.h.
+

@@ -1,0 +1,504 @@
+\hypertarget{structc_vec2}{
+\section{Referencia de la Estructura cVec2}
+\label{structc_vec2}\index{cVec2@{cVec2}}
+}
+
+
+Esta estructura representa un vector de tama�o 2.  
+
+
+
+
+{\ttfamily \#include $<$Vec2.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structc_vec2_a7e23401794a4e2c8a1b145fdb2e533fe}{cVec2} (void)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2_a9580fd58e00f5894f504b035a9b53782}{cVec2} (float newx, float newy)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2_aa4b6bd575815d71691d4d58ca473b581}{cVec2} (const \hyperlink{structc_vec3}{cVec3} \&vec3)
+\begin{DoxyCompactList}\small\item\em Constructor explicito. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2_ac28e24aa6d32961daf4ce2165d1a35c4}{cVec2} (const \hyperlink{structc_vec4}{cVec4} \&vec4)
+\begin{DoxyCompactList}\small\item\em Constructor explicito. \item\end{DoxyCompactList}\item 
+float \& \hyperlink{structc_vec2_a970bdcf8591bbbbb6300f380f18c3c52}{operator\mbox{[}$\,$\mbox{]}} (unsigned position)
+\begin{DoxyCompactList}\small\item\em Operador de Indexacion. \item\end{DoxyCompactList}\item 
+const float \& \hyperlink{structc_vec2_a0812c63a8a0ba87194d0c65613feda69}{operator\mbox{[}$\,$\mbox{]}} (unsigned position) const 
+\begin{DoxyCompactList}\small\item\em Operador de Indexacion. \item\end{DoxyCompactList}\item 
+float \& \hyperlink{structc_vec2_a211faed9ddfe1a695903aa535f88e5a0}{operator()} (unsigned i)
+\begin{DoxyCompactList}\small\item\em Operador Parentesis. \item\end{DoxyCompactList}\item 
+const float \& \hyperlink{structc_vec2_aadbbfd4bfcd8ac2d6242a062ec48c9fb}{operator()} (unsigned i) const 
+\begin{DoxyCompactList}\small\item\em Operador Parentesis. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \& \hyperlink{structc_vec2_a7ded43058ef1d5ffcdaa4e1d3499eff8}{operator+=} (const \hyperlink{structc_vec2}{cVec2} \&other)
+\begin{DoxyCompactList}\small\item\em Suma dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \& \hyperlink{structc_vec2_a45a3dd0fb194ce7123998b474675a13c}{operator-\/=} (const \hyperlink{structc_vec2}{cVec2} \&other)
+\begin{DoxyCompactList}\small\item\em Resta dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \& \hyperlink{structc_vec2_a918f6edfa5fbcd4995e32637629c3c42}{operator$\ast$=} (float value)
+\begin{DoxyCompactList}\small\item\em Multiplica el vector por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \& \hyperlink{structc_vec2_a6cd5852cb6d49b9918c2d86cef4fcaf8}{operator/=} (float value)
+\begin{DoxyCompactList}\small\item\em Divide el vector por un escalar. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_vec2_a346a6f13842d4e82ed432aa5f8011ddf}{Set} (float newx, float newy)
+\begin{DoxyCompactList}\small\item\em Setea las componentes del vector. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec2_abdf0c6054f0af8745ba793e1df25ce28}{LengthSqr} (void) const 
+\begin{DoxyCompactList}\small\item\em Calcula la longitud al cuadrado del vector. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec2_ae8c69ea3b899a8c3907e309e50999a75}{Length} (void) const 
+\begin{DoxyCompactList}\small\item\em Calcula la longitud del vector. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec2_a6bdac89fe63639263fa1c6296dcc7acf}{DistanceSqrTo} (const \hyperlink{structc_vec2}{cVec2} \&p) const 
+\begin{DoxyCompactList}\small\item\em Calcula la Distancia al cuadrado entre los dos puntos. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec2_ac14678c7f447759ff4e11701e400c39d}{DistanceTo} (const \hyperlink{structc_vec2}{cVec2} \&p) const 
+\begin{DoxyCompactList}\small\item\em Calcula la Distancia entre los dos puntos. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structc_vec2_aa327679a1f24e19e5ab2c0c7a0c3d2a1}{IsZero} (void) const 
+\begin{DoxyCompactList}\small\item\em Comprueba si la longitud del vector es cero. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \& \hyperlink{structc_vec2_ac694a965519271e59dead16cb0c018bf}{Normalize} (void)
+\begin{DoxyCompactList}\small\item\em Normaliza el vector. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_vec2_a9619bf6ab2a5315f8d3de4068d999b47}{StoreMax} (const \hyperlink{structc_vec2}{cVec2} \&p)
+\begin{DoxyCompactList}\small\item\em Almacena el valor maximo por componentes. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_vec2_aee55f0168943ca37eea5aadd92d0bdcd}{StoreMin} (const \hyperlink{structc_vec2}{cVec2} \&p)
+\begin{DoxyCompactList}\small\item\em Almacena el valor minimo por componentes. \item\end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{structc_vec2_a5c71160eecc4e9af87f829cec89db721}{AsFloatPointer} ()
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero a la zona de memoria del vector. \item\end{DoxyCompactList}\item 
+const float $\ast$ \hyperlink{structc_vec2_a7b229a2838b792b2613f62a6c2ecf55e}{AsFloatPointer} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero a la zona de memoria del vector. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structc_vec2_ab0579c05d3fd7f0cd5c149c8196d58b3}{x}
+\item 
+float \hyperlink{structc_vec2_a9baae58edf734d7b4f0e420a1d8442d8}{y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Esta estructura representa un vector de tama�o 2. 
+
+Definición en la línea 14 del archivo Vec2.h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{structc_vec2_a7e23401794a4e2c8a1b145fdb2e533fe}{
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\subsubsection[{cVec2}]{\setlength{\rightskip}{0pt plus 5cm}cVec2::cVec2 (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a7e23401794a4e2c8a1b145fdb2e533fe}
+
+
+Constructor por defecto. 
+
+
+
+Definición en la línea 18 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a9580fd58e00f5894f504b035a9b53782}{
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\subsubsection[{cVec2}]{\setlength{\rightskip}{0pt plus 5cm}cVec2::cVec2 (float {\em newx}, \/  float {\em newy})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a9580fd58e00f5894f504b035a9b53782}
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em newx}]Componente X del quaternion \item[{\em newy}]Componente Y del quaternion \end{DoxyParams}
+
+
+Definición en la línea 25 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_aa4b6bd575815d71691d4d58ca473b581}{
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\subsubsection[{cVec2}]{\setlength{\rightskip}{0pt plus 5cm}cVec2::cVec2 (const {\bf cVec3} \& {\em vec3})\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{structc_vec2_aa4b6bd575815d71691d4d58ca473b581}
+
+
+Constructor explicito. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em vec3}]Vector 3 \end{DoxyParams}
+
+
+Definición en la línea 6 del archivo Vec.cpp.
+
+\hypertarget{structc_vec2_ac28e24aa6d32961daf4ce2165d1a35c4}{
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\index{cVec2@{cVec2}!cVec2@{cVec2}}
+\subsubsection[{cVec2}]{\setlength{\rightskip}{0pt plus 5cm}cVec2::cVec2 (const {\bf cVec4} \& {\em vec4})\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{structc_vec2_ac28e24aa6d32961daf4ce2165d1a35c4}
+
+
+Constructor explicito. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em vec4}]Vector 4 \end{DoxyParams}
+
+
+Definición en la línea 7 del archivo Vec.cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{structc_vec2_a7b229a2838b792b2613f62a6c2ecf55e}{
+\index{cVec2@{cVec2}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cVec2@{cVec2}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ cVec2::AsFloatPointer () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a7b229a2838b792b2613f62a6c2ecf55e}
+
+
+Devuelve un puntero a la zona de memoria del vector. 
+
+Devuelve un puntero a la zona de memoria del vector \begin{DoxyReturn}{Devuelve}
+Puntero a la zona de memoria 
+\end{DoxyReturn}
+
+
+Definición en la línea 165 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a5c71160eecc4e9af87f829cec89db721}{
+\index{cVec2@{cVec2}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cVec2@{cVec2}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ cVec2::AsFloatPointer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a5c71160eecc4e9af87f829cec89db721}
+
+
+Devuelve un puntero a la zona de memoria del vector. 
+
+Devuelve un puntero a la zona de memoria del vector \begin{DoxyReturn}{Devuelve}
+Puntero a la zona de memoria 
+\end{DoxyReturn}
+
+
+Definición en la línea 159 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a6bdac89fe63639263fa1c6296dcc7acf}{
+\index{cVec2@{cVec2}!DistanceSqrTo@{DistanceSqrTo}}
+\index{DistanceSqrTo@{DistanceSqrTo}!cVec2@{cVec2}}
+\subsubsection[{DistanceSqrTo}]{\setlength{\rightskip}{0pt plus 5cm}float cVec2::DistanceSqrTo (const {\bf cVec2} \& {\em p}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a6bdac89fe63639263fa1c6296dcc7acf}
+
+
+Calcula la Distancia al cuadrado entre los dos puntos. 
+
+Calcula la Distancia al cuadrado entre los dos puntos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto al que se calculara la distancia \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El valor de la distancia al cuadrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 297 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_ac14678c7f447759ff4e11701e400c39d}{
+\index{cVec2@{cVec2}!DistanceTo@{DistanceTo}}
+\index{DistanceTo@{DistanceTo}!cVec2@{cVec2}}
+\subsubsection[{DistanceTo}]{\setlength{\rightskip}{0pt plus 5cm}float cVec2::DistanceTo (const {\bf cVec2} \& {\em p}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_ac14678c7f447759ff4e11701e400c39d}
+
+
+Calcula la Distancia entre los dos puntos. 
+
+Calcula la Distancia entre los dos puntos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto al que se calculara la distancia \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El valor de la distancia al cuadrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 302 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_aa327679a1f24e19e5ab2c0c7a0c3d2a1}{
+\index{cVec2@{cVec2}!IsZero@{IsZero}}
+\index{IsZero@{IsZero}!cVec2@{cVec2}}
+\subsubsection[{IsZero}]{\setlength{\rightskip}{0pt plus 5cm}bool cVec2::IsZero (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_aa327679a1f24e19e5ab2c0c7a0c3d2a1}
+
+
+Comprueba si la longitud del vector es cero. 
+
+Comprueba si la longitud del vector es cero \begin{DoxyReturn}{Devuelve}
+Devuelve si la longitus del vector es cero 
+\end{DoxyReturn}
+
+
+Definición en la línea 307 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_ae8c69ea3b899a8c3907e309e50999a75}{
+\index{cVec2@{cVec2}!Length@{Length}}
+\index{Length@{Length}!cVec2@{cVec2}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float cVec2::Length (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_ae8c69ea3b899a8c3907e309e50999a75}
+
+
+Calcula la longitud del vector. 
+
+Calcula la longitud del vector \begin{DoxyReturn}{Devuelve}
+El valor de la longitud 
+\end{DoxyReturn}
+
+
+Definición en la línea 292 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_abdf0c6054f0af8745ba793e1df25ce28}{
+\index{cVec2@{cVec2}!LengthSqr@{LengthSqr}}
+\index{LengthSqr@{LengthSqr}!cVec2@{cVec2}}
+\subsubsection[{LengthSqr}]{\setlength{\rightskip}{0pt plus 5cm}float cVec2::LengthSqr (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_abdf0c6054f0af8745ba793e1df25ce28}
+
+
+Calcula la longitud al cuadrado del vector. 
+
+Calcula la longitud al cuadrado del vector \begin{DoxyReturn}{Devuelve}
+El valor de la longitud al cuadrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 288 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_ac694a965519271e59dead16cb0c018bf}{
+\index{cVec2@{cVec2}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!cVec2@{cVec2}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} \& cVec2::Normalize (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_ac694a965519271e59dead16cb0c018bf}
+
+
+Normaliza el vector. 
+
+Normaliza el vector \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al vector normalizado 
+\end{DoxyReturn}
+
+
+Definición en la línea 311 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_aadbbfd4bfcd8ac2d6242a062ec48c9fb}{
+\index{cVec2@{cVec2}!operator()@{operator()}}
+\index{operator()@{operator()}!cVec2@{cVec2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}const float \& cVec2::operator() (unsigned {\em i}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_aadbbfd4bfcd8ac2d6242a062ec48c9fb}
+
+
+Operador Parentesis. 
+
+Operador Parentesis. Los indices empiezan en 1. 
+\begin{DoxyParams}{Parámetros}
+\item[{\em i}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 250 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a211faed9ddfe1a695903aa535f88e5a0}{
+\index{cVec2@{cVec2}!operator()@{operator()}}
+\index{operator()@{operator()}!cVec2@{cVec2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}float \& cVec2::operator() (unsigned {\em i})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a211faed9ddfe1a695903aa535f88e5a0}
+
+
+Operador Parentesis. 
+
+Operador Parentesis. Los indices empiezan en 1. 
+\begin{DoxyParams}{Parámetros}
+\item[{\em i}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 245 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a918f6edfa5fbcd4995e32637629c3c42}{
+\index{cVec2@{cVec2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cVec2@{cVec2}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} \& cVec2::operator$\ast$= (float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a918f6edfa5fbcd4995e32637629c3c42}
+
+
+Multiplica el vector por un escalar. 
+
+Multiplica el vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Vector resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 267 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a7ded43058ef1d5ffcdaa4e1d3499eff8}{
+\index{cVec2@{cVec2}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!cVec2@{cVec2}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} \& cVec2::operator+= (const {\bf cVec2} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a7ded43058ef1d5ffcdaa4e1d3499eff8}
+
+
+Suma dos vectores. 
+
+Suma dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 255 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a45a3dd0fb194ce7123998b474675a13c}{
+\index{cVec2@{cVec2}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!cVec2@{cVec2}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} \& cVec2::operator-\/= (const {\bf cVec2} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a45a3dd0fb194ce7123998b474675a13c}
+
+
+Resta dos vectores. 
+
+Resta dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Vector resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 261 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a6cd5852cb6d49b9918c2d86cef4fcaf8}{
+\index{cVec2@{cVec2}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!cVec2@{cVec2}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} \& cVec2::operator/= (float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a6cd5852cb6d49b9918c2d86cef4fcaf8}
+
+
+Divide el vector por un escalar. 
+
+Divide el vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Vector resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 273 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a0812c63a8a0ba87194d0c65613feda69}{
+\index{cVec2@{cVec2}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!cVec2@{cVec2}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const float \& cVec2::operator\mbox{[}$\,$\mbox{]} (unsigned {\em position}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a0812c63a8a0ba87194d0c65613feda69}
+
+
+Operador de Indexacion. 
+
+Operador de Indexacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em position}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 240 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a970bdcf8591bbbbb6300f380f18c3c52}{
+\index{cVec2@{cVec2}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!cVec2@{cVec2}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float \& cVec2::operator\mbox{[}$\,$\mbox{]} (unsigned {\em position})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a970bdcf8591bbbbb6300f380f18c3c52}
+
+
+Operador de Indexacion. 
+
+Operador de Indexacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em position}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 235 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a346a6f13842d4e82ed432aa5f8011ddf}{
+\index{cVec2@{cVec2}!Set@{Set}}
+\index{Set@{Set}!cVec2@{cVec2}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void cVec2::Set (float {\em newx}, \/  float {\em newy})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec2_a346a6f13842d4e82ed432aa5f8011ddf}
+
+
+Setea las componentes del vector. 
+
+Setea las componentes del vector 
+\begin{DoxyParams}{Parámetros}
+\item[{\em newx}]Operando \item[{\em newy}]Operando \end{DoxyParams}
+
+
+Definición en la línea 283 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a9619bf6ab2a5315f8d3de4068d999b47}{
+\index{cVec2@{cVec2}!StoreMax@{StoreMax}}
+\index{StoreMax@{StoreMax}!cVec2@{cVec2}}
+\subsubsection[{StoreMax}]{\setlength{\rightskip}{0pt plus 5cm}void cVec2::StoreMax (const {\bf cVec2} \& {\em p})}}
+\label{structc_vec2_a9619bf6ab2a5315f8d3de4068d999b47}
+
+
+Almacena el valor maximo por componentes. 
+
+Almacena el valor maximo por componentes 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto con el que se va a comparar el valor maximo \end{DoxyParams}
+
+
+Definición en la línea 9 del archivo Vec.cpp.
+
+\hypertarget{structc_vec2_aee55f0168943ca37eea5aadd92d0bdcd}{
+\index{cVec2@{cVec2}!StoreMin@{StoreMin}}
+\index{StoreMin@{StoreMin}!cVec2@{cVec2}}
+\subsubsection[{StoreMin}]{\setlength{\rightskip}{0pt plus 5cm}void cVec2::StoreMin (const {\bf cVec2} \& {\em p})}}
+\label{structc_vec2_aee55f0168943ca37eea5aadd92d0bdcd}
+
+
+Almacena el valor minimo por componentes. 
+
+Almacena el valor minimo por componentes 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto con el que se va a comparar el valor minimo \end{DoxyParams}
+
+
+Definición en la línea 13 del archivo Vec.cpp.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{structc_vec2_ab0579c05d3fd7f0cd5c149c8196d58b3}{
+\index{cVec2@{cVec2}!x@{x}}
+\index{x@{x}!cVec2@{cVec2}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cVec2::x}}}
+\label{structc_vec2_ab0579c05d3fd7f0cd5c149c8196d58b3}
+
+
+Definición en la línea 15 del archivo Vec2.h.
+
+\hypertarget{structc_vec2_a9baae58edf734d7b4f0e420a1d8442d8}{
+\index{cVec2@{cVec2}!y@{y}}
+\index{y@{y}!cVec2@{cVec2}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cVec2::y}}}
+\label{structc_vec2_a9baae58edf734d7b4f0e420a1d8442d8}
+
+
+Definición en la línea 15 del archivo Vec2.h.
+
+
+
+La documentación para esta estructura fue generada a partir de los siguientes ficheros:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/\hyperlink{_vec2_8h}{Vec2.h}\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/\hyperlink{_vec_8cpp}{Vec.cpp}\end{DoxyCompactItemize}

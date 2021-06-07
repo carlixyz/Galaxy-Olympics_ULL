@@ -1,0 +1,164 @@
+\hypertarget{_quaternion_8h}{
+\section{Referencia del Archivo D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/Quaternion.h}
+\label{_quaternion_8h}\index{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/Quaternion.h@{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/Quaternion.h}}
+}
+{\ttfamily \#include \char`\"{}../Vec/VecLib.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}../Matrix/MatrixLib.h\char`\"{}}\par
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structc_quaternion}{cQuaternion}
+\begin{DoxyCompactList}\small\item\em Esta estructura representa un quaternion. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_ae458840377029c340c82c49f4e378bd7}{operator+} (const \hyperlink{structc_quaternion}{cQuaternion} \&first, const \hyperlink{structc_quaternion}{cQuaternion} \&second)
+\begin{DoxyCompactList}\small\item\em Suma dos quaterniones. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_a2be46b0a210c7eabebf589da13cd758e}{operator-\/} (const \hyperlink{structc_quaternion}{cQuaternion} \&first, const \hyperlink{structc_quaternion}{cQuaternion} \&second)
+\begin{DoxyCompactList}\small\item\em Resta dos quaterniones. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_a49fd11d216ab76e6eeef904ba456dd3c}{operator-\/} (const \hyperlink{structc_quaternion}{cQuaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Niega un quaternion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_a8f4a756fc6d4aaec46f865a67b517d53}{operator$\ast$} (const \hyperlink{structc_quaternion}{cQuaternion} \&first, const \hyperlink{structc_quaternion}{cQuaternion} \&second)
+\begin{DoxyCompactList}\small\item\em Multiplica dos quaterniones. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_accf0513ea99797cf3af3a398e5172dcd}{operator$\ast$} (const \hyperlink{structc_quaternion}{cQuaternion} \&quat, float scalar)
+\begin{DoxyCompactList}\small\item\em Multiplica un quaternion por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_a42ac348e81a2097e03bdd3e17785e072}{operator$\ast$} (float scalar, const \hyperlink{structc_quaternion}{cQuaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Multiplica un quaternion por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_quaternion}{cQuaternion} \hyperlink{_quaternion_8h_ae920de22470bf0331a377e4697c59648}{operator/} (const \hyperlink{structc_quaternion}{cQuaternion} \&quat, float scalar)
+\begin{DoxyCompactList}\small\item\em Divide un quaternion por un escalar. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{_quaternion_8h_a42ac348e81a2097e03bdd3e17785e072}{
+\index{Quaternion.h@{Quaternion.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator$\ast$ (float {\em scalar}, \/  const {\bf cQuaternion} \& {\em quat})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_a42ac348e81a2097e03bdd3e17785e072}
+
+
+Multiplica un quaternion por un escalar. 
+
+Multiplica un quaternion por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em scalar}]Escalar \item[{\em quat}]Quaternion \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 404 del archivo Quaternion.h.
+
+\hypertarget{_quaternion_8h_accf0513ea99797cf3af3a398e5172dcd}{
+\index{Quaternion.h@{Quaternion.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator$\ast$ (const {\bf cQuaternion} \& {\em quat}, \/  float {\em scalar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_accf0513ea99797cf3af3a398e5172dcd}
+
+
+Multiplica un quaternion por un escalar. 
+
+Multiplica un quaternion por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em quat}]Quaternion \item[{\em scalar}]Escalar \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 400 del archivo Quaternion.h.
+
+\hypertarget{_quaternion_8h_a8f4a756fc6d4aaec46f865a67b517d53}{
+\index{Quaternion.h@{Quaternion.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator$\ast$ (const {\bf cQuaternion} \& {\em first}, \/  const {\bf cQuaternion} \& {\em second})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_a8f4a756fc6d4aaec46f865a67b517d53}
+
+
+Multiplica dos quaterniones. 
+
+Multiplica dos quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em first}]Primer Operando \item[{\em second}]Segundo Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 394 del archivo Quaternion.h.
+
+\hypertarget{_quaternion_8h_ae458840377029c340c82c49f4e378bd7}{
+\index{Quaternion.h@{Quaternion.h}!operator+@{operator+}}
+\index{operator+@{operator+}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator+ (const {\bf cQuaternion} \& {\em first}, \/  const {\bf cQuaternion} \& {\em second})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_ae458840377029c340c82c49f4e378bd7}
+
+
+Suma dos quaterniones. 
+
+Suma dos quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em first}]Primer Operando \item[{\em second}]Segundo Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 382 del archivo Quaternion.h.
+
+\hypertarget{_quaternion_8h_a49fd11d216ab76e6eeef904ba456dd3c}{
+\index{Quaternion.h@{Quaternion.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator-\/ (const {\bf cQuaternion} \& {\em quat})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_a49fd11d216ab76e6eeef904ba456dd3c}
+
+
+Niega un quaternion. 
+
+Niega un quaternion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em quat}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 390 del archivo Quaternion.h.
+
+\hypertarget{_quaternion_8h_a2be46b0a210c7eabebf589da13cd758e}{
+\index{Quaternion.h@{Quaternion.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator-\/ (const {\bf cQuaternion} \& {\em first}, \/  const {\bf cQuaternion} \& {\em second})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_a2be46b0a210c7eabebf589da13cd758e}
+
+
+Resta dos quaterniones. 
+
+Resta dos quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em first}]Primer Operando \item[{\em second}]Segundo Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 386 del archivo Quaternion.h.
+
+\hypertarget{_quaternion_8h_ae920de22470bf0331a377e4697c59648}{
+\index{Quaternion.h@{Quaternion.h}!operator/@{operator/}}
+\index{operator/@{operator/}!Quaternion.h@{Quaternion.h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cQuaternion} operator/ (const {\bf cQuaternion} \& {\em quat}, \/  float {\em scalar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_8h_ae920de22470bf0331a377e4697c59648}
+
+
+Divide un quaternion por un escalar. 
+
+Divide un quaternion por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em quat}]Quaternion \item[{\em scalar}]Escalar \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el quaternion resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 408 del archivo Quaternion.h.
+

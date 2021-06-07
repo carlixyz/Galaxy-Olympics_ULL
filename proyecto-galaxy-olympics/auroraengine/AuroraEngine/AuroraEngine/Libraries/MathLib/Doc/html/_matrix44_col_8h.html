@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia del Archivo D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/Matrix44Col.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia del Archivo D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/Matrix44Col.h</h1>
+<p><a href="_matrix44_col_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix44_col_8h.html#af47c9a995fbf7e1738bfc86d453d1cbe">TransformPoint</a> (<a class="el" href="structc_vec3.html">cVec3</a> &amp;out, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;matrix, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;point)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aplica la transformacion definida por la matriz a un punto.  <a href="#af47c9a995fbf7e1738bfc86d453d1cbe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix44_col_8h.html#ad0962ec9aaa3435c4fab3c8a8cec86f0">TransformNormal</a> (<a class="el" href="structc_vec3.html">cVec3</a> &amp;out, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;normal, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;matrix)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aplica la transformacion definida por la matriz a una normal (no aplica la traslacion).  <a href="#ad0962ec9aaa3435c4fab3c8a8cec86f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix44_col_8h.html#a461c27de417441ff35d4f3418639121d">TransformCoords</a> (<a class="el" href="structc_vec4.html">cVec4</a> &amp;out, const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;matrix, const <a class="el" href="structc_vec4.html">cVec4</a> &amp;coords)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aplica la transformacion definida por la matriz a una coordenada.  <a href="#a461c27de417441ff35d4f3418639121d"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="a461c27de417441ff35d4f3418639121d"></a><!-- doxytag: member="Matrix44Col.h::TransformCoords" ref="a461c27de417441ff35d4f3418639121d" args="(cVec4 &amp;out, const cMatrix &amp;matrix, const cVec4 &amp;coords)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformCoords </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec4.html">cVec4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coords</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Aplica la transformacion definida por la matriz a una coordenada. </p>
+<p>Tranforma unas coordenadas representadas por vector4 aplicando una matriz de transformacion.</p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Vector resultante de la transformacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>coords</em>&nbsp;</td><td>Vector que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz que define la transformacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00199">199</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0962ec9aaa3435c4fab3c8a8cec86f0"></a><!-- doxytag: member="Matrix44Col.h::TransformNormal" ref="ad0962ec9aaa3435c4fab3c8a8cec86f0" args="(cVec3 &amp;out, const cVec3 &amp;normal, const cMatrix &amp;matrix)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>matrix</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Aplica la transformacion definida por la matriz a una normal (no aplica la traslacion). </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Vector resultante de la transformacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>normal</em>&nbsp;</td><td>Vector que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz que define la transformacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00186">186</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af47c9a995fbf7e1738bfc86d453d1cbe"></a><!-- doxytag: member="Matrix44Col.h::TransformPoint" ref="af47c9a995fbf7e1738bfc86d453d1cbe" args="(cVec3 &amp;out, const cMatrix &amp;matrix, const cVec3 &amp;point)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransformPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_matrix.html">cMatrix</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>point</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Aplica la transformacion definida por la matriz a un punto. </p>
+<p>Transforma un punto aplicado una matriz de transformacion.</p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>Vector resultante de la transformacion </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>point</em>&nbsp;</td><td>Punto que se desea transformar </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix</em>&nbsp;</td><td>Matriz que define la transformacion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_matrix44_col_8h_source.html#l00173">173</a> del archivo <a class="el" href="_matrix44_col_8h_source.html">Matrix44Col.h</a>.</p>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

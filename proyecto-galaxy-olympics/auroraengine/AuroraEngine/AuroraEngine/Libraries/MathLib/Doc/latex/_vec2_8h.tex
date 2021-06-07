@@ -1,0 +1,186 @@
+\hypertarget{_vec2_8h}{
+\section{Referencia del Archivo D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/Vec2.h}
+\label{_vec2_8h}\index{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/Vec2.h@{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/Vec2.h}}
+}
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$cassert$>$}\par
+{\ttfamily \#include \char`\"{}../MathConst.h\char`\"{}}\par
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structc_vec2}{cVec2}
+\begin{DoxyCompactList}\small\item\em Esta estructura representa un vector de tama�o 2. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_vec2_8h_a6f42f431653a07c0a2a8ec6de85c8e00}{operator==} (const \hyperlink{structc_vec2}{cVec2} \&v1, const \hyperlink{structc_vec2}{cVec2} \&v2)
+\begin{DoxyCompactList}\small\item\em Comprueba si dos vectores son iguales. \item\end{DoxyCompactList}\item 
+bool \hyperlink{_vec2_8h_a64579eb8c51dab41973d9cf5cb0c27f0}{operator!=} (const \hyperlink{structc_vec2}{cVec2} \&v1, const \hyperlink{structc_vec2}{cVec2} \&v2)
+\begin{DoxyCompactList}\small\item\em Comprueba si dos vectores son distintos. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \hyperlink{_vec2_8h_a2da925c4af2f75bbf5f4fe8b0b2535ac}{operator-\/} (const \hyperlink{structc_vec2}{cVec2} \&v1)
+\begin{DoxyCompactList}\small\item\em Niega un vector. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \hyperlink{_vec2_8h_ac488be72ab3a62305d077c499d08f2ed}{operator+} (const \hyperlink{structc_vec2}{cVec2} \&v1, const \hyperlink{structc_vec2}{cVec2} \&v2)
+\begin{DoxyCompactList}\small\item\em Suma dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \hyperlink{_vec2_8h_ae9b6049d18630b9816504683c5ced1c7}{operator-\/} (const \hyperlink{structc_vec2}{cVec2} \&v1, const \hyperlink{structc_vec2}{cVec2} \&v2)
+\begin{DoxyCompactList}\small\item\em Resta dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \hyperlink{_vec2_8h_a1693ff661a79dfe8a8531360da45cfed}{operator$\ast$} (const \hyperlink{structc_vec2}{cVec2} \&v1, float value)
+\begin{DoxyCompactList}\small\item\em Multiplica un vector por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \hyperlink{_vec2_8h_ae3a1b0b0136febc57a73b9b59d1f0061}{operator$\ast$} (float value, const \hyperlink{structc_vec2}{cVec2} \&v1)
+\begin{DoxyCompactList}\small\item\em Multiplica un vector por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec2}{cVec2} \hyperlink{_vec2_8h_a88df3b276f52a2ee20b1cc1ecfca53e2}{operator/} (const \hyperlink{structc_vec2}{cVec2} \&v1, float value)
+\begin{DoxyCompactList}\small\item\em Divide un vector por un escalar. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{_vec2_8h_a64579eb8c51dab41973d9cf5cb0c27f0}{
+\index{Vec2.h@{Vec2.h}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (const {\bf cVec2} \& {\em v1}, \/  const {\bf cVec2} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_a64579eb8c51dab41973d9cf5cb0c27f0}
+
+
+Comprueba si dos vectores son distintos. 
+
+Comprueba si dos vectores son Distintos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 323 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_ae3a1b0b0136febc57a73b9b59d1f0061}{
+\index{Vec2.h@{Vec2.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} operator$\ast$ (float {\em value}, \/  const {\bf cVec2} \& {\em v1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_ae3a1b0b0136febc57a73b9b59d1f0061}
+
+
+Multiplica un vector por un escalar. 
+
+Multiplica un vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor \item[{\em v1}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 343 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_a1693ff661a79dfe8a8531360da45cfed}{
+\index{Vec2.h@{Vec2.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} operator$\ast$ (const {\bf cVec2} \& {\em v1}, \/  float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_a1693ff661a79dfe8a8531360da45cfed}
+
+
+Multiplica un vector por un escalar. 
+
+Multiplica un vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em value}]Valor \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 339 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_ac488be72ab3a62305d077c499d08f2ed}{
+\index{Vec2.h@{Vec2.h}!operator+@{operator+}}
+\index{operator+@{operator+}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} operator+ (const {\bf cVec2} \& {\em v1}, \/  const {\bf cVec2} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_ac488be72ab3a62305d077c499d08f2ed}
+
+
+Suma dos vectores. 
+
+Suma dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 331 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_ae9b6049d18630b9816504683c5ced1c7}{
+\index{Vec2.h@{Vec2.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} operator-\/ (const {\bf cVec2} \& {\em v1}, \/  const {\bf cVec2} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_ae9b6049d18630b9816504683c5ced1c7}
+
+
+Resta dos vectores. 
+
+Resta dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 335 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_a2da925c4af2f75bbf5f4fe8b0b2535ac}{
+\index{Vec2.h@{Vec2.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} operator-\/ (const {\bf cVec2} \& {\em v1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_a2da925c4af2f75bbf5f4fe8b0b2535ac}
+
+
+Niega un vector. 
+
+Niega un vector 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 327 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_a88df3b276f52a2ee20b1cc1ecfca53e2}{
+\index{Vec2.h@{Vec2.h}!operator/@{operator/}}
+\index{operator/@{operator/}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec2} operator/ (const {\bf cVec2} \& {\em v1}, \/  float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_a88df3b276f52a2ee20b1cc1ecfca53e2}
+
+
+Divide un vector por un escalar. 
+
+Divide un vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Valor \item[{\em v1}]Operando 1 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 347 del archivo Vec2.h.
+
+\hypertarget{_vec2_8h_a6f42f431653a07c0a2a8ec6de85c8e00}{
+\index{Vec2.h@{Vec2.h}!operator==@{operator==}}
+\index{operator==@{operator==}!Vec2.h@{Vec2.h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (const {\bf cVec2} \& {\em v1}, \/  const {\bf cVec2} \& {\em v2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_vec2_8h_a6f42f431653a07c0a2a8ec6de85c8e00}
+
+
+Comprueba si dos vectores son iguales. 
+
+Comprueba si dos vectores son iguales 
+\begin{DoxyParams}{Parámetros}
+\item[{\em v1}]Operando 1 \item[{\em v2}]Operando 2 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el resultado del operador 
+\end{DoxyReturn}
+
+
+Definición en la línea 319 del archivo Vec2.h.
+

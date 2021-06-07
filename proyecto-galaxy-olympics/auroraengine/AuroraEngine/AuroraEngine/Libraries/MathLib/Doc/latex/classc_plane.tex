@@ -1,0 +1,100 @@
+\hypertarget{classc_plane}{
+\section{Referencia de la Clase cPlane}
+\label{classc_plane}\index{cPlane@{cPlane}}
+}
+
+
+Representa un plano en el espacio.  
+
+
+
+
+{\ttfamily \#include $<$Plane.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_plane_a5154ba8f5458f345ccb082b288e685a1}{Init} (const \hyperlink{structc_vec3}{cVec3} \&lvNormal, const \hyperlink{structc_vec3}{cVec3} \&lvPoint)
+\begin{DoxyCompactList}\small\item\em Inicializa el plano con su normal y un punto contenido en el. \item\end{DoxyCompactList}\item 
+void \hyperlink{classc_plane_aa9b769d78fb6eabea63877e5d479a3e2}{Init} (const \hyperlink{structc_vec3}{cVec3} \&lvPoint1, const \hyperlink{structc_vec3}{cVec3} \&lvPoint2, const \hyperlink{structc_vec3}{cVec3} \&lvPoint3)
+\begin{DoxyCompactList}\small\item\em Inicializa el plano tres puntos contenidos en el. \item\end{DoxyCompactList}\item 
+float \hyperlink{classc_plane_a3964901627d6c01b4978e03380afbd16}{PointTest} (const \hyperlink{structc_vec3}{cVec3} \&lvPoint1) const 
+\begin{DoxyCompactList}\small\item\em Comprueba si el punto esta contenido o no en el plano. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un plano en el espacio. Esta clase calcula un plano a traves de:
+\begin{DoxyItemize}
+\item La normal del plano y un punto contenido en el mismo
+\item Tres puntos contenidos en el plano
+\end{DoxyItemize}
+
+f(x) = Ax + By + Cz + D
+
+Despues permite evaluar puntos para saber si estan contenidos en el plano o su posicion con respecto a este. 
+
+Definición en la línea 16 del archivo Plane.h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classc_plane_aa9b769d78fb6eabea63877e5d479a3e2}{
+\index{cPlane@{cPlane}!Init@{Init}}
+\index{Init@{Init}!cPlane@{cPlane}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void cPlane::Init (const {\bf cVec3} \& {\em lvPoint1}, \/  const {\bf cVec3} \& {\em lvPoint2}, \/  const {\bf cVec3} \& {\em lvPoint3})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_plane_aa9b769d78fb6eabea63877e5d479a3e2}
+
+
+Inicializa el plano tres puntos contenidos en el. 
+
+Inicaliza el plano tres puntos contenidos en el. 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lvPoint1}]Punto 1 contenido en el plano. \item[{\em lvPoint2}]Punto 2 contenido en el plano. \item[{\em lvPoint3}]Punto 3 contenido en el plano. \end{DoxyParams}
+
+
+Definición en la línea 40 del archivo Plane.h.
+
+\hypertarget{classc_plane_a5154ba8f5458f345ccb082b288e685a1}{
+\index{cPlane@{cPlane}!Init@{Init}}
+\index{Init@{Init}!cPlane@{cPlane}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void cPlane::Init (const {\bf cVec3} \& {\em lvNormal}, \/  const {\bf cVec3} \& {\em lvPoint})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_plane_a5154ba8f5458f345ccb082b288e685a1}
+
+
+Inicializa el plano con su normal y un punto contenido en el. 
+
+Inicaliza el plano con su normal y un punto contenido en el. 
+\begin{DoxyParams}{Parámetros}
+\item[{\em lvNormal}]Normal del plano. \item[{\em lvPoint}]Punto contenido en el plano. \end{DoxyParams}
+
+
+Definición en la línea 25 del archivo Plane.h.
+
+\hypertarget{classc_plane_a3964901627d6c01b4978e03380afbd16}{
+\index{cPlane@{cPlane}!PointTest@{PointTest}}
+\index{PointTest@{PointTest}!cPlane@{cPlane}}
+\subsubsection[{PointTest}]{\setlength{\rightskip}{0pt plus 5cm}float cPlane::PointTest (const {\bf cVec3} \& {\em lvPoint1}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_plane_a3964901627d6c01b4978e03380afbd16}
+
+
+Comprueba si el punto esta contenido o no en el plano. 
+
+Comprueba si el punto esta contenido o no en el plano.
+\begin{DoxyItemize}
+\item Si devuelve 0, el punto esta contenido en el plano
+\item Si devuelve un numero positivo, el punto esta en la direccion a la normal (delante del plano)
+\item Si devuelve un numero negativo, el punto esta en la direccion opuesta a la normal (detras del plano)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em lvPoint1}]Punto que se desea evaluar. \end{DoxyParams}
+
+
+Definición en la línea 55 del archivo Plane.h.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/MathUtils/\hyperlink{_plane_8h}{Plane.h}\end{DoxyCompactItemize}

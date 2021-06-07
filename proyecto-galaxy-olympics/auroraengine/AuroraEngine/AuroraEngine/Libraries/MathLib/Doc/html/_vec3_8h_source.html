@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Fichero Fuente D:/Master Videojuegos ULL 09_10/Asignaturas/PrÃ¡cticas BÃ¡sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Vec/Vec3.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>PÃ¡gina&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Vec/Vec3.h</h1><a href="_vec3_8h.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef VEC3_H_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define VEC3_H_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;math.h&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;cassert&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;../MathConst.h&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="keyword">struct </span><a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a>;
+<a name="l00010"></a>00010 <span class="keyword">struct </span><a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a>;
+<a name="l00011"></a>00011 
+<a name="l00013"></a><a class="code" href="structc_vec3.html">00013</a> <span class="keyword">struct </span><a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> {
+<a name="l00014"></a><a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">00014</a>   <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>, <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>, <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>;
+<a name="l00015"></a>00015 
+<a name="l00017"></a><a class="code" href="structc_vec3.html#adb56b9608a5880824c9adcdfddd4ce28">00017</a>   <a class="code" href="structc_vec3.html#adb56b9608a5880824c9adcdfddd4ce28" title="Constructor por defecto.">cVec3</a>(<span class="keywordtype">void</span>): <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>(0),<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>(0),<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>(0) {}
+<a name="l00019"></a>00019 
+<a name="l00025"></a><a class="code" href="structc_vec3.html#a4b620378f3bad52b0b0d6714f1959a66">00025</a>   <a class="code" href="structc_vec3.html#a4b620378f3bad52b0b0d6714f1959a66" title="Constructor.">cVec3</a>(<span class="keywordtype">float</span>  newx, <span class="keywordtype">float</span>  newy, <span class="keywordtype">float</span>  newz): <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>(newx), <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>(newy), <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>(newz) {}
+<a name="l00027"></a>00027 
+<a name="l00032"></a>00032   <span class="keyword">explicit</span> <a class="code" href="structc_vec3.html#adb56b9608a5880824c9adcdfddd4ce28" title="Constructor por defecto.">cVec3</a>(<span class="keyword">const</span> <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;vec2, <span class="keywordtype">float</span>  lz=0);
+<a name="l00034"></a>00034 
+<a name="l00038"></a>00038   <span class="keyword">explicit</span> <a class="code" href="structc_vec3.html#adb56b9608a5880824c9adcdfddd4ce28" title="Constructor por defecto.">cVec3</a>(<span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;vec4);
+<a name="l00039"></a>00039 
+<a name="l00041"></a>00041 
+<a name="l00046"></a>00046   <span class="keyword">inline</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a0793dbf02687a132a6efb0ad8b29bfcd" title="Operador de Indexacion.">operator [] </a>(<span class="keywordtype">unsigned</span>      position);
+<a name="l00048"></a>00048 
+<a name="l00053"></a>00053   <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a0793dbf02687a132a6efb0ad8b29bfcd" title="Operador de Indexacion.">operator [] </a>(<span class="keywordtype">unsigned</span>      position) <span class="keyword">const</span>;
+<a name="l00055"></a>00055 
+<a name="l00060"></a>00060   <span class="keyword">inline</span> <span class="keywordtype">float</span>        &amp;<a class="code" href="structc_vec3.html#a37c15f069663367b9213ddf439ce6cea" title="Operador Parentesis.">operator() </a>(<span class="keywordtype">unsigned</span>      i);
+<a name="l00062"></a>00062 
+<a name="l00067"></a>00067   <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a37c15f069663367b9213ddf439ce6cea" title="Operador Parentesis.">operator() </a>(<span class="keywordtype">unsigned</span>      i) <span class="keyword">const</span>;
+<a name="l00069"></a>00069 
+<a name="l00074"></a>00074   <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#ac7f06c87f7c4b376a2ef13cead4308fe" title="Suma dos vectores.">operator += </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;other);
+<a name="l00076"></a>00076 
+<a name="l00081"></a>00081   <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#af3045e4ea44a8b4b25397d6ab15630d8" title="Resta dos vectores.">operator -= </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;other);
+<a name="l00083"></a>00083 
+<a name="l00088"></a>00088   <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#a916164e3dd0a57841bcbbc6b0d335003" title="Multiplica el vector por un escalar.">operator *= </a>(<span class="keywordtype">float</span>  value);
+<a name="l00090"></a>00090 
+<a name="l00095"></a>00095   <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#ae75eb4e1198de074462df35fae00ce95" title="Divide el vector por un escalar.">operator /= </a>(<span class="keywordtype">float</span>  value);
+<a name="l00096"></a>00096 
+<a name="l00098"></a>00098 
+<a name="l00104"></a>00104   <span class="keyword">inline</span> <span class="keywordtype">void</span>  <a class="code" href="structc_vec3.html#a8e21297cd063b840c05225c6acbdde37" title="Setea las componentes del vector.">Set</a>(<span class="keywordtype">float</span>  newx, <span class="keywordtype">float</span>  newy, <span class="keywordtype">float</span>  newz);
+<a name="l00106"></a>00106 
+<a name="l00110"></a>00110   <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#a175c36d2f68c7d99c11c9e2bd4acd868" title="Calcula la longitud al cuadrado del vector.">LengthSqr</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00112"></a>00112 
+<a name="l00116"></a>00116   <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#ab933754d854c3b1a058cc1d0213e031b" title="Calcula la longitud del vector.">Length</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00118"></a>00118 
+<a name="l00123"></a>00123   <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#aa4c26e7a12fbec06f7327b345ebb58fc" title="Calcula la Distancia al cuadrado entre los dos puntos.">DistanceSqrTo</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;p ) <span class="keyword">const</span>;
+<a name="l00125"></a>00125 
+<a name="l00130"></a>00130   <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#adc4a8be28be2d5f494d8aa3661b32b33" title="Calcula la Distancia entre los dos puntos.">DistanceTo</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;p ) <span class="keyword">const</span>;
+<a name="l00132"></a>00132 
+<a name="l00136"></a>00136   <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="structc_vec3.html#a48c31ff63f7a13bc7acb81c50e5704fb" title="Comprueba si la longitud del vector es cero.">IsZero</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00138"></a>00138 
+<a name="l00142"></a>00142   <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#a477abe6707a7cd21773cbc6b515f63aa" title="Normaliza el vector.">Normalize</a>(<span class="keywordtype">void</span>);
+<a name="l00143"></a>00143 
+<a name="l00145"></a>00145 
+<a name="l00149"></a>00149   <span class="keywordtype">void</span> <a class="code" href="structc_vec3.html#ad3df8bbd125ad1bc8f8efc7bf9aab045" title="Almacena el valor maximo por componentes.">StoreMax</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;p );
+<a name="l00151"></a>00151 
+<a name="l00155"></a>00155   <span class="keywordtype">void</span> <a class="code" href="structc_vec3.html#aa53320d95f7a417049d3970a23cb713c" title="Almacena el valor minimo por componentes.">StoreMin</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;p );
+<a name="l00156"></a>00156 
+<a name="l00158"></a>00158 
+<a name="l00162"></a><a class="code" href="structc_vec3.html#af79c786727323c0edeb6055d10537a6f">00162</a>   <span class="keyword">inline</span> <span class="keywordtype">float</span>        *<a class="code" href="structc_vec3.html#af79c786727323c0edeb6055d10537a6f" title="Devuelve un puntero a la zona de memoria del vector.">AsFloatPointer</a>( ) { <span class="keywordflow">return</span> &amp;<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>; }
+<a name="l00164"></a>00164 
+<a name="l00168"></a><a class="code" href="structc_vec3.html#ab5dd3e997596052341b076913aafcd3d">00168</a>   <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span>  *<a class="code" href="structc_vec3.html#ab5dd3e997596052341b076913aafcd3d" title="Devuelve un puntero a la zona de memoria del vector.">AsFloatPointer</a>( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>; }
+<a name="l00169"></a>00169 };
+<a name="l00170"></a>00170 
+<a name="l00171"></a>00171 <span class="comment">// Externs</span>
+<a name="l00173"></a>00173 <span class="comment"></span>
+<a name="l00179"></a>00179 <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_matrix_8h.html#a8cde60fe2b302238b16a86c6295df215" title="Comprueba si dos matrices son iguales, comparando componente a componente.">operator == </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2);
+<a name="l00181"></a>00181 
+<a name="l00187"></a>00187 <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_matrix_8h.html#ac7536664da0dcce3b48d7ca2929acb81" title="Comprueba si al menos una componente de las dos matrices es distinto, comparando...">operator != </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2);
+<a name="l00189"></a>00189 
+<a name="l00194"></a>00194 <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1);
+<a name="l00196"></a>00196 
+<a name="l00202"></a>00202 <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ae43bee6380c84967cee8ec5fa3db10e9" title="Suma dos matrices, componente a componente.">operator + </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2);
+<a name="l00204"></a>00204 
+<a name="l00210"></a>00210 <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2);
+<a name="l00212"></a>00212 
+<a name="l00218"></a>00218 <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keywordtype">float</span>  value);
+<a name="l00220"></a>00220 
+<a name="l00226"></a>00226 <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keywordtype">float</span>  value, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1);
+<a name="l00228"></a>00228 
+<a name="l00234"></a>00234 <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#a05a3ad681341b70bdef48c3ea1ccd3d2" title="Divide todas las componentes de una matriz por un valor flotante.">operator / </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keywordtype">float</span>  value);
+<a name="l00235"></a>00235 
+<a name="l00236"></a>00236 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00237"></a>00237 <span class="comment">// Operators</span>
+<a name="l00238"></a><a class="code" href="structc_vec3.html#a0793dbf02687a132a6efb0ad8b29bfcd">00238</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a0793dbf02687a132a6efb0ad8b29bfcd" title="Operador de Indexacion.">cVec3::operator [] </a>(<span class="keywordtype">unsigned</span>      position) {
+<a name="l00239"></a>00239   assert(position&lt;3);
+<a name="l00240"></a>00240   <span class="keywordflow">return</span> *(&amp;<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>+position);
+<a name="l00241"></a>00241 }
+<a name="l00242"></a>00242 
+<a name="l00243"></a><a class="code" href="structc_vec3.html#a595c241368750cfbe2fca70d99263442">00243</a> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a0793dbf02687a132a6efb0ad8b29bfcd" title="Operador de Indexacion.">cVec3::operator [] </a>(<span class="keywordtype">unsigned</span>      position)<span class="keyword"> const </span>{
+<a name="l00244"></a>00244   assert(position&lt;3);
+<a name="l00245"></a>00245   <span class="keywordflow">return</span> *(&amp;<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>+position);
+<a name="l00246"></a>00246 }
+<a name="l00247"></a>00247 
+<a name="l00248"></a><a class="code" href="structc_vec3.html#a37c15f069663367b9213ddf439ce6cea">00248</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a37c15f069663367b9213ddf439ce6cea" title="Operador Parentesis.">cVec3::operator() </a>(<span class="keywordtype">unsigned</span>      i) {
+<a name="l00249"></a>00249   assert(i &gt; 0 &amp;&amp; i &lt;= 3);
+<a name="l00250"></a>00250   <span class="keywordflow">return</span> (*<span class="keyword">this</span>)[i-1]; <span class="comment">// Access appropriate value</span>
+<a name="l00251"></a>00251 }
+<a name="l00252"></a>00252 
+<a name="l00253"></a><a class="code" href="structc_vec3.html#a0371d459bd0fc18e7d6b9ac644714bfb">00253</a> <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span>  &amp;<a class="code" href="structc_vec3.html#a37c15f069663367b9213ddf439ce6cea" title="Operador Parentesis.">cVec3::operator() </a>(<span class="keywordtype">unsigned</span>      i)<span class="keyword"> const </span>{
+<a name="l00254"></a>00254   assert(i &gt; 0 &amp;&amp; i &lt;= 3);
+<a name="l00255"></a>00255   <span class="keywordflow">return</span> (*<span class="keyword">this</span>)[i-1]; <span class="comment">// Access appropriate value</span>
+<a name="l00256"></a>00256 }
+<a name="l00257"></a>00257 
+<a name="l00258"></a><a class="code" href="structc_vec3.html#ac7f06c87f7c4b376a2ef13cead4308fe">00258</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#ac7f06c87f7c4b376a2ef13cead4308fe" title="Suma dos vectores.">cVec3::operator += </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;other) {
+<a name="l00259"></a>00259   <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> += other.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>;
+<a name="l00260"></a>00260   <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> += other.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>;
+<a name="l00261"></a>00261   <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> += other.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>;
+<a name="l00262"></a>00262   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00263"></a>00263 }
+<a name="l00264"></a>00264 
+<a name="l00265"></a><a class="code" href="structc_vec3.html#af3045e4ea44a8b4b25397d6ab15630d8">00265</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#af3045e4ea44a8b4b25397d6ab15630d8" title="Resta dos vectores.">cVec3::operator -= </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;other) {
+<a name="l00266"></a>00266   <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> -= other.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>;
+<a name="l00267"></a>00267   <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> -= other.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>;
+<a name="l00268"></a>00268   <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> -= other.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>;
+<a name="l00269"></a>00269   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00270"></a>00270 }
+<a name="l00271"></a>00271 
+<a name="l00272"></a><a class="code" href="structc_vec3.html#a916164e3dd0a57841bcbbc6b0d335003">00272</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#a916164e3dd0a57841bcbbc6b0d335003" title="Multiplica el vector por un escalar.">cVec3::operator *= </a>(<span class="keywordtype">float</span>  value) {
+<a name="l00273"></a>00273   <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> *= value;
+<a name="l00274"></a>00274   <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> *= value;
+<a name="l00275"></a>00275   <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> *= value;
+<a name="l00276"></a>00276   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00277"></a>00277 }
+<a name="l00278"></a>00278 
+<a name="l00279"></a><a class="code" href="structc_vec3.html#ae75eb4e1198de074462df35fae00ce95">00279</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#ae75eb4e1198de074462df35fae00ce95" title="Divide el vector por un escalar.">cVec3::operator /= </a>(<span class="keywordtype">float</span>  value) {
+<a name="l00280"></a>00280   assert( value != 0.0f );
+<a name="l00281"></a>00281   <span class="keywordtype">float</span>  inv = 1.0f / value;
+<a name="l00282"></a>00282   <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> *= inv;
+<a name="l00283"></a>00283   <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> *= inv;
+<a name="l00284"></a>00284   <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> *= inv;
+<a name="l00285"></a>00285   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00286"></a>00286 }
+<a name="l00287"></a>00287 
+<a name="l00288"></a>00288 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00289"></a>00289 <span class="comment">// Functions</span>
+<a name="l00290"></a><a class="code" href="structc_vec3.html#a8e21297cd063b840c05225c6acbdde37">00290</a> <span class="keyword">inline</span> <span class="keywordtype">void</span>  <a class="code" href="structc_vec3.html#a8e21297cd063b840c05225c6acbdde37" title="Setea las componentes del vector.">cVec3::Set</a>(<span class="keywordtype">float</span>  newx, <span class="keywordtype">float</span>  newy, <span class="keywordtype">float</span>  newz) {
+<a name="l00291"></a>00291   <a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> = newx;
+<a name="l00292"></a>00292   <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> = newy;
+<a name="l00293"></a>00293   <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> = newz;
+<a name="l00294"></a>00294 }
+<a name="l00295"></a>00295 
+<a name="l00296"></a><a class="code" href="structc_vec3.html#a175c36d2f68c7d99c11c9e2bd4acd868">00296</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#a175c36d2f68c7d99c11c9e2bd4acd868" title="Calcula la longitud al cuadrado del vector.">cVec3::LengthSqr</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
+<a name="l00297"></a>00297   <span class="keywordflow">return</span> (<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>*<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> + <a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>*<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> + <a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>*<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>);
+<a name="l00298"></a>00298 }
+<a name="l00299"></a>00299 
+<a name="l00300"></a><a class="code" href="structc_vec3.html#ab933754d854c3b1a058cc1d0213e031b">00300</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#ab933754d854c3b1a058cc1d0213e031b" title="Calcula la longitud del vector.">cVec3::Length</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
+<a name="l00301"></a>00301    assert( <a class="code" href="structc_vec3.html#a175c36d2f68c7d99c11c9e2bd4acd868" title="Calcula la longitud al cuadrado del vector.">LengthSqr</a>() &gt;= 0.0f );
+<a name="l00302"></a>00302    <span class="keywordflow">return</span> sqrtf( <a class="code" href="structc_vec3.html#a175c36d2f68c7d99c11c9e2bd4acd868" title="Calcula la longitud al cuadrado del vector.">LengthSqr</a>() );
+<a name="l00303"></a>00303 }
+<a name="l00304"></a>00304 
+<a name="l00305"></a><a class="code" href="structc_vec3.html#aa4c26e7a12fbec06f7327b345ebb58fc">00305</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#aa4c26e7a12fbec06f7327b345ebb58fc" title="Calcula la Distancia al cuadrado entre los dos puntos.">cVec3::DistanceSqrTo</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;p )<span class="keyword"> const </span>{
+<a name="l00306"></a>00306   <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> this2p = p - (*this);
+<a name="l00307"></a>00307   <span class="keywordflow">return</span> this2p.<a class="code" href="structc_vec3.html#a175c36d2f68c7d99c11c9e2bd4acd868" title="Calcula la longitud al cuadrado del vector.">LengthSqr</a>( );
+<a name="l00308"></a>00308 }
+<a name="l00309"></a>00309 
+<a name="l00310"></a><a class="code" href="structc_vec3.html#adc4a8be28be2d5f494d8aa3661b32b33">00310</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_vec3.html#adc4a8be28be2d5f494d8aa3661b32b33" title="Calcula la Distancia entre los dos puntos.">cVec3::DistanceTo</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;p )<span class="keyword"> const </span>{
+<a name="l00311"></a>00311   <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> this2p = p - (*this);
+<a name="l00312"></a>00312   <span class="keywordflow">return</span> this2p.<a class="code" href="structc_vec3.html#ab933754d854c3b1a058cc1d0213e031b" title="Calcula la longitud del vector.">Length</a>( );
+<a name="l00313"></a>00313 }
+<a name="l00314"></a>00314 
+<a name="l00315"></a><a class="code" href="structc_vec3.html#a48c31ff63f7a13bc7acb81c50e5704fb">00315</a> <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="structc_vec3.html#a48c31ff63f7a13bc7acb81c50e5704fb" title="Comprueba si la longitud del vector es cero.">cVec3::IsZero</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
+<a name="l00316"></a>00316   <span class="keywordflow">return</span> (fabsf(<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>) &lt; <a class="code" href="_math_const_8h.html#a002b2f4894492820fe708b1b7e7c5e70" title="Constante Epsilon: Un valor suficientemente peque&amp;ntilde;o como para ser despreciable...">EPSILON</a>) &amp;&amp; (fabsf(<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>) &lt; <a class="code" href="_math_const_8h.html#a002b2f4894492820fe708b1b7e7c5e70" title="Constante Epsilon: Un valor suficientemente peque&amp;ntilde;o como para ser despreciable...">EPSILON</a>) &amp;&amp; (fabsf(<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>) &lt; <a class="code" href="_math_const_8h.html#a002b2f4894492820fe708b1b7e7c5e70" title="Constante Epsilon: Un valor suficientemente peque&amp;ntilde;o como para ser despreciable...">EPSILON</a>);
+<a name="l00317"></a>00317 }
+<a name="l00318"></a>00318 
+<a name="l00319"></a><a class="code" href="structc_vec3.html#a477abe6707a7cd21773cbc6b515f63aa">00319</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;<a class="code" href="structc_vec3.html#a477abe6707a7cd21773cbc6b515f63aa" title="Normaliza el vector.">cVec3::Normalize</a>(<span class="keywordtype">void</span>) { 
+<a name="l00320"></a>00320   assert(<a class="code" href="structc_vec3.html#ab933754d854c3b1a058cc1d0213e031b" title="Calcula la longitud del vector.">Length</a>());
+<a name="l00321"></a>00321   (*this) /= <a class="code" href="structc_vec3.html#ab933754d854c3b1a058cc1d0213e031b" title="Calcula la longitud del vector.">Length</a>();
+<a name="l00322"></a>00322   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00323"></a>00323 }
+<a name="l00324"></a>00324 
+<a name="l00325"></a>00325 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00326"></a>00326 <span class="comment">// Externs</span>
+<a name="l00327"></a><a class="code" href="_vec3_8h.html#ae1e661d7d35a0c38de1afb9438298bac">00327</a> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_matrix_8h.html#a8cde60fe2b302238b16a86c6295df215" title="Comprueba si dos matrices son iguales, comparando componente a componente.">operator == </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) {
+<a name="l00328"></a>00328   <span class="keywordflow">return</span> ((v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> == v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>) &amp;&amp; (v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> == v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>) &amp;&amp; (v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> == v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>));
+<a name="l00329"></a>00329 }
+<a name="l00330"></a>00330 
+<a name="l00331"></a><a class="code" href="_vec3_8h.html#a31a652d40f383424b18a6deeb603f886">00331</a> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="_matrix_8h.html#ac7536664da0dcce3b48d7ca2929acb81" title="Comprueba si al menos una componente de las dos matrices es distinto, comparando...">operator != </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) {
+<a name="l00332"></a>00332   <span class="keywordflow">return</span> ((v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> != v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>) || (v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> != v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>) || (v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> != v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>));
+<a name="l00333"></a>00333 }
+<a name="l00334"></a>00334 
+<a name="l00335"></a><a class="code" href="_vec3_8h.html#ad7705e5c09001822f05d426944f14a17">00335</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1) {
+<a name="l00336"></a>00336   <span class="keywordflow">return</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a>(-v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>, -v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>, -v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>);
+<a name="l00337"></a>00337 }
+<a name="l00338"></a>00338 
+<a name="l00339"></a><a class="code" href="_vec3_8h.html#a1491df8d820f2cbc9c2f6a6c64a0daa6">00339</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ae43bee6380c84967cee8ec5fa3db10e9" title="Suma dos matrices, componente a componente.">operator + </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) {
+<a name="l00340"></a>00340   <span class="keywordflow">return</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a>( v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>+v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>, v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>+v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>, v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>+v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> );
+<a name="l00341"></a>00341 }
+<a name="l00342"></a>00342 
+<a name="l00343"></a><a class="code" href="_vec3_8h.html#ad43cb77277c71ee0954f8ab0583a00c0">00343</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) {
+<a name="l00344"></a>00344   <span class="keywordflow">return</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a>( v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>-v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>, v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>-v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>, v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>-v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>);
+<a name="l00345"></a>00345 }
+<a name="l00346"></a>00346 
+<a name="l00347"></a><a class="code" href="_vec3_8h.html#a0d85665f29f22cea2578772dc06c2c4b">00347</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keywordtype">float</span>  value) {
+<a name="l00348"></a>00348   <span class="keywordflow">return</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a>( v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>*value, v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>*value, v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>*value );
+<a name="l00349"></a>00349 }
+<a name="l00350"></a>00350 
+<a name="l00351"></a><a class="code" href="_vec3_8h.html#ac661ac0ceb547d5585413c0c49b0baa8">00351</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keywordtype">float</span>  value, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1) {
+<a name="l00352"></a>00352   <span class="keywordflow">return</span> (v1*value);
+<a name="l00353"></a>00353 }
+<a name="l00354"></a>00354 
+<a name="l00355"></a><a class="code" href="_vec3_8h.html#a47188439477e20ca2f54119eb0ddfdf0">00355</a> <span class="keyword">inline</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> <a class="code" href="_matrix_8h.html#a05a3ad681341b70bdef48c3ea1ccd3d2" title="Divide todas las componentes de una matriz por un valor flotante.">operator / </a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keywordtype">float</span>  value) {
+<a name="l00356"></a>00356   assert( value!=0.0f );
+<a name="l00357"></a>00357   <span class="keywordtype">float</span>  inv = 1.0f / value;
+<a name="l00358"></a>00358   <span class="keywordflow">return</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a>( v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>*inv, v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>*inv, v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>*inv );
+<a name="l00359"></a>00359 }
+<a name="l00360"></a>00360 
+<a name="l00361"></a>00361 <span class="preprocessor">#endif // VEC3_H_</span>
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

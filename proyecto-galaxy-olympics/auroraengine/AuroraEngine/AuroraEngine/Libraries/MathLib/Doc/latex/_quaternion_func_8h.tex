@@ -1,0 +1,104 @@
+\hypertarget{_quaternion_func_8h}{
+\section{Referencia del Archivo D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/QuaternionFunc.h}
+\label{_quaternion_func_8h}\index{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/QuaternionFunc.h@{D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Quaternion/QuaternionFunc.h}}
+}
+{\ttfamily \#include \char`\"{}Quaternion.h\char`\"{}}\par
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_quaternion_func_8h_a35a6192b816742192912c6706fac76e0}{TransformPoint} (\hyperlink{structc_vec3}{cVec3} \&out, const \hyperlink{structc_quaternion}{cQuaternion} \&q, const \hyperlink{structc_vec3}{cVec3} \&v)
+\begin{DoxyCompactList}\small\item\em Transforma un punto por un quaternion. \item\end{DoxyCompactList}\item 
+float \hyperlink{_quaternion_func_8h_a67e97f9c1eee8a290e58517227b7677a}{Dot} (const \hyperlink{structc_quaternion}{cQuaternion} \&first, const \hyperlink{structc_quaternion}{cQuaternion} \&second)
+\begin{DoxyCompactList}\small\item\em Calcula el producto escalar de dos quaterniones. \item\end{DoxyCompactList}\item 
+void \hyperlink{_quaternion_func_8h_ae8df146659e7dbbacefefc860d2d0514}{Lerp} (\hyperlink{structc_quaternion}{cQuaternion} \&out, const \hyperlink{structc_quaternion}{cQuaternion} \&from, const \hyperlink{structc_quaternion}{cQuaternion} \&To, float t)
+\begin{DoxyCompactList}\small\item\em Calcula la interpolacion lineal de dos quaterniones. \item\end{DoxyCompactList}\item 
+void \hyperlink{_quaternion_func_8h_a3a28dfea1c36b6b2e012a919a3b5d7d1}{Slerp} (\hyperlink{structc_quaternion}{cQuaternion} \&out, const \hyperlink{structc_quaternion}{cQuaternion} \&from, const \hyperlink{structc_quaternion}{cQuaternion} \&To, float t)
+\begin{DoxyCompactList}\small\item\em Calcula la interpolacion esferica de dos quaterniones. \item\end{DoxyCompactList}\item 
+void \hyperlink{_quaternion_func_8h_a1270147c25a12b9f097c4fd73657b364}{RotationArc} (\hyperlink{structc_quaternion}{cQuaternion} \&out, const \hyperlink{structc_vec3}{cVec3} \&v0, const \hyperlink{structc_vec3}{cVec3} \&v1)
+\begin{DoxyCompactList}\small\item\em Genera el quaternion resultante de rotar un vector hasta el otro. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{_quaternion_func_8h_a67e97f9c1eee8a290e58517227b7677a}{
+\index{QuaternionFunc.h@{QuaternionFunc.h}!Dot@{Dot}}
+\index{Dot@{Dot}!QuaternionFunc.h@{QuaternionFunc.h}}
+\subsubsection[{Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Dot (const {\bf cQuaternion} \& {\em first}, \/  const {\bf cQuaternion} \& {\em second})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_func_8h_a67e97f9c1eee8a290e58517227b7677a}
+
+
+Calcula el producto escalar de dos quaterniones. 
+
+Calcula el producto escalar de dos quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em first}]Primer operando \item[{\em second}]Segundo operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Resultado del producto escalar 
+\end{DoxyReturn}
+
+
+Definición en la línea 66 del archivo QuaternionFunc.h.
+
+\hypertarget{_quaternion_func_8h_ae8df146659e7dbbacefefc860d2d0514}{
+\index{QuaternionFunc.h@{QuaternionFunc.h}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!QuaternionFunc.h@{QuaternionFunc.h}}
+\subsubsection[{Lerp}]{\setlength{\rightskip}{0pt plus 5cm}void Lerp ({\bf cQuaternion} \& {\em out}, \/  const {\bf cQuaternion} \& {\em from}, \/  const {\bf cQuaternion} \& {\em To}, \/  float {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_func_8h_ae8df146659e7dbbacefefc860d2d0514}
+
+
+Calcula la interpolacion lineal de dos quaterniones. 
+
+Calcula la interpolacion lineal de dos quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Quaternion resultante \item[{\em from}]Primer operando \item[{\em To}]Segundo operando \item[{\em t}]Factor de interpolacion \end{DoxyParams}
+
+
+Definición en la línea 70 del archivo QuaternionFunc.h.
+
+\hypertarget{_quaternion_func_8h_a1270147c25a12b9f097c4fd73657b364}{
+\index{QuaternionFunc.h@{QuaternionFunc.h}!RotationArc@{RotationArc}}
+\index{RotationArc@{RotationArc}!QuaternionFunc.h@{QuaternionFunc.h}}
+\subsubsection[{RotationArc}]{\setlength{\rightskip}{0pt plus 5cm}void RotationArc ({\bf cQuaternion} \& {\em out}, \/  const {\bf cVec3} \& {\em v0}, \/  const {\bf cVec3} \& {\em v1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_func_8h_a1270147c25a12b9f097c4fd73657b364}
+
+
+Genera el quaternion resultante de rotar un vector hasta el otro. 
+
+Genera el quaternion resultante de rotar un vector hasta el otro 
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Quaternion resultante \item[{\em v0}]Primer vector \item[{\em v1}]Primer vector \end{DoxyParams}
+
+
+Definición en la línea 75 del archivo QuaternionFunc.h.
+
+\hypertarget{_quaternion_func_8h_a3a28dfea1c36b6b2e012a919a3b5d7d1}{
+\index{QuaternionFunc.h@{QuaternionFunc.h}!Slerp@{Slerp}}
+\index{Slerp@{Slerp}!QuaternionFunc.h@{QuaternionFunc.h}}
+\subsubsection[{Slerp}]{\setlength{\rightskip}{0pt plus 5cm}void Slerp ({\bf cQuaternion} \& {\em out}, \/  const {\bf cQuaternion} \& {\em from}, \/  const {\bf cQuaternion} \& {\em To}, \/  float {\em t})}}
+\label{_quaternion_func_8h_a3a28dfea1c36b6b2e012a919a3b5d7d1}
+
+
+Calcula la interpolacion esferica de dos quaterniones. 
+
+Calcula la interpolacion esferica de dos quaterniones 
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Quaternion resultante \item[{\em from}]Primer operando \item[{\em To}]Segundo operando \item[{\em t}]Factor de interpolacion \end{DoxyParams}
+
+
+Definición en la línea 3 del archivo QuaternionFunc.cpp.
+
+\hypertarget{_quaternion_func_8h_a35a6192b816742192912c6706fac76e0}{
+\index{QuaternionFunc.h@{QuaternionFunc.h}!TransformPoint@{TransformPoint}}
+\index{TransformPoint@{TransformPoint}!QuaternionFunc.h@{QuaternionFunc.h}}
+\subsubsection[{TransformPoint}]{\setlength{\rightskip}{0pt plus 5cm}void TransformPoint ({\bf cVec3} \& {\em out}, \/  const {\bf cQuaternion} \& {\em q}, \/  const {\bf cVec3} \& {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_quaternion_func_8h_a35a6192b816742192912c6706fac76e0}
+
+
+Transforma un punto por un quaternion. 
+
+Transforma un punto por un quaternion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em out}]Punto resultante de la transformacion \item[{\em q}]Quaternion \item[{\em v}]Punto a transformar \end{DoxyParams}
+
+
+Definición en la línea 51 del archivo QuaternionFunc.h.
+

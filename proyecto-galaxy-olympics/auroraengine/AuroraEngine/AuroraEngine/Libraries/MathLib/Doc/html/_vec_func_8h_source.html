@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Fichero Fuente D:/Master Videojuegos ULL 09_10/Asignaturas/PrÃ¡cticas BÃ¡sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Vec/VecFunc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>PÃ¡gina&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Vec/VecFunc.h</h1><a href="_vec_func_8h.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef VECTOR_FUNC_H_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define VECTOR_FUNC_H_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="_vec2_8h.html">Vec2.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="_vec3_8h.html">Vec3.h</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="_vec4_8h.html">Vec4.h</a>&quot;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="comment">// Dot Products</span>
+<a name="l00009"></a><a class="code" href="_vec_func_8h.html#ad4f0459a9b717694225f24851454ae49">00009</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="_quaternion_func_8h.html#a67e97f9c1eee8a290e58517227b7677a" title="Calcula el producto escalar de dos quaterniones.">Dot</a>(<span class="keyword">const</span> <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;v2) { <span class="keywordflow">return</span> v1.<a class="code" href="structc_vec2.html#ab0579c05d3fd7f0cd5c149c8196d58b3">x</a>*v2.<a class="code" href="structc_vec2.html#ab0579c05d3fd7f0cd5c149c8196d58b3">x</a> + v1.<a class="code" href="structc_vec2.html#a9baae58edf734d7b4f0e420a1d8442d8">y</a>*v2.<a class="code" href="structc_vec2.html#a9baae58edf734d7b4f0e420a1d8442d8">y</a>; }
+<a name="l00010"></a><a class="code" href="_vec_func_8h.html#a62b0959e247d83035b1485b7daca1230">00010</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="_quaternion_func_8h.html#a67e97f9c1eee8a290e58517227b7677a" title="Calcula el producto escalar de dos quaterniones.">Dot</a>(<span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) { <span class="keywordflow">return</span> v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>*v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> + v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>*v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> + v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>*v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>; }
+<a name="l00011"></a><a class="code" href="_vec_func_8h.html#ac4430eda7f92e1e5ec1588d7ca580766">00011</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="_quaternion_func_8h.html#a67e97f9c1eee8a290e58517227b7677a" title="Calcula el producto escalar de dos quaterniones.">Dot</a>(<span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v2) { <span class="keywordflow">return</span> v1.<a class="code" href="structc_vec4.html#a0708f670925b4c793bc50462c61a8c31">x</a>*v2.<a class="code" href="structc_vec4.html#a0708f670925b4c793bc50462c61a8c31">x</a> + v1.<a class="code" href="structc_vec4.html#a70f3694ce6253d17aab748f6f8bb2703">y</a>*v2.<a class="code" href="structc_vec4.html#a70f3694ce6253d17aab748f6f8bb2703">y</a> + v1.<a class="code" href="structc_vec4.html#abda6e18c19bb9741a754c9052e681351">z</a>*v2.<a class="code" href="structc_vec4.html#abda6e18c19bb9741a754c9052e681351">z</a> + v1.<a class="code" href="structc_vec4.html#a112aa396081351bb645cc3c8ed33b9b0">w</a>*v2.<a class="code" href="structc_vec4.html#a112aa396081351bb645cc3c8ed33b9b0">w</a>; }
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="comment">// Cross Product</span>
+<a name="l00014"></a><a class="code" href="_vec_func_8h.html#a914f8cce13d3ee8a4ca6b77fda94a789">00014</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_vec_func_8h.html#a914f8cce13d3ee8a4ca6b77fda94a789">Cross</a>(<a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;out, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) {
+<a name="l00015"></a>00015   out.<a class="code" href="structc_vec3.html#a8e21297cd063b840c05225c6acbdde37" title="Setea las componentes del vector.">Set</a>( v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>*v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> - v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>*v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>,
+<a name="l00016"></a>00016       v1.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>*v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> - v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>*v2.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a>,
+<a name="l00017"></a>00017       v1.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a>*v2.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> - v1.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a>*v2.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> );
+<a name="l00018"></a>00018 }
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="comment">// Swap vectors</span>
+<a name="l00021"></a><a class="code" href="_vec_func_8h.html#a2f4d18c236ad8c41afaab7cd3622f463">00021</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_vec_func_8h.html#a2f4d18c236ad8c41afaab7cd3622f463">Swap</a>(<a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;v1, <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;v2) { <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> temp(v1); v1 = v2; v2 = temp; }
+<a name="l00022"></a><a class="code" href="_vec_func_8h.html#a1a103c1c3961338672306ee7e86f5685">00022</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_vec_func_8h.html#a2f4d18c236ad8c41afaab7cd3622f463">Swap</a>(<a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v1, <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;v2) { <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> temp(v1); v1 = v2; v2 = temp; }
+<a name="l00023"></a><a class="code" href="_vec_func_8h.html#aac6465b4aebfa277517d75cb15856fcc">00023</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_vec_func_8h.html#a2f4d18c236ad8c41afaab7cd3622f463">Swap</a>(<a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v1, <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v2) { <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> temp(v1); v1 = v2; v2 = temp; }
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="preprocessor">#endif // VECTOR_FUNC_H_</span>
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

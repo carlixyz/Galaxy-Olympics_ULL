@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Fichero Fuente D:/Master Videojuegos ULL 09_10/Asignaturas/PrÃ¡cticas BÃ¡sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/Matrix.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>PÃ¡gina&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Matrix/Matrix.cpp</h1><a href="_matrix_8cpp.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="_matrix_8h.html">Matrix.h</a>&quot;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &quot;../Quaternion/Quaternion.h&quot;</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a><a class="code" href="structc_matrix.html#a7222b8d70f30b08c4682afc5a0a3fc59">00004</a> <a class="code" href="structc_matrix.html#ac0f1436a8717bf1befb1101884272450" title="Constructor por defecto. NO inicializa la matrix a la identidad.">cMatrix::cMatrix</a>(<span class="keywordtype">float</span>  value) {
+<a name="l00005"></a>00005   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[0].<a class="code" href="structc_vec4.html#a054c2094fe18138f8cd4e46137cf1b56" title="Setea las componentes del vector.">Set</a>(value, value, value, value);
+<a name="l00006"></a>00006   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[1].<a class="code" href="structc_vec4.html#a054c2094fe18138f8cd4e46137cf1b56" title="Setea las componentes del vector.">Set</a>(value, value, value, value);
+<a name="l00007"></a>00007   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[2].<a class="code" href="structc_vec4.html#a054c2094fe18138f8cd4e46137cf1b56" title="Setea las componentes del vector.">Set</a>(value, value, value, value);
+<a name="l00008"></a>00008   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[3].<a class="code" href="structc_vec4.html#a054c2094fe18138f8cd4e46137cf1b56" title="Setea las componentes del vector.">Set</a>(value, value, value, value);
+<a name="l00009"></a>00009 }
+<a name="l00010"></a>00010 
+<a name="l00011"></a><a class="code" href="structc_matrix.html#a21c4a2f302922d3952ffe7bc2bd75a8b">00011</a> <a class="code" href="structc_matrix.html#ac0f1436a8717bf1befb1101884272450" title="Constructor por defecto. NO inicializa la matrix a la identidad.">cMatrix::cMatrix</a>(<span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v0,<span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v1,<span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v2, <span class="keyword">const</span> <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> &amp;v3) {
+<a name="l00012"></a>00012   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[0] = v0;
+<a name="l00013"></a>00013   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[1] = v1;
+<a name="l00014"></a>00014   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[2] = v2;
+<a name="l00015"></a>00015   <a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[3] = v3;
+<a name="l00016"></a>00016 }
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00019"></a><a class="code" href="structc_matrix.html#a3c6d5913bfa189bab32934e804aeda0b">00019</a> <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;<a class="code" href="structc_matrix.html#afa4c4793ed27a15f77b2eef4c7b2ecd8" title="Multiplica todos los componentes de la matriz por un numero.">cMatrix::operator *= </a>(<span class="keyword">const</span> <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;other) {
+<a name="l00020"></a>00020   <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> t;
+<a name="l00021"></a>00021   <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>      r = 0; r &lt; 4; ++r) {
+<a name="l00022"></a>00022       <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>      c = 0; c &lt; 4; ++c) {
+<a name="l00023"></a>00023           <span class="keywordtype">float</span>  f = 0.0f;
+<a name="l00024"></a>00024           f += (<a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[r][0] * other[0][c]);
+<a name="l00025"></a>00025           f += (<a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[r][1] * other[1][c]);
+<a name="l00026"></a>00026           f += (<a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[r][2] * other[2][c]);
+<a name="l00027"></a>00027           f += (<a class="code" href="structc_matrix.html#af65b7c82e3ace6aa8b0e6d8c3a1e6288">rows</a>[r][3] * other[3][c]);
+<a name="l00028"></a>00028           t[r][c] = f;
+<a name="l00029"></a>00029       }
+<a name="l00030"></a>00030   }
+<a name="l00031"></a>00031   (*this) = t;
+<a name="l00032"></a>00032   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00033"></a>00033 }
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00036"></a><a class="code" href="structc_matrix.html#ac41ca7fc346d8d5765f630ba9aecd2ac">00036</a> <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;<a class="code" href="structc_matrix.html#ac41ca7fc346d8d5765f630ba9aecd2ac" title="Invierte la matriz actual. Esta operacion es costosa, si la matriz solo tiene rotacion...">cMatrix::Invert</a>(<span class="keywordtype">void</span>) {
+<a name="l00037"></a>00037   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> N = 4;
+<a name="l00038"></a>00038   <span class="comment">//int *index;  index = new int [N+1];</span>
+<a name="l00039"></a>00039   <span class="keywordtype">int</span> index[N+1];
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041   <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> A(*<span class="keyword">this</span>);
+<a name="l00042"></a>00042   <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;Ainv = *<span class="keyword">this</span>;
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044   <span class="keywordtype">int</span> i, j, k;
+<a name="l00045"></a>00045   <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> b;     <span class="comment">// Scale factor and work array</span>
+<a name="l00046"></a>00046   <a class="code" href="structc_vec4.html" title="Esta estructura representa un vector de tamaño 3.">cVec4</a> scale;
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048   <span class="comment">//* Matrix b is initialized to the identity matrix</span>
+<a name="l00049"></a>00049   b.<a class="code" href="structc_matrix.html#a3164627fbbf0fa0576cd738856894480" title="Carga la identidad en la matriz actual.">LoadIdentity</a>();
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   <span class="comment">//* Set scale factor, scale(i) = max( |a(i,j)| ), for each row</span>
+<a name="l00052"></a>00052   <span class="keywordflow">for</span>( i=1; i&lt;=N; i++ ) {
+<a name="l00053"></a>00053       index[i] = i;              <span class="comment">// Initialize row index list</span>
+<a name="l00054"></a>00054       <span class="keywordtype">float</span>  scalemax = 0.;
+<a name="l00055"></a>00055       <span class="keywordflow">for</span>( j=1; j&lt;=N; j++ ) 
+<a name="l00056"></a>00056           scalemax = (scalemax &gt; fabs(A(i,j))) ? scalemax : fabs(A(i,j));
+<a name="l00057"></a>00057       scale(i) = scalemax;
+<a name="l00058"></a>00058   }
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060   <span class="comment">//* Loop over rows k = 1, ..., (N-1)</span>
+<a name="l00061"></a>00061   <span class="keywordtype">int</span> signDet = 1;
+<a name="l00062"></a>00062   <span class="keywordflow">for</span>( k=1; k&lt;=N-1; k++ ) {
+<a name="l00063"></a>00063       <span class="comment">//* Select pivot row from max( |a(j,k)/s(j)| )</span>
+<a name="l00064"></a>00064       <span class="keywordtype">float</span>  ratiomax = 0.0f;
+<a name="l00065"></a>00065       <span class="keywordtype">int</span> jPivot = k;
+<a name="l00066"></a>00066       <span class="keywordflow">for</span>( i=k; i&lt;=N; i++ ) {
+<a name="l00067"></a>00067           <span class="keywordtype">float</span>  ratio = fabs(A(index[i],k))/scale(index[i]);
+<a name="l00068"></a>00068           <span class="keywordflow">if</span>( ratio &gt; ratiomax ) {
+<a name="l00069"></a>00069               jPivot=i;
+<a name="l00070"></a>00070               ratiomax = ratio;
+<a name="l00071"></a>00071           }
+<a name="l00072"></a>00072       }
+<a name="l00073"></a>00073       <span class="comment">//* Perform pivoting using row index list</span>
+<a name="l00074"></a>00074       <span class="keywordtype">int</span> indexJ = index[k];
+<a name="l00075"></a>00075       <span class="keywordflow">if</span>( jPivot != k ) {              <span class="comment">// Pivot</span>
+<a name="l00076"></a>00076           indexJ = index[jPivot];
+<a name="l00077"></a>00077           index[jPivot] = index[k];   <span class="comment">// Swap index jPivot and k</span>
+<a name="l00078"></a>00078           index[k] = indexJ;
+<a name="l00079"></a>00079           signDet *= -1;              <span class="comment">// Flip sign of determinant</span>
+<a name="l00080"></a>00080       }
+<a name="l00081"></a>00081       <span class="comment">//* Perform forward elimination</span>
+<a name="l00082"></a>00082       <span class="keywordflow">for</span>( i=k+1; i&lt;=N; i++ ) {
+<a name="l00083"></a>00083           <span class="keywordtype">float</span>  coeff = A(index[i],k)/A(indexJ,k);
+<a name="l00084"></a>00084           <span class="keywordflow">for</span>( j=k+1; j&lt;=N; j++ )
+<a name="l00085"></a>00085               A(index[i],j) -= coeff*A(indexJ,j);
+<a name="l00086"></a>00086           A(index[i],k) = coeff;
+<a name="l00087"></a>00087           <span class="keywordflow">for</span>( j=1; j&lt;=N; j++ ) 
+<a name="l00088"></a>00088               b(index[i],j) -= A(index[i],k)*b(indexJ,j);
+<a name="l00089"></a>00089       }
+<a name="l00090"></a>00090   }
+<a name="l00091"></a>00091   <span class="comment">//* Compute determinant as product of diagonal elements</span>
+<a name="l00092"></a>00092   <span class="keywordtype">float</span>  determ = (float )signDet;       <span class="comment">// Sign of determinant</span>
+<a name="l00093"></a>00093   <span class="keywordflow">for</span>( i=1; i&lt;=N; i++ )
+<a name="l00094"></a>00094       determ *= A(index[i],i);
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096   <span class="comment">//* Perform backsubstitution</span>
+<a name="l00097"></a>00097   <span class="keywordflow">for</span>( k=1; k&lt;=N; k++ ) {
+<a name="l00098"></a>00098       Ainv(N,k) = b(index[N],k)/A(index[N],N);
+<a name="l00099"></a>00099       <span class="keywordflow">for</span>( i=N-1; i&gt;=1; i--) {
+<a name="l00100"></a>00100           <span class="keywordtype">float</span>  sum = b(index[i],k);
+<a name="l00101"></a>00101           <span class="keywordflow">for</span>( j=i+1; j&lt;=N; j++ )
+<a name="l00102"></a>00102               sum -= A(index[i],j)*Ainv(j,k);
+<a name="l00103"></a>00103           Ainv(i,k) = sum/A(index[i],i);
+<a name="l00104"></a>00104       }
+<a name="l00105"></a>00105   }
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107   <span class="comment">//delete [] index;    // Release allocated memory</span>
+<a name="l00108"></a>00108   <span class="comment">//return( determ );                </span>
+<a name="l00109"></a>00109   <span class="keywordflow">return</span>( Ainv );                
+<a name="l00110"></a>00110 }
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00113"></a><a class="code" href="structc_matrix.html#a56404b5ad0a0793a47c5ef40923cb9c3">00113</a> <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;<a class="code" href="structc_matrix.html#a56404b5ad0a0793a47c5ef40923cb9c3" title="Carga una matriz de rotacion en la matriz actual.">cMatrix::LoadRotation</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;axis, <span class="keywordtype">float</span>  rad ) {
+<a name="l00114"></a>00114   <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> quat;
+<a name="l00115"></a>00115   quat.<a class="code" href="structc_quaternion.html#a602bf50e49f245eccb540e3ace4ace5a" title="Crea un quaternion usando notacion Eje y Rotacion.">LoadRotationAxis</a>( axis, rad );
+<a name="l00116"></a>00116   quat.<a class="code" href="structc_quaternion.html#a1104eb04e46597bfa6bfaa13d7d947bd" title="Devuelve la matriz de rotacion equivalente al quaternion.">AsMatrix</a>( (*<span class="keyword">this</span>) );
+<a name="l00117"></a>00117   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00118"></a>00118 }
+<a name="l00119"></a>00119 
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

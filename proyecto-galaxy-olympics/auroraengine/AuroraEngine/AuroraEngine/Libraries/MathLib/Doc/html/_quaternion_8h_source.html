@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Fichero Fuente D:/Master Videojuegos ULL 09_10/Asignaturas/PrÃ¡cticas BÃ¡sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Quaternion/Quaternion.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>PÃ¡gina&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/Quaternion/Quaternion.h</h1><a href="_quaternion_8h.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef QUATERNION_H_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define QUATERNION_H_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;../Vec/VecLib.h&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;../Matrix/MatrixLib.h&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00008"></a><a class="code" href="structc_quaternion.html">00008</a> <span class="keyword">struct </span><a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a>
+<a name="l00009"></a>00009 {
+<a name="l00010"></a><a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">00010</a>   <span class="keywordtype">float</span>  <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>,<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>,<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>,<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>;
+<a name="l00011"></a>00011 
+<a name="l00013"></a><a class="code" href="structc_quaternion.html#a292fa3b73dacce52ec5319be85b897fb">00013</a>   <a class="code" href="structc_quaternion.html#a292fa3b73dacce52ec5319be85b897fb" title="Constructor por defecto. NO inicializa el Quaternion a la identidad.">cQuaternion</a>(<span class="keywordtype">void</span>) : <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>(0),<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>(0),<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>(0),<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>(0) {}
+<a name="l00015"></a>00015 
+<a name="l00022"></a><a class="code" href="structc_quaternion.html#a8fea08dea5a49c167806cc6d3b98e38b">00022</a>   <a class="code" href="structc_quaternion.html#a8fea08dea5a49c167806cc6d3b98e38b" title="Constructor.">cQuaternion</a>(<span class="keywordtype">float</span>  newx,<span class="keywordtype">float</span>  newy,<span class="keywordtype">float</span>  newz,<span class="keywordtype">float</span>  neww) : <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>(newx),<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>(newy),<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>(newz),<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>(neww) {}
+<a name="l00023"></a>00023 
+<a name="l00025"></a>00025 
+<a name="l00029"></a>00029   <span class="keyword">inline</span> <span class="keywordtype">bool</span>        <a class="code" href="structc_quaternion.html#ab435325d97290d0488b3f92123c46402" title="Compara si dos quaterniones son iguales.">operator == </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other) <span class="keyword">const</span>;
+<a name="l00031"></a>00031 
+<a name="l00035"></a>00035   <span class="keyword">inline</span> <span class="keywordtype">bool</span>        <a class="code" href="structc_quaternion.html#ac9aafef68862e68107f8cad3e07aed15" title="Compara si dos quaterniones son distintos.">operator != </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other) <span class="keyword">const</span>;
+<a name="l00037"></a>00037 
+<a name="l00041"></a>00041   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a9e7e105cafdaa6e75ab6618fae2df376" title="Suma dos Quaterniones.">operator += </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other);
+<a name="l00043"></a>00043 
+<a name="l00047"></a>00047   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a6efbe83b0ff46fa6608ced1225a8a6f7" title="Resta dos Quaterniones.">operator -= </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other);
+<a name="l00049"></a>00049 
+<a name="l00053"></a>00053   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a8d93f8a08d0425c4a06eca325cc7c968" title="Multiplica dos Quaterniones.">operator *= </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other);
+<a name="l00055"></a>00055 
+<a name="l00059"></a>00059   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a80f0ed9b1c1733779190c7ed12009872" title="Divide las componentes del quaternion por un valor.">operator /= </a>(<span class="keywordtype">float</span>  scalar);
+<a name="l00061"></a>00061 
+<a name="l00065"></a>00065   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a8d93f8a08d0425c4a06eca325cc7c968" title="Multiplica dos Quaterniones.">operator *= </a>(<span class="keywordtype">float</span>  scalar);
+<a name="l00066"></a>00066 
+<a name="l00068"></a>00068 
+<a name="l00072"></a>00072   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a8fd403063e1dc4e8b5fc09bf194d7416" title="Carga la identidad en el quaternion.">LoadIdentity</a>( );
+<a name="l00074"></a>00074 
+<a name="l00081"></a>00081   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#ae0b2a28cf1484a3f42c62ace23cb6233" title="Crea un quaternion usando angulos de Euler.">LoadRotationEuler</a>( <span class="keywordtype">float</span>  yaw, <span class="keywordtype">float</span>  pitch, <span class="keywordtype">float</span>  roll );
+<a name="l00083"></a>00083 
+<a name="l00089"></a>00089   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a602bf50e49f245eccb540e3ace4ace5a" title="Crea un quaternion usando notacion Eje y Rotacion.">LoadRotationAxis</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;axis, <span class="keywordtype">float</span>  angle_rad );
+<a name="l00091"></a>00091 
+<a name="l00099"></a>00099   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#abba925f9fa730b5263bae726c449b5b7" title="Permite cambiar las componentes del quaternion.">Set</a>(<span class="keywordtype">float</span>  newx,<span class="keywordtype">float</span>  newy,<span class="keywordtype">float</span>  newz,<span class="keywordtype">float</span>  neww);
+<a name="l00101"></a>00101 
+<a name="l00105"></a>00105   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a5927294d06a34ec6888f5e212386ab4c" title="Normaliza el quaternion.">Normalize</a>(<span class="keywordtype">void</span>);
+<a name="l00107"></a>00107 
+<a name="l00111"></a>00111   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#aa353ee85a2f5832ab15db7a0a2a7a83c" title="Crea el quaternion conjugado del quaternion.">Conjugate</a>();
+<a name="l00113"></a>00113 
+<a name="l00117"></a>00117   <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#af43966f8f41b23fd31838cf04ad0ebed" title="Crea el quaternion inverso del quaternion.">Invert</a>();
+<a name="l00119"></a>00119 
+<a name="l00123"></a>00123   <span class="keyword">inline</span> <span class="keywordtype">float</span>       <a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3" title="Calcula la longitud al cuadrado del quaternion.">LengthSqr</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00125"></a>00125 
+<a name="l00129"></a>00129   <span class="keyword">inline</span> <span class="keywordtype">float</span>       <a class="code" href="structc_quaternion.html#ac658da329b3e2dddd5dd86c1c210eb5b" title="Calcula la longitud del quaternion.">Length</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00130"></a>00130 
+<a name="l00132"></a>00132 
+<a name="l00135"></a>00135   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="structc_quaternion.html#a1104eb04e46597bfa6bfaa13d7d947bd" title="Devuelve la matriz de rotacion equivalente al quaternion.">AsMatrix</a>( <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;matrix ) <span class="keyword">const</span>;
+<a name="l00137"></a>00137 
+<a name="l00142"></a>00142   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="structc_quaternion.html#a2737011acd238789a3c81212f8ce2e4f" title="Devuelve el eje y angulo equivalente al quaternion.">AsAxis</a>( <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;axis, <span class="keywordtype">float</span>  &amp;angle ) <span class="keyword">const</span>;
+<a name="l00144"></a>00144 
+<a name="l00150"></a>00150   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="structc_quaternion.html#a40079e9508f1d35b43053f85e9e5e205" title="Devuelve los angulos de euler equivalentes al quaternion.">AsEuler</a>( <span class="keywordtype">float</span>  &amp;yaw, <span class="keywordtype">float</span>  &amp;pitch, <span class="keywordtype">float</span>  &amp;roll ) <span class="keyword">const</span>;
+<a name="l00152"></a>00152 
+<a name="l00156"></a><a class="code" href="structc_quaternion.html#a2c1246276dd255d42c9ed443e126e4e4">00156</a>   <span class="keyword">inline</span> <span class="keywordtype">float</span>  *<a class="code" href="structc_quaternion.html#a2c1246276dd255d42c9ed443e126e4e4" title="Devuelve el quaternion como un array de flotantes.">AsFloatPointer</a>( ) { <span class="keywordflow">return</span> &amp;<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>; }
+<a name="l00158"></a>00158 
+<a name="l00162"></a><a class="code" href="structc_quaternion.html#a4abb85f02f59ba6cb09692da5f2ba124">00162</a>   <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">float</span>  *<a class="code" href="structc_quaternion.html#a4abb85f02f59ba6cb09692da5f2ba124" title="Devuelve el quaternion como un array de flotantes.">AsFloatPointer</a>( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>; }
+<a name="l00163"></a>00163 };
+<a name="l00164"></a>00164 
+<a name="l00166"></a>00166 
+<a name="l00172"></a>00172 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae43bee6380c84967cee8ec5fa3db10e9" title="Suma dos matrices, componente a componente.">operator + </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;first, <span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;second);
+<a name="l00174"></a>00174 
+<a name="l00180"></a>00180 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;first, <span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;second);
+<a name="l00182"></a>00182 
+<a name="l00187"></a>00187 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat);
+<a name="l00189"></a>00189 
+<a name="l00195"></a>00195 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;first, <span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;second);
+<a name="l00197"></a>00197 
+<a name="l00203"></a>00203 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat,<span class="keywordtype">float</span>  scalar);
+<a name="l00205"></a>00205 
+<a name="l00211"></a>00211 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keywordtype">float</span>  scalar,<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat);
+<a name="l00213"></a>00213 
+<a name="l00219"></a>00219 <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#a05a3ad681341b70bdef48c3ea1ccd3d2" title="Divide todas las componentes de una matriz por un valor flotante.">operator / </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat,<span class="keywordtype">float</span>  scalar);
+<a name="l00220"></a>00220 
+<a name="l00221"></a>00221 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00222"></a>00222 <span class="comment">// Operators</span>
+<a name="l00223"></a><a class="code" href="structc_quaternion.html#ab435325d97290d0488b3f92123c46402">00223</a> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="structc_quaternion.html#ab435325d97290d0488b3f92123c46402" title="Compara si dos quaterniones son iguales.">cQuaternion::operator == </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other)<span class="keyword"> const  </span>{
+<a name="l00224"></a>00224   <span class="keywordflow">return</span> ((<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>==other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>) &amp;&amp; (<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>==other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>) &amp;&amp; (<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>==other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>) &amp;&amp; (<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>==other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>));
+<a name="l00225"></a>00225 }
+<a name="l00226"></a>00226 
+<a name="l00227"></a><a class="code" href="structc_quaternion.html#ac9aafef68862e68107f8cad3e07aed15">00227</a> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="structc_quaternion.html#ac9aafef68862e68107f8cad3e07aed15" title="Compara si dos quaterniones son distintos.">cQuaternion::operator != </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other)<span class="keyword"> const  </span>{
+<a name="l00228"></a>00228   <span class="keywordflow">return</span> ((<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>!=other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>) || (<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>!=other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>) || (<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>!=other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>) || (<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>!=other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>));
+<a name="l00229"></a>00229 }
+<a name="l00230"></a>00230 
+<a name="l00231"></a><a class="code" href="structc_quaternion.html#a9e7e105cafdaa6e75ab6618fae2df376">00231</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a9e7e105cafdaa6e75ab6618fae2df376" title="Suma dos Quaterniones.">cQuaternion::operator += </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other) {
+<a name="l00232"></a>00232   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>+=other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>;
+<a name="l00233"></a>00233   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>+=other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>;
+<a name="l00234"></a>00234   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>+=other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>;
+<a name="l00235"></a>00235   <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>+=other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>;
+<a name="l00236"></a>00236   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00237"></a>00237 }
+<a name="l00238"></a>00238 
+<a name="l00239"></a><a class="code" href="structc_quaternion.html#a6efbe83b0ff46fa6608ced1225a8a6f7">00239</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a6efbe83b0ff46fa6608ced1225a8a6f7" title="Resta dos Quaterniones.">cQuaternion::operator -= </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other) {
+<a name="l00240"></a>00240   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>-=other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>;
+<a name="l00241"></a>00241   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>-=other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>;
+<a name="l00242"></a>00242   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>-=other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>;
+<a name="l00243"></a>00243   <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>-=other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>;
+<a name="l00244"></a>00244   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00245"></a>00245 }
+<a name="l00246"></a>00246 
+<a name="l00247"></a><a class="code" href="structc_quaternion.html#a8d93f8a08d0425c4a06eca325cc7c968">00247</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a8d93f8a08d0425c4a06eca325cc7c968" title="Multiplica dos Quaterniones.">cQuaternion::operator *= </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;other) {
+<a name="l00248"></a>00248   <a class="code" href="structc_quaternion.html#abba925f9fa730b5263bae726c449b5b7" title="Permite cambiar las componentes del quaternion.">Set</a>(<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> * other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> + <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> * other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> + <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> * other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> - <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> * other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>,
+<a name="l00249"></a>00249       <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> * other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> + <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> * other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> + <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> * other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> - <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> * other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>,
+<a name="l00250"></a>00250       <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> * other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> + <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> * other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> + <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> * other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> - <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> * other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>,
+<a name="l00251"></a>00251       <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> * other.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> - <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> * other.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> - <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> * other.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> - <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> * other.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>);
+<a name="l00252"></a>00252   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00253"></a>00253 }
+<a name="l00254"></a>00254 
+<a name="l00255"></a><a class="code" href="structc_quaternion.html#a80f0ed9b1c1733779190c7ed12009872">00255</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a80f0ed9b1c1733779190c7ed12009872" title="Divide las componentes del quaternion por un valor.">cQuaternion::operator /= </a>(<span class="keywordtype">float</span>  scalar) {
+<a name="l00256"></a>00256   assert( scalar != 0 );
+<a name="l00257"></a>00257   <span class="keywordtype">float</span>  inv = 1.0f / scalar;
+<a name="l00258"></a>00258   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*=inv;
+<a name="l00259"></a>00259   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*=inv;
+<a name="l00260"></a>00260   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*=inv;
+<a name="l00261"></a>00261   <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*=inv;
+<a name="l00262"></a>00262   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00263"></a>00263 }
+<a name="l00264"></a>00264 
+<a name="l00265"></a><a class="code" href="structc_quaternion.html#a99165a12ba4f4a5e450447be9978311e">00265</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a8d93f8a08d0425c4a06eca325cc7c968" title="Multiplica dos Quaterniones.">cQuaternion::operator *= </a>(<span class="keywordtype">float</span>  scalar) {
+<a name="l00266"></a>00266   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*=scalar;
+<a name="l00267"></a>00267   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*=scalar;
+<a name="l00268"></a>00268   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*=scalar;
+<a name="l00269"></a>00269   <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*=scalar;
+<a name="l00270"></a>00270   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00271"></a>00271 }
+<a name="l00272"></a>00272 
+<a name="l00273"></a>00273 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00274"></a>00274 <span class="comment">// Functions</span>
+<a name="l00275"></a><a class="code" href="structc_quaternion.html#a8fd403063e1dc4e8b5fc09bf194d7416">00275</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a8fd403063e1dc4e8b5fc09bf194d7416" title="Carga la identidad en el quaternion.">cQuaternion::LoadIdentity</a>( ) {
+<a name="l00276"></a>00276   <a class="code" href="structc_quaternion.html#abba925f9fa730b5263bae726c449b5b7" title="Permite cambiar las componentes del quaternion.">Set</a>( 0, 0, 0, 1 );
+<a name="l00277"></a>00277   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00278"></a>00278 }
+<a name="l00279"></a>00279 
+<a name="l00280"></a><a class="code" href="structc_quaternion.html#ae0b2a28cf1484a3f42c62ace23cb6233">00280</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#ae0b2a28cf1484a3f42c62ace23cb6233" title="Crea un quaternion usando angulos de Euler.">cQuaternion::LoadRotationEuler</a>(<span class="keywordtype">float</span>  yaw, <span class="keywordtype">float</span>  pitch, <span class="keywordtype">float</span>  roll) {
+<a name="l00281"></a>00281   <span class="keywordtype">float</span>  cosy = cosf(yaw   * 0.5f);
+<a name="l00282"></a>00282   <span class="keywordtype">float</span>  siny = sinf(yaw   * 0.5f);
+<a name="l00283"></a>00283   <span class="keywordtype">float</span>  cosP = cosf(pitch * 0.5f);
+<a name="l00284"></a>00284   <span class="keywordtype">float</span>  sinP = sinf(pitch * 0.5f);
+<a name="l00285"></a>00285   <span class="keywordtype">float</span>  cosR = cosf(roll  * 0.5f);
+<a name="l00286"></a>00286   <span class="keywordtype">float</span>  sinR = sinf(roll  * 0.5f);
+<a name="l00287"></a>00287 
+<a name="l00288"></a>00288   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> = cosR * sinP * cosy + sinR * cosP * siny;
+<a name="l00289"></a>00289   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> = cosR * cosP * siny - sinR * sinP * cosy;
+<a name="l00290"></a>00290   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> = sinR * cosP * cosy - cosR * sinP * siny;
+<a name="l00291"></a>00291   <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> = cosR * cosP * cosy + sinR * sinP * siny;
+<a name="l00292"></a>00292   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00293"></a>00293 }
+<a name="l00294"></a>00294 
+<a name="l00295"></a><a class="code" href="structc_quaternion.html#a602bf50e49f245eccb540e3ace4ace5a">00295</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a602bf50e49f245eccb540e3ace4ace5a" title="Crea un quaternion usando notacion Eje y Rotacion.">cQuaternion::LoadRotationAxis</a>( <span class="keyword">const</span> <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;axis, <span class="keywordtype">float</span>  angle_rad) {
+<a name="l00296"></a>00296   <span class="keywordtype">float</span>  s = sinf(angle_rad * 0.5f);
+<a name="l00297"></a>00297   <a class="code" href="structc_quaternion.html#abba925f9fa730b5263bae726c449b5b7" title="Permite cambiar las componentes del quaternion.">Set</a>( axis.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> * s, axis.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> * s, axis.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> * s, cosf(angle_rad * 0.5f) );
+<a name="l00298"></a>00298   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00299"></a>00299 }
+<a name="l00300"></a>00300 
+<a name="l00301"></a><a class="code" href="structc_quaternion.html#abba925f9fa730b5263bae726c449b5b7">00301</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#abba925f9fa730b5263bae726c449b5b7" title="Permite cambiar las componentes del quaternion.">cQuaternion::Set</a>(<span class="keywordtype">float</span>  newx,<span class="keywordtype">float</span>  newy,<span class="keywordtype">float</span>  newz,<span class="keywordtype">float</span>  neww) {
+<a name="l00302"></a>00302   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>=newx;
+<a name="l00303"></a>00303   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>=newy;
+<a name="l00304"></a>00304   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>=newz;
+<a name="l00305"></a>00305   <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>=neww;
+<a name="l00306"></a>00306   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00307"></a>00307 }
+<a name="l00308"></a>00308 
+<a name="l00309"></a><a class="code" href="structc_quaternion.html#a5927294d06a34ec6888f5e212386ab4c">00309</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#a5927294d06a34ec6888f5e212386ab4c" title="Normaliza el quaternion.">cQuaternion::Normalize</a>(<span class="keywordtype">void</span>) {
+<a name="l00310"></a>00310    assert( <a class="code" href="structc_quaternion.html#ac658da329b3e2dddd5dd86c1c210eb5b" title="Calcula la longitud del quaternion.">Length</a>( ) &gt; <a class="code" href="_math_const_8h.html#a002b2f4894492820fe708b1b7e7c5e70" title="Constante Epsilon: Un valor suficientemente peque&amp;ntilde;o como para ser despreciable...">EPSILON</a> );
+<a name="l00311"></a>00311   (*this) /= <a class="code" href="structc_quaternion.html#ac658da329b3e2dddd5dd86c1c210eb5b" title="Calcula la longitud del quaternion.">Length</a>( );
+<a name="l00312"></a>00312   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00313"></a>00313 }
+<a name="l00314"></a>00314 
+<a name="l00315"></a><a class="code" href="structc_quaternion.html#aa353ee85a2f5832ab15db7a0a2a7a83c">00315</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#aa353ee85a2f5832ab15db7a0a2a7a83c" title="Crea el quaternion conjugado del quaternion.">cQuaternion::Conjugate</a>() {
+<a name="l00316"></a>00316   <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>=-<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>;
+<a name="l00317"></a>00317   <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>=-<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>;
+<a name="l00318"></a>00318   <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>=-<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>;
+<a name="l00319"></a>00319   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00320"></a>00320 }
+<a name="l00321"></a>00321 
+<a name="l00322"></a><a class="code" href="structc_quaternion.html#af43966f8f41b23fd31838cf04ad0ebed">00322</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;<a class="code" href="structc_quaternion.html#af43966f8f41b23fd31838cf04ad0ebed" title="Crea el quaternion inverso del quaternion.">cQuaternion::Invert</a>() {
+<a name="l00323"></a>00323   <a class="code" href="structc_quaternion.html#aa353ee85a2f5832ab15db7a0a2a7a83c" title="Crea el quaternion conjugado del quaternion.">Conjugate</a>();
+<a name="l00324"></a>00324   assert( <a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3" title="Calcula la longitud al cuadrado del quaternion.">LengthSqr</a>( ) &gt; <a class="code" href="_math_const_8h.html#a002b2f4894492820fe708b1b7e7c5e70" title="Constante Epsilon: Un valor suficientemente peque&amp;ntilde;o como para ser despreciable...">EPSILON</a> );
+<a name="l00325"></a>00325   (*this) /= <a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3" title="Calcula la longitud al cuadrado del quaternion.">LengthSqr</a>();
+<a name="l00326"></a>00326   <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+<a name="l00327"></a>00327 }
+<a name="l00328"></a>00328 
+<a name="l00329"></a><a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3">00329</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3" title="Calcula la longitud al cuadrado del quaternion.">cQuaternion::LengthSqr</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
+<a name="l00330"></a>00330   <span class="keywordflow">return</span> <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> * <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a> + <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> * <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a> + <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> * <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a> + <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a> * <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>;
+<a name="l00331"></a>00331 }
+<a name="l00332"></a>00332 
+<a name="l00333"></a><a class="code" href="structc_quaternion.html#ac658da329b3e2dddd5dd86c1c210eb5b">00333</a> <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="structc_quaternion.html#ac658da329b3e2dddd5dd86c1c210eb5b" title="Calcula la longitud del quaternion.">cQuaternion::Length</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{
+<a name="l00334"></a>00334    assert(<a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3" title="Calcula la longitud al cuadrado del quaternion.">LengthSqr</a>() &gt;= 0);
+<a name="l00335"></a>00335   <span class="keywordflow">return</span> sqrtf( <a class="code" href="structc_quaternion.html#ac7e25e6ab6eb1e2cf20b7365f7f4ada3" title="Calcula la longitud al cuadrado del quaternion.">LengthSqr</a>() );
+<a name="l00336"></a>00336 }
+<a name="l00337"></a>00337 
+<a name="l00338"></a><a class="code" href="structc_quaternion.html#a1104eb04e46597bfa6bfaa13d7d947bd">00338</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="structc_quaternion.html#a1104eb04e46597bfa6bfaa13d7d947bd" title="Devuelve la matriz de rotacion equivalente al quaternion.">cQuaternion::AsMatrix</a>( <a class="code" href="structc_matrix.html" title="Esta estructura representa una matriz de transformacion 4x4.">cMatrix</a> &amp;matrix )<span class="keyword"> const </span>{
+<a name="l00339"></a>00339 <span class="preprocessor">#ifdef ROW_AXIS</span>
+<a name="l00340"></a>00340 <span class="preprocessor"></span>  matrix[0].Set( 1 - 2*(<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>) - 2*(<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>), 2*(<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*y+<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*z),           2*(<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*z-<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*y),           0 );
+<a name="l00341"></a>00341   matrix[1].Set( 2*(<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*y-<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*z),           1 - 2*(<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>) - 2*(z*z), 2*(y*z+<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*x),           0 );
+<a name="l00342"></a>00342   matrix[2].Set( 2*(x*z+<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*y),           2*(y*z-<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*x),           1 - 2*(x*x) - 2*(y*y), 0 );
+<a name="l00343"></a>00343   matrix[3].Set( 0,                     0,                     0,                     1 );
+<a name="l00344"></a>00344 <span class="preprocessor">#else</span>
+<a name="l00345"></a>00345 <span class="preprocessor"></span>  matrix[0].Set( 1 - 2*(y*y) - 2*(z*z), 2*(x*y-<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*z),           2*(x*z+<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*y),           0 );
+<a name="l00346"></a>00346   matrix[1].Set( 2*(x*y+<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*z),           1 - 2*(x*x) - 2*(z*z), 2*(y*z-<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*x),           0 );
+<a name="l00347"></a>00347   matrix[2].Set( 2*(x*z-<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*y),           2*(y*z+<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*x),           1 - 2*(x*x) - 2*(y*y), 0 );
+<a name="l00348"></a>00348   matrix[3].Set( 0,                     0,                     0,                     1 );
+<a name="l00349"></a>00349 <span class="preprocessor">#endif</span>
+<a name="l00350"></a>00350 <span class="preprocessor"></span>}
+<a name="l00351"></a>00351 
+<a name="l00352"></a><a class="code" href="structc_quaternion.html#a2737011acd238789a3c81212f8ce2e4f">00352</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="structc_quaternion.html#a2737011acd238789a3c81212f8ce2e4f" title="Devuelve el eje y angulo equivalente al quaternion.">cQuaternion::AsAxis</a>( <a class="code" href="structc_vec3.html" title="Esta estructura representa un vector de tamaño 3.">cVec3</a> &amp;axis, <span class="keywordtype">float</span>  &amp;angle )<span class="keyword"> const </span>{
+<a name="l00353"></a>00353   angle = acosf(<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>);
+<a name="l00354"></a>00354 
+<a name="l00355"></a>00355   <span class="comment">// pre-compute to save time</span>
+<a name="l00356"></a>00356   <span class="keywordtype">float</span>  sinf_theta_inv = sinf(angle);
+<a name="l00357"></a>00357   assert( sinf_theta_inv != 0.0f );
+<a name="l00358"></a>00358   sinf_theta_inv = 1.0f / sinf_theta_inv;
+<a name="l00359"></a>00359 
+<a name="l00360"></a>00360   <span class="comment">// now the vector</span>
+<a name="l00361"></a>00361   axis.<a class="code" href="structc_vec3.html#ac628736e838d2dfe704b70f6e905b205">x</a> = <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*sinf_theta_inv;
+<a name="l00362"></a>00362   axis.<a class="code" href="structc_vec3.html#a523e374aba118e89978215226860796f">y</a> = <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*sinf_theta_inv;
+<a name="l00363"></a>00363   axis.<a class="code" href="structc_vec3.html#a5ea1389463d378691465687dead1c238">z</a> = <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*sinf_theta_inv;
+<a name="l00364"></a>00364 
+<a name="l00365"></a>00365   <span class="comment">// multiply by 2</span>
+<a name="l00366"></a>00366   angle*=2.0f;
+<a name="l00367"></a>00367 }
+<a name="l00368"></a>00368 
+<a name="l00369"></a><a class="code" href="structc_quaternion.html#a40079e9508f1d35b43053f85e9e5e205">00369</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="structc_quaternion.html#a40079e9508f1d35b43053f85e9e5e205" title="Devuelve los angulos de euler equivalentes al quaternion.">cQuaternion::AsEuler</a>( <span class="keywordtype">float</span>  &amp;yaw, <span class="keywordtype">float</span>  &amp;pitch, <span class="keywordtype">float</span>  &amp;roll )<span class="keyword"> const </span>{
+<a name="l00370"></a>00370   <span class="keywordtype">float</span>  sqw = <a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>;
+<a name="l00371"></a>00371   <span class="keywordtype">float</span>  sqx = <a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>;
+<a name="l00372"></a>00372   <span class="keywordtype">float</span>  sqy = <a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>;
+<a name="l00373"></a>00373   <span class="keywordtype">float</span>  sqz = <a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>;
+<a name="l00374"></a>00374 
+<a name="l00375"></a>00375   yaw   = atan2f( 2.0f * (x*y + z*w), sqx - sqy - sqz + sqw );                  
+<a name="l00376"></a>00376   pitch = asinf( -2.0f * (x*z - y*w) );
+<a name="l00377"></a>00377   roll  = atan2f( 2.0f * (y*z + x*w), -sqx - sqy + sqz + sqw );    
+<a name="l00378"></a>00378 }
+<a name="l00379"></a>00379 
+<a name="l00380"></a>00380 <span class="comment">// -------------------------------------------------------</span>
+<a name="l00381"></a>00381 <span class="comment">// Externs</span>
+<a name="l00382"></a><a class="code" href="_quaternion_8h.html#ae458840377029c340c82c49f4e378bd7">00382</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae43bee6380c84967cee8ec5fa3db10e9" title="Suma dos matrices, componente a componente.">operator + </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;first, <span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;second) {
+<a name="l00383"></a>00383   <span class="keywordflow">return</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a>(first.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>+second.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>,first.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>+second.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>,first.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>+second.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>,first.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>+second.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>);
+<a name="l00384"></a>00384 }
+<a name="l00385"></a>00385 
+<a name="l00386"></a><a class="code" href="_quaternion_8h.html#a2be46b0a210c7eabebf589da13cd758e">00386</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;first, <span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;second) {
+<a name="l00387"></a>00387   <span class="keywordflow">return</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a>(first.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>-second.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>,first.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>-second.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>,first.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>-second.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>,first.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>-second.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>);
+<a name="l00388"></a>00388 }
+<a name="l00389"></a>00389 
+<a name="l00390"></a><a class="code" href="_quaternion_8h.html#a49fd11d216ab76e6eeef904ba456dd3c">00390</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ab0dc69bc44c1feb0b0e1bf64465da872" title="Resta dos matrices, componente a componente.">operator - </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat) {
+<a name="l00391"></a>00391   <span class="keywordflow">return</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a>(-quat.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>, -quat.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>, -quat.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>, -quat.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>);
+<a name="l00392"></a>00392 }
+<a name="l00393"></a>00393 
+<a name="l00394"></a><a class="code" href="_quaternion_8h.html#a8f4a756fc6d4aaec46f865a67b517d53">00394</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;first, <span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;second) {
+<a name="l00395"></a>00395   <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> q(first);
+<a name="l00396"></a>00396   q *= second;
+<a name="l00397"></a>00397   <span class="keywordflow">return</span> q;
+<a name="l00398"></a>00398 }
+<a name="l00399"></a>00399 
+<a name="l00400"></a><a class="code" href="_quaternion_8h.html#accf0513ea99797cf3af3a398e5172dcd">00400</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat,<span class="keywordtype">float</span>  scalar) {
+<a name="l00401"></a>00401   <span class="keywordflow">return</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a>(quat.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*scalar,quat.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*scalar,quat.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*scalar,quat.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*scalar);
+<a name="l00402"></a>00402 }
+<a name="l00403"></a>00403 
+<a name="l00404"></a><a class="code" href="_quaternion_8h.html#a42ac348e81a2097e03bdd3e17785e072">00404</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#ae0a45cd33a3f8ce68d8cde19287ff74c" title="Multiplica dos matrices.">operator * </a>(<span class="keywordtype">float</span>  scalar,<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat) {
+<a name="l00405"></a>00405   <span class="keywordflow">return</span> (quat*scalar);
+<a name="l00406"></a>00406 }
+<a name="l00407"></a>00407 
+<a name="l00408"></a><a class="code" href="_quaternion_8h.html#ae920de22470bf0331a377e4697c59648">00408</a> <span class="keyword">inline</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> <a class="code" href="_matrix_8h.html#a05a3ad681341b70bdef48c3ea1ccd3d2" title="Divide todas las componentes de una matriz por un valor flotante.">operator / </a>(<span class="keyword">const</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a> &amp;quat,<span class="keywordtype">float</span>  scalar) {
+<a name="l00409"></a>00409   assert( scalar != 0 );
+<a name="l00410"></a>00410   <span class="keywordtype">float</span>  inv = 1.0f / scalar;
+<a name="l00411"></a>00411   <span class="keywordflow">return</span> <a class="code" href="structc_quaternion.html" title="Esta estructura representa un quaternion.">cQuaternion</a>(quat.<a class="code" href="structc_quaternion.html#ae9d38f2dff8865de112c2573cd14a16f">x</a>*inv,quat.<a class="code" href="structc_quaternion.html#a597f81d5bb8b45db94feecda6665b943">y</a>*inv,quat.<a class="code" href="structc_quaternion.html#a9693b661a38913251604d96b4ab3b0c6">z</a>*inv,quat.<a class="code" href="structc_quaternion.html#adac004127cac4aeb0a0d5e8772317997">w</a>*inv);
+<a name="l00412"></a>00412 }
+<a name="l00413"></a>00413 
+<a name="l00414"></a>00414 <span class="preprocessor">#endif // QUATERNION_H_</span>
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

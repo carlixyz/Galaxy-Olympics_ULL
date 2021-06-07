@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora General Configuration File  -->
+<Application name="Aurora Engine" fullscreen="true"> 
+  <BitsPerPixel>16</BitsPerPixel>
+  <Size width="800" height="600"/>
+</Application>

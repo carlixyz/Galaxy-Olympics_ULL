@@ -1,0 +1,92 @@
+\hypertarget{classc_linear_interpolator}{
+\section{Referencia de la Clase cLinearInterpolator}
+\label{classc_linear_interpolator}\index{cLinearInterpolator@{cLinearInterpolator}}
+}
+
+
+Calcula una interpolacion lineal.  
+
+
+
+
+{\ttfamily \#include $<$LinearInterpolator.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classc_linear_interpolator_a7c02893997109a64f054de4805f23f77}{Init} (float lfX0, float lfY0, float lfX1, float lfY1)
+\begin{DoxyCompactList}\small\item\em Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1). \item\end{DoxyCompactList}\item 
+void \hyperlink{classc_linear_interpolator_aa3fde11ab9970f60e75a531e7a6554ea}{Init} (const \hyperlink{structc_vec2}{cVec2} \&lP0, const \hyperlink{structc_vec2}{cVec2} \&lP1)
+\begin{DoxyCompactList}\small\item\em Inicializa el interpolador pasandole los dos puntos lP0 y lP1. \item\end{DoxyCompactList}\item 
+float \hyperlink{classc_linear_interpolator_a23fed19b6a9261ea8751d875acd69e5a}{Eval} (float lfX)
+\begin{DoxyCompactList}\small\item\em Evalua el interpolador o la recta en el punto indicado. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Calcula una interpolacion lineal. Dado dos puntos, calcula la expresion de la recta que une esos dos puntos.
+
+f(x) = Ax + B
+
+Despues permite evaluar los valores para otros puntos que no eran los iniciales 
+
+Definición en la línea 14 del archivo LinearInterpolator.h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classc_linear_interpolator_a23fed19b6a9261ea8751d875acd69e5a}{
+\index{cLinearInterpolator@{cLinearInterpolator}!Eval@{Eval}}
+\index{Eval@{Eval}!cLinearInterpolator@{cLinearInterpolator}}
+\subsubsection[{Eval}]{\setlength{\rightskip}{0pt plus 5cm}float cLinearInterpolator::Eval (float {\em lfX})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_interpolator_a23fed19b6a9261ea8751d875acd69e5a}
+
+
+Evalua el interpolador o la recta en el punto indicado. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em lfX}]Punto que se quiere evaluar \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Valor del interpolador o la recta en ese punto 
+\end{DoxyReturn}
+
+
+Definición en la línea 44 del archivo LinearInterpolator.h.
+
+\hypertarget{classc_linear_interpolator_aa3fde11ab9970f60e75a531e7a6554ea}{
+\index{cLinearInterpolator@{cLinearInterpolator}!Init@{Init}}
+\index{Init@{Init}!cLinearInterpolator@{cLinearInterpolator}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void cLinearInterpolator::Init (const {\bf cVec2} \& {\em lP0}, \/  const {\bf cVec2} \& {\em lP1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_interpolator_aa3fde11ab9970f60e75a531e7a6554ea}
+
+
+Inicializa el interpolador pasandole los dos puntos lP0 y lP1. 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em lP0}]Primer punto \item[{\em lP1}]Segundo punto \end{DoxyParams}
+
+
+Definición en la línea 35 del archivo LinearInterpolator.h.
+
+\hypertarget{classc_linear_interpolator_a7c02893997109a64f054de4805f23f77}{
+\index{cLinearInterpolator@{cLinearInterpolator}!Init@{Init}}
+\index{Init@{Init}!cLinearInterpolator@{cLinearInterpolator}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void cLinearInterpolator::Init (float {\em lfX0}, \/  float {\em lfY0}, \/  float {\em lfX1}, \/  float {\em lfY1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classc_linear_interpolator_a7c02893997109a64f054de4805f23f77}
+
+
+Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1). 
+
+
+\begin{DoxyParams}{Parámetros}
+\item[{\em lfX0}]Componente X del primer punto \item[{\em lfY0}]Componente Y del primer punto \item[{\em lfX1}]Componente X del segundo punto \item[{\em lfY1}]Componente Y del segundo punto \end{DoxyParams}
+
+
+Definición en la línea 24 del archivo LinearInterpolator.h.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/MathUtils/\hyperlink{_linear_interpolator_8h}{LinearInterpolator.h}\end{DoxyCompactItemize}

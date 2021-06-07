@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia de la plantilla de la Clase cLinearSplitFunction&lt; NPoints &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la plantilla de la Clase cLinearSplitFunction&lt; NPoints &gt;</h1><!-- doxytag: class="cLinearSplitFunction" -->
+<p>Representa una funcion a trozos.  
+<a href="#_details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>&gt;</code></p>
+
+<p><a href="classc_linear_split_function-members.html">Lista de todos los miembros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_split_function.html#a343d682ba5deb3d540e53e5b4b5d89cc">Init</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializa la clase.  <a href="#a343d682ba5deb3d540e53e5b4b5d89cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_split_function.html#ad1d97bafbc5db2a88d2d7a2795dabb9c">Add</a> (float lfX, float lfY)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A�ade un punto a la clase.  <a href="#ad1d97bafbc5db2a88d2d7a2795dabb9c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_split_function.html#a961b19b470f70c1ed2d1e9361c974993">Add</a> (<a class="el" href="structc_vec2.html">cVec2</a> lfPoint)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A�ade un punto a la clase.  <a href="#a961b19b470f70c1ed2d1e9361c974993"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_split_function.html#aef51aa1ae6e4a3b107b6dff9efdfb389">Add</a> (<a class="el" href="structc_vec2.html">cVec2</a> *lafPoints, unsigned luiNumPoints)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A�ade un array de puntos a la clase.  <a href="#aef51aa1ae6e4a3b107b6dff9efdfb389"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_split_function.html#a7ff160394977a786de0d4f7bda9b0e8f">Eval</a> (float lfX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Evalua el punto en la funcion a trozos.  <a href="#a7ff160394977a786de0d4f7bda9b0e8f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_split_function.html#a7d00fd7b0d8ce306e4ae037b404818ba">CoherentEval</a> (float lfX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Evalua el punto en la funcion a trozos utilizando una evaluacion anterior.  <a href="#a7d00fd7b0d8ce306e4ae037b404818ba"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descripción detallada</h2>
+<h3>template&lt;unsigned NPoints&gt;<br/>
+ class cLinearSplitFunction&lt; NPoints &gt;</h3>
+
+<p>Representa una funcion a trozos. </p>
+<p>Representa una funcion a trozos. Dados una serie de puntos, se crea una funcion a trozos que se puede evaluar para todo numero flotante.</p>
+<p>f0 = Y1 si x &lt;= X1 f1 = Lineal(Y1, Y2) si X1 &lt; x &lt;= X2 f2 = Lineal(Y2, Y3) si X2 &lt; x &lt;= X3 ... fn-1 = Lineal(Yn-1, Yn) si Xn-1 &lt; x &lt;= Xn fn = Yn si Xn &lt; x</p>
+<p>NPoints es el numero de puntos que se va a usar para definir la funcion a trozos </p>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00021">21</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+<hr/><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="aef51aa1ae6e4a3b107b6dff9efdfb389"></a><!-- doxytag: member="cLinearSplitFunction::Add" ref="aef51aa1ae6e4a3b107b6dff9efdfb389" args="(cVec2 *lafPoints, unsigned luiNumPoints)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned NPoints&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classc_linear_split_function.html">cLinearSplitFunction</a>&lt; NPoints &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec2.html">cVec2</a> *&nbsp;</td>
+          <td class="paramname"> <em>lafPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&nbsp;</td>
+          <td class="paramname"> <em>luiNumPoints</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>A�ade un array de puntos a la clase. </p>
+<p>A�ade un array de puntos a la clase para crear la funcion lineal </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lafPoints</em>&nbsp;</td><td>Array de puntos </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>luiNumPoints</em>&nbsp;</td><td>Numero de puntos en el array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00100">100</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a961b19b470f70c1ed2d1e9361c974993"></a><!-- doxytag: member="cLinearSplitFunction::Add" ref="a961b19b470f70c1ed2d1e9361c974993" args="(cVec2 lfPoint)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned NPoints&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classc_linear_split_function.html">cLinearSplitFunction</a>&lt; NPoints &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structc_vec2.html">cVec2</a>&nbsp;</td>
+          <td class="paramname"> <em>lfPoint</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>A�ade un punto a la clase. </p>
+<p>A�ade un punto a la clase para crear la funcion lineal </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lfPoint</em>&nbsp;</td><td>Punto a a�adir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00085">85</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1d97bafbc5db2a88d2d7a2795dabb9c"></a><!-- doxytag: member="cLinearSplitFunction::Add" ref="ad1d97bafbc5db2a88d2d7a2795dabb9c" args="(float lfX, float lfY)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned NPoints&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classc_linear_split_function.html">cLinearSplitFunction</a>&lt; NPoints &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfY</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>A�ade un punto a la clase. </p>
+<p>A�ade un punto a la clase para crear la funcion lineal </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lfX</em>&nbsp;</td><td>Componente X del punto a a�adir </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lfY</em>&nbsp;</td><td>Componente Y del punto a a�adir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00079">79</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d00fd7b0d8ce306e4ae037b404818ba"></a><!-- doxytag: member="cLinearSplitFunction::CoherentEval" ref="a7d00fd7b0d8ce306e4ae037b404818ba" args="(float lfX)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned NPoints&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classc_linear_split_function.html">cLinearSplitFunction</a>&lt; NPoints &gt;::CoherentEval </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfX</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Evalua el punto en la funcion a trozos utilizando una evaluacion anterior. </p>
+<p>Evalua el punto en la funcion a trozos asumiendo que existe una cierta continuidad con el valor evaluado anteriormente. Esta funcion sera mas rapida que la anterior si el valor evaluado es muy cercano al ultimo valor evaluado. De lo contrario puede ser mas ineficiente. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lfX</em>&nbsp;</td><td>Punto que se desea evaluar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Valor Y correspondiente al punto evaluado </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00161">161</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ff160394977a786de0d4f7bda9b0e8f"></a><!-- doxytag: member="cLinearSplitFunction::Eval" ref="a7ff160394977a786de0d4f7bda9b0e8f" args="(float lfX)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned NPoints&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classc_linear_split_function.html">cLinearSplitFunction</a>&lt; NPoints &gt;::Eval </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfX</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Evalua el punto en la funcion a trozos. </p>
+<p>Evalua el punto en la funcion a trozos </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lfX</em>&nbsp;</td><td>Punto que se desea evaluar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Valor Y correspondiente al punto evaluado </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00110">110</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a343d682ba5deb3d540e53e5b4b5d89cc"></a><!-- doxytag: member="cLinearSplitFunction::Init" ref="a343d682ba5deb3d540e53e5b4b5d89cc" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned NPoints&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classc_linear_split_function.html">cLinearSplitFunction</a>&lt; NPoints &gt;::Init </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Inicializa la clase. </p>
+<p>Inicializa la clase </p>
+
+<p>Definición en la línea <a class="el" href="_linear_split_function_8h_source.html#l00072">72</a> del archivo <a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/MathUtils/<a class="el" href="_linear_split_function_8h_source.html">LinearSplitFunction.h</a></li>
+</ul>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:13 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

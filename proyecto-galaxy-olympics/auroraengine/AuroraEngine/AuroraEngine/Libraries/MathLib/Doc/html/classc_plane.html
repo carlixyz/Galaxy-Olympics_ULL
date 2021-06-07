@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia de la Clase cPlane</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la Clase cPlane</h1><!-- doxytag: class="cPlane" -->
+<p>Representa un plano en el espacio.  
+<a href="#_details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_plane_8h_source.html">Plane.h</a>&gt;</code></p>
+
+<p><a href="classc_plane-members.html">Lista de todos los miembros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_plane.html#a5154ba8f5458f345ccb082b288e685a1">Init</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;lvNormal, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;lvPoint)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializa el plano con su normal y un punto contenido en el.  <a href="#a5154ba8f5458f345ccb082b288e685a1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_plane.html#aa9b769d78fb6eabea63877e5d479a3e2">Init</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;lvPoint1, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;lvPoint2, const <a class="el" href="structc_vec3.html">cVec3</a> &amp;lvPoint3)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializa el plano tres puntos contenidos en el.  <a href="#aa9b769d78fb6eabea63877e5d479a3e2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_plane.html#a3964901627d6c01b4978e03380afbd16">PointTest</a> (const <a class="el" href="structc_vec3.html">cVec3</a> &amp;lvPoint1) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Comprueba si el punto esta contenido o no en el plano.  <a href="#a3964901627d6c01b4978e03380afbd16"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descripción detallada</h2>
+<p>Representa un plano en el espacio. </p>
+<p>Esta clase calcula un plano a traves de:</p>
+<ul>
+<li>La normal del plano y un punto contenido en el mismo</li>
+<li>Tres puntos contenidos en el plano</li>
+</ul>
+<p>f(x) = Ax + By + Cz + D</p>
+<p>Despues permite evaluar puntos para saber si estan contenidos en el plano o su posicion con respecto a este. </p>
+
+<p>Definición en la línea <a class="el" href="_plane_8h_source.html#l00016">16</a> del archivo <a class="el" href="_plane_8h_source.html">Plane.h</a>.</p>
+<hr/><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="aa9b769d78fb6eabea63877e5d479a3e2"></a><!-- doxytag: member="cPlane::Init" ref="aa9b769d78fb6eabea63877e5d479a3e2" args="(const cVec3 &amp;lvPoint1, const cVec3 &amp;lvPoint2, const cVec3 &amp;lvPoint3)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cPlane::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lvPoint1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lvPoint2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lvPoint3</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Inicializa el plano tres puntos contenidos en el. </p>
+<p>Inicaliza el plano tres puntos contenidos en el. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lvPoint1</em>&nbsp;</td><td>Punto 1 contenido en el plano. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lvPoint2</em>&nbsp;</td><td>Punto 2 contenido en el plano. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lvPoint3</em>&nbsp;</td><td>Punto 3 contenido en el plano. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_plane_8h_source.html#l00040">40</a> del archivo <a class="el" href="_plane_8h_source.html">Plane.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5154ba8f5458f345ccb082b288e685a1"></a><!-- doxytag: member="cPlane::Init" ref="a5154ba8f5458f345ccb082b288e685a1" args="(const cVec3 &amp;lvNormal, const cVec3 &amp;lvPoint)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cPlane::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lvNormal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lvPoint</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Inicializa el plano con su normal y un punto contenido en el. </p>
+<p>Inicaliza el plano con su normal y un punto contenido en el. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lvNormal</em>&nbsp;</td><td>Normal del plano. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lvPoint</em>&nbsp;</td><td>Punto contenido en el plano. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_plane_8h_source.html#l00025">25</a> del archivo <a class="el" href="_plane_8h_source.html">Plane.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3964901627d6c01b4978e03380afbd16"></a><!-- doxytag: member="cPlane::PointTest" ref="a3964901627d6c01b4978e03380afbd16" args="(const cVec3 &amp;lvPoint1) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float cPlane::PointTest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec3.html">cVec3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lvPoint1</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Comprueba si el punto esta contenido o no en el plano. </p>
+<p>Comprueba si el punto esta contenido o no en el plano.</p>
+<ul>
+<li>Si devuelve 0, el punto esta contenido en el plano</li>
+<li>Si devuelve un numero positivo, el punto esta en la direccion a la normal (delante del plano)</li>
+<li>Si devuelve un numero negativo, el punto esta en la direccion opuesta a la normal (detras del plano)</li>
+</ul>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lvPoint1</em>&nbsp;</td><td>Punto que se desea evaluar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_plane_8h_source.html#l00055">55</a> del archivo <a class="el" href="_plane_8h_source.html">Plane.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/MathUtils/<a class="el" href="_plane_8h_source.html">Plane.h</a></li>
+</ul>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:13 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

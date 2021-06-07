@@ -1,0 +1,91 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large MathLib \\[1ex]\large 1.0 }\\
+\vspace*{1cm}
+{\large Generado por Doxygen 1.6.3}\\
+\vspace*{0.5cm}
+{\small Wed Oct 6 00:48:12 2010}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{Índice de clases}
+\input{annotated}
+\chapter{Indice de archivos}
+\input{files}
+\chapter{Documentación de las clases}
+\input{classc_linear_interpolator}
+\include{classc_linear_split_function}
+\include{structc_matrix}
+\include{classc_plane}
+\include{structc_quaternion}
+\include{structc_vec2}
+\include{structc_vec3}
+\include{structc_vec4}
+\chapter{Documentación de archivos}
+\input{_math_const_8h}
+\include{_math_lib_8h}
+\include{_linear_interpolator_8h}
+\include{_linear_split_function_8h}
+\include{_math_utils_lib_8h}
+\include{_plane_8h}
+\include{_matrix_8cpp}
+\include{_matrix_8h}
+\include{_matrix44_col_8h}
+\include{_matrix44_row_8h}
+\include{_matrix_func_8h}
+\include{_matrix_lib_8h}
+\include{_quaternion_8h}
+\include{_quaternion_func_8cpp}
+\include{_quaternion_func_8h}
+\include{_quaternion_lib_8h}
+\include{_vec_8cpp}
+\include{_vec2_8h}
+\include{_vec3_8h}
+\include{_vec4_8h}
+\include{_vec_func_8h}
+\include{_vec_lib_8h}
+\printindex
+\end{document}

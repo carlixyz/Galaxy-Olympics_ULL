@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Fichero Fuente D:/Master Videojuegos ULL 09_10/Asignaturas/PrÃ¡cticas BÃ¡sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/MathUtils/LinearInterpolator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>PÃ¡gina&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>D:/Master Videojuegos ULL 09_10/Asignaturas/Prácticas Básicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/MathUtils/LinearInterpolator.h</h1><a href="_linear_interpolator_8h.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef LINEAR_INTERPOLATOR_H_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define LINEAR_INTERPOLATOR_H_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;../Vec/VecLib.h&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00007"></a>00007 
+<a name="l00014"></a><a class="code" href="classc_linear_interpolator.html">00014</a> <span class="keyword">class </span><a class="code" href="classc_linear_interpolator.html" title="Calcula una interpolacion lineal.">cLinearInterpolator</a>
+<a name="l00015"></a>00015 {
+<a name="l00016"></a>00016   <span class="keyword">public</span>:
+<a name="l00018"></a>00018 
+<a name="l00024"></a><a class="code" href="classc_linear_interpolator.html#a7c02893997109a64f054de4805f23f77">00024</a>       <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classc_linear_interpolator.html#a7c02893997109a64f054de4805f23f77" title="Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1).">Init</a>( <span class="keywordtype">float</span>  lfX0, <span class="keywordtype">float</span>  lfY0, <span class="keywordtype">float</span>  lfX1, <span class="keywordtype">float</span>  lfY1 )
+<a name="l00025"></a>00025       {
+<a name="l00026"></a>00026           assert( fabs( lfX1 - lfX0) &gt; <a class="code" href="_math_const_8h.html#a002b2f4894492820fe708b1b7e7c5e70" title="Constante Epsilon: Un valor suficientemente peque&amp;ntilde;o como para ser despreciable...">EPSILON</a> );
+<a name="l00027"></a>00027           mfParamA = (lfY1 - lfY0) / ( lfX1 - lfX0 );
+<a name="l00028"></a>00028           mfParamB = -mfParamA * lfX0 + lfY0;
+<a name="l00029"></a>00029       }
+<a name="l00031"></a>00031 
+<a name="l00035"></a><a class="code" href="classc_linear_interpolator.html#aa3fde11ab9970f60e75a531e7a6554ea">00035</a>       <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classc_linear_interpolator.html#a7c02893997109a64f054de4805f23f77" title="Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1).">Init</a>( <span class="keyword">const</span> <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;lP0, <span class="keyword">const</span> <a class="code" href="structc_vec2.html" title="Esta estructura representa un vector de tamaño 2.">cVec2</a> &amp;lP1 )
+<a name="l00036"></a>00036       {
+<a name="l00037"></a>00037           <a class="code" href="classc_linear_interpolator.html#a7c02893997109a64f054de4805f23f77" title="Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1).">Init</a>( lP0.<a class="code" href="structc_vec2.html#ab0579c05d3fd7f0cd5c149c8196d58b3">x</a>, lP0.<a class="code" href="structc_vec2.html#a9baae58edf734d7b4f0e420a1d8442d8">y</a>, lP1.<a class="code" href="structc_vec2.html#ab0579c05d3fd7f0cd5c149c8196d58b3">x</a>, lP1.<a class="code" href="structc_vec2.html#a9baae58edf734d7b4f0e420a1d8442d8">y</a> );
+<a name="l00038"></a>00038       }
+<a name="l00040"></a>00040 
+<a name="l00044"></a><a class="code" href="classc_linear_interpolator.html#a23fed19b6a9261ea8751d875acd69e5a">00044</a>       <span class="keyword">inline</span> <span class="keywordtype">float</span>  <a class="code" href="classc_linear_interpolator.html#a23fed19b6a9261ea8751d875acd69e5a" title="Evalua el interpolador o la recta en el punto indicado.">Eval</a>( <span class="keywordtype">float</span>  lfX )
+<a name="l00045"></a>00045       {
+<a name="l00046"></a>00046           <span class="keywordflow">return</span> mfParamA * lfX + mfParamB;
+<a name="l00047"></a>00047       }
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049   <span class="keyword">private</span>:
+<a name="l00050"></a>00050       <span class="keywordtype">float</span>  mfParamA;
+<a name="l00051"></a>00051       <span class="keywordtype">float</span>  mfParamB;
+<a name="l00052"></a>00052 };
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="preprocessor">#endif // LINEAR_INTERPOLATOR_H_</span>
+</pre></div></div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:12 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

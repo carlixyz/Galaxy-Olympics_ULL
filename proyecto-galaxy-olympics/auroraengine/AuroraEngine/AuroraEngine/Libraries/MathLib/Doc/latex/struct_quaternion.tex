@@ -1,0 +1,332 @@
+\hypertarget{struct_quaternion}{
+\section{Referencia de la Estructura Quaternion}
+\label{struct_quaternion}\index{Quaternion@{Quaternion}}
+}
+
+
+{\ttfamily \#include $<$Quaternion.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_quaternion_a39a0971895c9e93ae338ed9ecbc18220}{Quaternion} (void)
+\item 
+\hyperlink{struct_quaternion_a68fcc1746d03661db1c44a1ef1da0ee4}{Quaternion} (float newx, float newy, float newz, float neww)
+\item 
+bool \hyperlink{struct_quaternion_a42082dbdbebe3a9b2cadd10a8b3f767b}{operator==} (const \hyperlink{struct_quaternion}{Quaternion} \&other) const 
+\item 
+bool \hyperlink{struct_quaternion_aa2b9f08ded11182532dd99af87189a5c}{operator!=} (const \hyperlink{struct_quaternion}{Quaternion} \&other) const 
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a72ef12aabea6b197ca0c386f8692131c}{operator+=} (const \hyperlink{struct_quaternion}{Quaternion} \&other)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a682c2bc53ef117e70dd633271ddd65b4}{operator-\/=} (const \hyperlink{struct_quaternion}{Quaternion} \&other)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a005233b2ecdca221e818975ef5f68d0e}{operator$\ast$=} (const \hyperlink{struct_quaternion}{Quaternion} \&other)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a860018754b065c76851616d54d01cff7}{operator/=} (float scalar)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a5c8d605f81f7f3ede3d6c53480752359}{operator$\ast$=} (float scalar)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a31ffb4ff1cb6adb94798fd5e89fd96dd}{LoadIdentity} ()
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a3c99a53b568de7f5615c96bd906ff4dc}{LoadRotationEuler} (float yaw, float pitch, float roll)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a0ff63fa162a83bfffb51204778907b65}{LoadRotationAxis} (const \hyperlink{structc_vec3}{cVec3} \&axis, float angle\_\-rad)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a35bfd6227bb768e4cb6439b330cd6a4b}{Set} (float newx, float newy, float newz, float neww)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a1abadacdc1ee6a236cde78c9bd1229b1}{Normalize} (void)
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_a92dc45f84709ac09e4be54f671f75244}{Conjugate} ()
+\item 
+\hyperlink{struct_quaternion}{Quaternion} \& \hyperlink{struct_quaternion_adf3f5e1c40394774ae7e4662bdd8c477}{Invert} ()
+\item 
+float \hyperlink{struct_quaternion_acba07039fb1d33470dbd37f2006280ed}{LengthSqr} (void) const 
+\item 
+float \hyperlink{struct_quaternion_ade39732093b98854241519d19916310b}{Length} (void) const 
+\item 
+void \hyperlink{struct_quaternion_ab0ec79d0fc86a863a4721af8bca5226d}{AsMatrix} (\hyperlink{structc_matrix}{cMatrix} \&matrix) const 
+\item 
+void \hyperlink{struct_quaternion_aeeecfc1222faf1ca6d09a71c38b3de43}{AsAxis} (\hyperlink{structc_vec3}{cVec3} \&axis, float \&angle) const 
+\item 
+void \hyperlink{struct_quaternion_ac1fad9f2d56b2364a082ca750a26f6b5}{AsEuler} (float \&yaw, float \&pitch, float \&roll) const 
+\item 
+float $\ast$ \hyperlink{struct_quaternion_a6eb6dec27fa8bb0a7ece63519e365647}{AsFloatPointer} ()
+\item 
+const float $\ast$ \hyperlink{struct_quaternion_ab0f9d23602fdd6b8a824f7a22db02d13}{AsFloatPointer} () const 
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_quaternion_a8b80f191a3155cc0158d2b4f4d50b2cb}{x}
+\item 
+float \hyperlink{struct_quaternion_a3bd3f270462944423611f44e19d2511b}{y}
+\item 
+float \hyperlink{struct_quaternion_a625cb732d8ff3083e7852b86b736ab29}{z}
+\item 
+float \hyperlink{struct_quaternion_aa44a65ab99e36f6ab8771030eed8a7ad}{w}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 8 del archivo Quaternion.h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{struct_quaternion_a39a0971895c9e93ae338ed9ecbc18220}{
+\index{Quaternion@{Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Quaternion@{Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion::Quaternion (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a39a0971895c9e93ae338ed9ecbc18220}
+
+
+Definición en la línea 12 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a68fcc1746d03661db1c44a1ef1da0ee4}{
+\index{Quaternion@{Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Quaternion@{Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion::Quaternion (float {\em newx}, \/  float {\em newy}, \/  float {\em newz}, \/  float {\em neww})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a68fcc1746d03661db1c44a1ef1da0ee4}
+
+
+Definición en la línea 13 del archivo Quaternion.h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{struct_quaternion_aeeecfc1222faf1ca6d09a71c38b3de43}{
+\index{Quaternion@{Quaternion}!AsAxis@{AsAxis}}
+\index{AsAxis@{AsAxis}!Quaternion@{Quaternion}}
+\subsubsection[{AsAxis}]{\setlength{\rightskip}{0pt plus 5cm}void Quaternion::AsAxis ({\bf cVec3} \& {\em axis}, \/  float \& {\em angle}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_aeeecfc1222faf1ca6d09a71c38b3de43}
+
+
+Definición en la línea 184 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_ac1fad9f2d56b2364a082ca750a26f6b5}{
+\index{Quaternion@{Quaternion}!AsEuler@{AsEuler}}
+\index{AsEuler@{AsEuler}!Quaternion@{Quaternion}}
+\subsubsection[{AsEuler}]{\setlength{\rightskip}{0pt plus 5cm}void Quaternion::AsEuler (float \& {\em yaw}, \/  float \& {\em pitch}, \/  float \& {\em roll}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_ac1fad9f2d56b2364a082ca750a26f6b5}
+
+
+Definición en la línea 201 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_ab0f9d23602fdd6b8a824f7a22db02d13}{
+\index{Quaternion@{Quaternion}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!Quaternion@{Quaternion}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ Quaternion::AsFloatPointer () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_ab0f9d23602fdd6b8a824f7a22db02d13}
+
+
+Definición en la línea 41 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a6eb6dec27fa8bb0a7ece63519e365647}{
+\index{Quaternion@{Quaternion}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!Quaternion@{Quaternion}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ Quaternion::AsFloatPointer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a6eb6dec27fa8bb0a7ece63519e365647}
+
+
+Definición en la línea 40 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_ab0ec79d0fc86a863a4721af8bca5226d}{
+\index{Quaternion@{Quaternion}!AsMatrix@{AsMatrix}}
+\index{AsMatrix@{AsMatrix}!Quaternion@{Quaternion}}
+\subsubsection[{AsMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void Quaternion::AsMatrix ({\bf cMatrix} \& {\em matrix}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_ab0ec79d0fc86a863a4721af8bca5226d}
+
+
+Definición en la línea 170 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a92dc45f84709ac09e4be54f671f75244}{
+\index{Quaternion@{Quaternion}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!Quaternion@{Quaternion}}
+\subsubsection[{Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::Conjugate ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a92dc45f84709ac09e4be54f671f75244}
+
+
+Definición en la línea 147 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_adf3f5e1c40394774ae7e4662bdd8c477}{
+\index{Quaternion@{Quaternion}!Invert@{Invert}}
+\index{Invert@{Invert}!Quaternion@{Quaternion}}
+\subsubsection[{Invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::Invert (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_adf3f5e1c40394774ae7e4662bdd8c477}
+
+
+Definición en la línea 154 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_ade39732093b98854241519d19916310b}{
+\index{Quaternion@{Quaternion}!Length@{Length}}
+\index{Length@{Length}!Quaternion@{Quaternion}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float Quaternion::Length (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_ade39732093b98854241519d19916310b}
+
+
+Definición en la línea 165 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_acba07039fb1d33470dbd37f2006280ed}{
+\index{Quaternion@{Quaternion}!LengthSqr@{LengthSqr}}
+\index{LengthSqr@{LengthSqr}!Quaternion@{Quaternion}}
+\subsubsection[{LengthSqr}]{\setlength{\rightskip}{0pt plus 5cm}float Quaternion::LengthSqr (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_acba07039fb1d33470dbd37f2006280ed}
+
+
+Definición en la línea 161 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a31ffb4ff1cb6adb94798fd5e89fd96dd}{
+\index{Quaternion@{Quaternion}!LoadIdentity@{LoadIdentity}}
+\index{LoadIdentity@{LoadIdentity}!Quaternion@{Quaternion}}
+\subsubsection[{LoadIdentity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::LoadIdentity (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a31ffb4ff1cb6adb94798fd5e89fd96dd}
+
+
+Definición en la línea 107 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a0ff63fa162a83bfffb51204778907b65}{
+\index{Quaternion@{Quaternion}!LoadRotationAxis@{LoadRotationAxis}}
+\index{LoadRotationAxis@{LoadRotationAxis}!Quaternion@{Quaternion}}
+\subsubsection[{LoadRotationAxis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::LoadRotationAxis (const {\bf cVec3} \& {\em axis}, \/  float {\em angle\_\-rad})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a0ff63fa162a83bfffb51204778907b65}
+
+
+Definición en la línea 127 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a3c99a53b568de7f5615c96bd906ff4dc}{
+\index{Quaternion@{Quaternion}!LoadRotationEuler@{LoadRotationEuler}}
+\index{LoadRotationEuler@{LoadRotationEuler}!Quaternion@{Quaternion}}
+\subsubsection[{LoadRotationEuler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::LoadRotationEuler (float {\em yaw}, \/  float {\em pitch}, \/  float {\em roll})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a3c99a53b568de7f5615c96bd906ff4dc}
+
+
+Definición en la línea 112 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a1abadacdc1ee6a236cde78c9bd1229b1}{
+\index{Quaternion@{Quaternion}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Quaternion@{Quaternion}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::Normalize (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a1abadacdc1ee6a236cde78c9bd1229b1}
+
+
+Definición en la línea 141 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_aa2b9f08ded11182532dd99af87189a5c}{
+\index{Quaternion@{Quaternion}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Quaternion@{Quaternion}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Quaternion::operator!= (const {\bf Quaternion} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_aa2b9f08ded11182532dd99af87189a5c}
+
+
+Definición en la línea 59 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a5c8d605f81f7f3ede3d6c53480752359}{
+\index{Quaternion@{Quaternion}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Quaternion@{Quaternion}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::operator$\ast$= (float {\em scalar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a5c8d605f81f7f3ede3d6c53480752359}
+
+
+Definición en la línea 97 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a005233b2ecdca221e818975ef5f68d0e}{
+\index{Quaternion@{Quaternion}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Quaternion@{Quaternion}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::operator$\ast$= (const {\bf Quaternion} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a005233b2ecdca221e818975ef5f68d0e}
+
+
+Definición en la línea 79 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a72ef12aabea6b197ca0c386f8692131c}{
+\index{Quaternion@{Quaternion}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Quaternion@{Quaternion}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::operator+= (const {\bf Quaternion} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a72ef12aabea6b197ca0c386f8692131c}
+
+
+Definición en la línea 63 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a682c2bc53ef117e70dd633271ddd65b4}{
+\index{Quaternion@{Quaternion}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Quaternion@{Quaternion}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::operator-\/= (const {\bf Quaternion} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a682c2bc53ef117e70dd633271ddd65b4}
+
+
+Definición en la línea 71 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a860018754b065c76851616d54d01cff7}{
+\index{Quaternion@{Quaternion}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Quaternion@{Quaternion}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::operator/= (float {\em scalar})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a860018754b065c76851616d54d01cff7}
+
+
+Definición en la línea 87 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a42082dbdbebe3a9b2cadd10a8b3f767b}{
+\index{Quaternion@{Quaternion}!operator==@{operator==}}
+\index{operator==@{operator==}!Quaternion@{Quaternion}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Quaternion::operator== (const {\bf Quaternion} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a42082dbdbebe3a9b2cadd10a8b3f767b}
+
+
+Definición en la línea 55 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a35bfd6227bb768e4cb6439b330cd6a4b}{
+\index{Quaternion@{Quaternion}!Set@{Set}}
+\index{Set@{Set}!Quaternion@{Quaternion}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} \& Quaternion::Set (float {\em newx}, \/  float {\em newy}, \/  float {\em newz}, \/  float {\em neww})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{struct_quaternion_a35bfd6227bb768e4cb6439b330cd6a4b}
+
+
+Definición en la línea 133 del archivo Quaternion.h.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{struct_quaternion_aa44a65ab99e36f6ab8771030eed8a7ad}{
+\index{Quaternion@{Quaternion}!w@{w}}
+\index{w@{w}!Quaternion@{Quaternion}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Quaternion::w}}}
+\label{struct_quaternion_aa44a65ab99e36f6ab8771030eed8a7ad}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a8b80f191a3155cc0158d2b4f4d50b2cb}{
+\index{Quaternion@{Quaternion}!x@{x}}
+\index{x@{x}!Quaternion@{Quaternion}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Quaternion::x}}}
+\label{struct_quaternion_a8b80f191a3155cc0158d2b4f4d50b2cb}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a3bd3f270462944423611f44e19d2511b}{
+\index{Quaternion@{Quaternion}!y@{y}}
+\index{y@{y}!Quaternion@{Quaternion}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Quaternion::y}}}
+\label{struct_quaternion_a3bd3f270462944423611f44e19d2511b}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+\hypertarget{struct_quaternion_a625cb732d8ff3083e7852b86b736ab29}{
+\index{Quaternion@{Quaternion}!z@{z}}
+\index{z@{z}!Quaternion@{Quaternion}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Quaternion::z}}}
+\label{struct_quaternion_a625cb732d8ff3083e7852b86b736ab29}
+
+
+Definición en la línea 10 del archivo Quaternion.h.
+
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero:\begin{DoxyCompactItemize}
+\item 
+D:/MathLib/Quaternion/\hyperlink{_quaternion_8h}{Quaternion.h}\end{DoxyCompactItemize}

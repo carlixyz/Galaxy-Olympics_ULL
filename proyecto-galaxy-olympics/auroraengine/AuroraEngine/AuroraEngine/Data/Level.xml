@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level> 
+ <Object type ="Skybox" collision="Box" >
+	<resource name = "Skybox" modelFile ="./Data/Scene/Skybox.DAE" />
+    <position x="0.0" y="0.0" z="0.0" />
+  </Object> <!-- Objeto Skybox -->
+
+  <Object type ="object" collision="Box" >
+	<resource name = "Inicio" modelFile ="./Data/Scene/SateliteSalida.DAE" />
+    <position x="0.0" y="-5.0" z="0.0" />
+  </Object> --> <!-- Largada -->
+
+  <Object type ="Player" collision="Box" >
+	<resource name = "Player" modelFile ="./Data/Scene/SinergiaBoost.DAE" />
+    <position x="10.0" y="0.0" z="-50" />
+  </Object> <!-- Personaje Jugador -->
+    
+  <Object type ="Ring" collision="Box" >
+	<resource name = "Anillo" modelFile ="./Data/Scene/AnilloCuantico.DAE" />
+    <position x="-7.0" y="-7.0" z="50" />
+  </Object> <!-- 1° Anillo -->
+  
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid02" modelFile ="./Data/Scene/Asteroid04.DAE" />
+    <position x="-8.0" y="-3.5" z="55.1" />
+  </Object> <!-- Asteroide mediano 2 -->
+  
+    <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid02" modelFile ="./Data/Scene/Asteroid02.DAE" />
+    <position x="8.5" y="-4.5" z="60.5" />
+  </Object> <!-- Asteroide mediano 3 -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid03" modelFile ="./Data/Scene/Asteroid03.DAE" />
+    <position x="-10.3" y="4.1" z="65.1" />
+  </Object> <!-- Asteroide pequeño 4 -->
+  
+  <Object type ="Ring" collision="Box" >
+	<resource name = "Anillo" modelFile ="./Data/Scene/AnilloCuantico.DAE" />
+    <position x="5.3" y="8.0" z="80.1" />
+  </Object> <!-- 2° Anillo 5 -->
+  
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid02" modelFile ="./Data/Scene/Asteroid02.DAE" />
+    <position x="6.3" y="4.1" z="95.1" />
+  </Object> <!-- Asteroide mediano 6 -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "ChatarraEspacial01" modelFile ="./Data/Scene/ChatarraEspacial1.DAE" />
+    <position x="-10.3" y="7.1" z="110.1" />
+  </Object> <!-- estorbo 7 -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid01" modelFile ="./Data/Scene/Asteroid01.DAE" />
+    <position x="10.0" y="4.1" z="125.1"/>
+  </Object> <!-- 100% Working 8 -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "satelite" modelFile ="./Data/Scene/Satelitex.DAE" />
+    <position x="5.0" y="-5.0" z="135" />
+  </Object> <!-- satelite perdido 9 -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid04" modelFile ="./Data/Scene/Asteroid04.DAE" />
+    <position x="2.3" y="8.1" z="150.1" />
+  </Object> <!-- Asteroide gigante 100% Working 10 -->
+  
+    <Object type ="Ring" collision="Box" >
+	<resource name = "Anillo" modelFile ="./Data/Scene/AnilloCuantico.DAE" />
+    <position x="-1.0" y="3.0" z="200" />
+  </Object> <!-- 3° Anillo 11-->
+  
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid02" modelFile ="./Data/Scene/Asteroid04.DAE" />
+    <position x="6.0" y="3.5" z="235.1" />
+  </Object> <!-- Asteroide mediano -->
+  
+    <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid02" modelFile ="./Data/Scene/Asteroid02.DAE" />
+    <position x="8.5" y="4.5" z="260.5" />
+  </Object> <!-- Asteroide mediano -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid03" modelFile ="./Data/Scene/Asteroid03.DAE" />
+    <position x="10.3" y="-4.1" z="305.1" />
+  </Object> <!-- Asteroide pequeño 1 -->
+  
+  <Object type ="Ring" collision="Box" >
+	<resource name = "Anillo" modelFile ="./Data/Scene/AnilloCuantico.DAE" />
+    <position x="-1.3" y="-5.0" z="350.1" />
+  </Object> <!-- 2° Anillo -->
+  
+   <Object type ="Background" collision="Box" >
+	<resource name = "PlanetaCrater" modelFile ="./Data/Scene/PlanetaCrater.DAE" />
+    <position x="-20.3" y="-28.0" z="410.1" />
+  </Object> <!--  Super Planeta Crater ! ! 100% Working -->
+  
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid02" modelFile ="./Data/Scene/Asteroid02.DAE" />
+    <position x="-6.3" y="-4.1" z="495.1" />
+  </Object> <!-- Asteroide mediano -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "ChatarraEspacial01" modelFile ="./Data/Scene/ChatarraEspacial1.DAE" />
+    <position x="9.3" y="-7.1" z="540.1" />
+  </Object> <!-- estorbo -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid01" modelFile ="./Data/Scene/Asteroid01.DAE" />
+    <position x="-8.0" y="-4.1" z="575.1"/>
+  </Object> <!-- 100% Working -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "satelite" modelFile ="./Data/Scene/Satelitex.DAE" />
+    <position x="-5.0" y="5.0" z="605" />
+  </Object> <!-- satelite perdido -->
+
+  <Object type ="Obstacle" collision="Box" >
+	<resource name = "Asteroid04" modelFile ="./Data/Scene/Asteroid04.DAE" />
+    <position x="-2.3" y="-8.1" z="750.1" />
+  </Object> <!-- Asteroide gigante 100% Working (llegando al final) -->
+  
+  <Object type ="Ring" collision="Box" >
+	<resource name = "Anillo" modelFile ="./Data/Scene/AnilloCuantico.DAE" />
+    <position x="-7.0" y="+7.0" z="840" />
+  </Object> <!-- 1° Anillo -->    
+
+  <Object type ="Background" collision="Box" >
+	<resource name = "ChatarraEspacial02" modelFile ="./Data/Scene/ChatarraEspacial2.DAE" />
+    <position x="-19.0" y="15.1" z="865.1" />
+  </Object> <!-- Basurero espacial , super coña -->
+
+  <Object type ="Background" collision="Box" >
+	<resource name = "PlanetaCrater" modelFile ="./Data/Scene/PlanetaCrater.DAE" />
+    <position x="14.3" y="-15.0" z="995.1" />
+  </Object> <!--  Super Planeta Crater ! ! 100% Working -->
+
+  <Object type ="object" collision="Box" >
+	<resource name = "Meta" modelFile ="./Data/Scene/SateliteMeta.DAE" />
+    <position x="-2.3" y="8.1" z="1050.1" />
+  </Object> <!-- LLegada 100% Working -->
+  
+  
+</Level>
+
+
+<!-- future int types number def:
+Object 	= 0
+Ring 	= 1
+Obstacle= 2
+Item	= 3
+Enemy	= 4
+Player	= 5
+-->

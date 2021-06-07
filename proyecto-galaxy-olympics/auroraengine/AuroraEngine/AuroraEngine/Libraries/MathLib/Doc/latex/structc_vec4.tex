@@ -1,0 +1,526 @@
+\hypertarget{structc_vec4}{
+\section{Referencia de la Estructura cVec4}
+\label{structc_vec4}\index{cVec4@{cVec4}}
+}
+
+
+Esta estructura representa un vector de tama�o 3.  
+
+
+
+
+{\ttfamily \#include $<$Vec4.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structc_vec4_a33a43d1a14541f248def942163004528}{cVec4} (void)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4_a9aafa3ddd7fac3bc5a4b9f053172ef78}{cVec4} (float newx, float newy, float newz, float neww)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4_ae44db7aad00387e8ccaa5c07e209d5db}{cVec4} (const \hyperlink{structc_vec2}{cVec2} \&vec2, float lz=0, float lw=0)
+\begin{DoxyCompactList}\small\item\em Constructor explicito. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4_aacb179abe83f41299616e18119b4ab63}{cVec4} (const \hyperlink{structc_vec3}{cVec3} \&vec3, float lw=0)
+\begin{DoxyCompactList}\small\item\em Constructor explicito. \item\end{DoxyCompactList}\item 
+float \& \hyperlink{structc_vec4_a3b45d235574bd22832392513a4d9520b}{operator\mbox{[}$\,$\mbox{]}} (unsigned position)
+\begin{DoxyCompactList}\small\item\em Operador de Indexacion. \item\end{DoxyCompactList}\item 
+const float \& \hyperlink{structc_vec4_a6849e5e28ab1e91b067f0622af17025f}{operator\mbox{[}$\,$\mbox{]}} (unsigned position) const 
+\begin{DoxyCompactList}\small\item\em Operador de Indexacion. \item\end{DoxyCompactList}\item 
+float \& \hyperlink{structc_vec4_a0266223ec34d1e7d88ee28e84e057044}{operator()} (unsigned i)
+\begin{DoxyCompactList}\small\item\em Operador de Indexacion. \item\end{DoxyCompactList}\item 
+const float \& \hyperlink{structc_vec4_aeebeb699c8ad37df4e2379fbd8b6be96}{operator()} (unsigned i) const 
+\begin{DoxyCompactList}\small\item\em Operador de Indexacion. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_vec4_a3beebee4eda74724ad8e1da6d3b5527e}{operator+=} (const \hyperlink{structc_vec4}{cVec4} \&other)
+\begin{DoxyCompactList}\small\item\em Suma dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_vec4_af1147a8ee14da17a243d933a7bc72856}{operator-\/=} (const \hyperlink{structc_vec4}{cVec4} \&other)
+\begin{DoxyCompactList}\small\item\em Resta dos vectores. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_vec4_a9eb91325bdbc2ffbc2e8c128489eac3e}{operator$\ast$=} (float value)
+\begin{DoxyCompactList}\small\item\em Multiplica el vector por un escalar. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_vec4_aae8a7f2348a717019235699aaf525b77}{operator/=} (float value)
+\begin{DoxyCompactList}\small\item\em Divide el vector por un escalar. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_vec4_a054c2094fe18138f8cd4e46137cf1b56}{Set} (float newx, float newy, float newz, float neww)
+\begin{DoxyCompactList}\small\item\em Setea las componentes del vector. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec4_aa1802bd56b8b685c3bec20457034ea75}{LengthSqr} (void) const 
+\begin{DoxyCompactList}\small\item\em Calcula la longitud al cuadrado del vector. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec4_a07afee28e60a447edfa09870f48f61d0}{Length} (void) const 
+\begin{DoxyCompactList}\small\item\em Calcula la longitud del vector. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec4_ac71a11a6206ccd2df1809bdbb22bb563}{DistanceSqrTo} (const \hyperlink{structc_vec4}{cVec4} \&p) const 
+\begin{DoxyCompactList}\small\item\em Calcula la Distancia al cuadrado entre los dos puntos. \item\end{DoxyCompactList}\item 
+float \hyperlink{structc_vec4_adf8e37e4f9c902c02e2a0994daf7adcd}{DistanceTo} (const \hyperlink{structc_vec4}{cVec4} \&p) const 
+\begin{DoxyCompactList}\small\item\em Calcula la Distancia entre los dos puntos. \item\end{DoxyCompactList}\item 
+bool \hyperlink{structc_vec4_a511bf725c38c4cd9febca7c4769afa18}{IsZero} (void) const 
+\begin{DoxyCompactList}\small\item\em Comprueba si la longitud del vector es cero. \item\end{DoxyCompactList}\item 
+\hyperlink{structc_vec4}{cVec4} \& \hyperlink{structc_vec4_aaac5c3038e7dd5a99344862a255bfabc}{Normalize} (void)
+\begin{DoxyCompactList}\small\item\em Normaliza el vector. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_vec4_a3c4834df65cdde74d6ad9540ed26d4da}{StoreMax} (const \hyperlink{structc_vec4}{cVec4} \&p)
+\begin{DoxyCompactList}\small\item\em Almacena el valor maximo por componentes. \item\end{DoxyCompactList}\item 
+void \hyperlink{structc_vec4_a8fce7abe3a15deb4e0f0097ce1ea5b39}{StoreMin} (const \hyperlink{structc_vec4}{cVec4} \&p)
+\begin{DoxyCompactList}\small\item\em Almacena el valor minimo por componentes. \item\end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{structc_vec4_a0946da4dd8ecd14279fade28041cb497}{AsFloatPointer} ()
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero a la zona de memoria del vector. \item\end{DoxyCompactList}\item 
+const float $\ast$ \hyperlink{structc_vec4_a8b9a4577a951db30de66d02b4b23e148}{AsFloatPointer} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve un puntero a la zona de memoria del vector. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structc_vec4_a0708f670925b4c793bc50462c61a8c31}{x}
+\item 
+float \hyperlink{structc_vec4_a70f3694ce6253d17aab748f6f8bb2703}{y}
+\item 
+float \hyperlink{structc_vec4_abda6e18c19bb9741a754c9052e681351}{z}
+\item 
+float \hyperlink{structc_vec4_a112aa396081351bb645cc3c8ed33b9b0}{w}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Esta estructura representa un vector de tama�o 3. 
+
+Definición en la línea 13 del archivo Vec4.h.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{structc_vec4_a33a43d1a14541f248def942163004528}{
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\subsubsection[{cVec4}]{\setlength{\rightskip}{0pt plus 5cm}cVec4::cVec4 (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a33a43d1a14541f248def942163004528}
+
+
+Constructor por defecto. 
+
+
+
+Definición en la línea 16 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a9aafa3ddd7fac3bc5a4b9f053172ef78}{
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\subsubsection[{cVec4}]{\setlength{\rightskip}{0pt plus 5cm}cVec4::cVec4 (float {\em newx}, \/  float {\em newy}, \/  float {\em newz}, \/  float {\em neww})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a9aafa3ddd7fac3bc5a4b9f053172ef78}
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em newx}]Componente X del quaternion \item[{\em newy}]Componente Y del quaternion \item[{\em newz}]Componente Z del quaternion \item[{\em neww}]Componente Z del quaternion \end{DoxyParams}
+
+
+Definición en la línea 25 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_ae44db7aad00387e8ccaa5c07e209d5db}{
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\subsubsection[{cVec4}]{\setlength{\rightskip}{0pt plus 5cm}cVec4::cVec4 (const {\bf cVec2} \& {\em vec2}, \/  float {\em lz} = {\ttfamily 0}, \/  float {\em lw} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{structc_vec4_ae44db7aad00387e8ccaa5c07e209d5db}
+
+
+Constructor explicito. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em vec2}]Vector 2 \item[{\em lz}]Tercera coordenada \item[{\em lw}]Cuarta coordenada \end{DoxyParams}
+
+
+Definición en la línea 34 del archivo Vec.cpp.
+
+\hypertarget{structc_vec4_aacb179abe83f41299616e18119b4ab63}{
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\index{cVec4@{cVec4}!cVec4@{cVec4}}
+\subsubsection[{cVec4}]{\setlength{\rightskip}{0pt plus 5cm}cVec4::cVec4 (const {\bf cVec3} \& {\em vec3}, \/  float {\em lw} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{structc_vec4_aacb179abe83f41299616e18119b4ab63}
+
+
+Constructor explicito. 
+
+Constructor 
+\begin{DoxyParams}{Parámetros}
+\item[{\em vec3}]Vector 3 \item[{\em lw}]Cuarta coordenada \end{DoxyParams}
+
+
+Definición en la línea 35 del archivo Vec.cpp.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{structc_vec4_a8b9a4577a951db30de66d02b4b23e148}{
+\index{cVec4@{cVec4}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cVec4@{cVec4}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}const float$\ast$ cVec4::AsFloatPointer () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a8b9a4577a951db30de66d02b4b23e148}
+
+
+Devuelve un puntero a la zona de memoria del vector. 
+
+Devuelve un puntero a la zona de memoria del vector \begin{DoxyReturn}{Devuelve}
+Puntero a la zona de memoria 
+\end{DoxyReturn}
+
+
+Definición en la línea 169 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a0946da4dd8ecd14279fade28041cb497}{
+\index{cVec4@{cVec4}!AsFloatPointer@{AsFloatPointer}}
+\index{AsFloatPointer@{AsFloatPointer}!cVec4@{cVec4}}
+\subsubsection[{AsFloatPointer}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ cVec4::AsFloatPointer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a0946da4dd8ecd14279fade28041cb497}
+
+
+Devuelve un puntero a la zona de memoria del vector. 
+
+Devuelve un puntero a la zona de memoria del vector \begin{DoxyReturn}{Devuelve}
+Puntero a la zona de memoria 
+\end{DoxyReturn}
+
+
+Definición en la línea 163 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_ac71a11a6206ccd2df1809bdbb22bb563}{
+\index{cVec4@{cVec4}!DistanceSqrTo@{DistanceSqrTo}}
+\index{DistanceSqrTo@{DistanceSqrTo}!cVec4@{cVec4}}
+\subsubsection[{DistanceSqrTo}]{\setlength{\rightskip}{0pt plus 5cm}float cVec4::DistanceSqrTo (const {\bf cVec4} \& {\em p}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_ac71a11a6206ccd2df1809bdbb22bb563}
+
+
+Calcula la Distancia al cuadrado entre los dos puntos. 
+
+Calcula la Distancia al cuadrado entre los dos puntos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto al que se calculara la distancia \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El valor de la distancia al cuadrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 311 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_adf8e37e4f9c902c02e2a0994daf7adcd}{
+\index{cVec4@{cVec4}!DistanceTo@{DistanceTo}}
+\index{DistanceTo@{DistanceTo}!cVec4@{cVec4}}
+\subsubsection[{DistanceTo}]{\setlength{\rightskip}{0pt plus 5cm}float cVec4::DistanceTo (const {\bf cVec4} \& {\em p}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_adf8e37e4f9c902c02e2a0994daf7adcd}
+
+
+Calcula la Distancia entre los dos puntos. 
+
+Calcula la Distancia entre los dos puntos 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto al que se calculara la distancia \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El valor de la distancia al cuadrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 316 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a511bf725c38c4cd9febca7c4769afa18}{
+\index{cVec4@{cVec4}!IsZero@{IsZero}}
+\index{IsZero@{IsZero}!cVec4@{cVec4}}
+\subsubsection[{IsZero}]{\setlength{\rightskip}{0pt plus 5cm}bool cVec4::IsZero (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a511bf725c38c4cd9febca7c4769afa18}
+
+
+Comprueba si la longitud del vector es cero. 
+
+Comprueba si la longitud del vector es cero \begin{DoxyReturn}{Devuelve}
+Devuelve si la longitus del vector es cero 
+\end{DoxyReturn}
+
+
+Definición en la línea 321 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a07afee28e60a447edfa09870f48f61d0}{
+\index{cVec4@{cVec4}!Length@{Length}}
+\index{Length@{Length}!cVec4@{cVec4}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float cVec4::Length (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a07afee28e60a447edfa09870f48f61d0}
+
+
+Calcula la longitud del vector. 
+
+Calcula la longitud del vector \begin{DoxyReturn}{Devuelve}
+El valor de la longitud 
+\end{DoxyReturn}
+
+
+Definición en la línea 306 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_aa1802bd56b8b685c3bec20457034ea75}{
+\index{cVec4@{cVec4}!LengthSqr@{LengthSqr}}
+\index{LengthSqr@{LengthSqr}!cVec4@{cVec4}}
+\subsubsection[{LengthSqr}]{\setlength{\rightskip}{0pt plus 5cm}float cVec4::LengthSqr (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_aa1802bd56b8b685c3bec20457034ea75}
+
+
+Calcula la longitud al cuadrado del vector. 
+
+Calcula la longitud al cuadrado del vector \begin{DoxyReturn}{Devuelve}
+El valor de la longitud al cuadrado 
+\end{DoxyReturn}
+
+
+Definición en la línea 302 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_aaac5c3038e7dd5a99344862a255bfabc}{
+\index{cVec4@{cVec4}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!cVec4@{cVec4}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} \& cVec4::Normalize (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_aaac5c3038e7dd5a99344862a255bfabc}
+
+
+Normaliza el vector. 
+
+Normaliza el vector \begin{DoxyReturn}{Devuelve}
+Devuelve una referencia al vector normalizado 
+\end{DoxyReturn}
+
+
+Definición en la línea 325 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_aeebeb699c8ad37df4e2379fbd8b6be96}{
+\index{cVec4@{cVec4}!operator()@{operator()}}
+\index{operator()@{operator()}!cVec4@{cVec4}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}const float \& cVec4::operator() (unsigned {\em i}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_aeebeb699c8ad37df4e2379fbd8b6be96}
+
+
+Operador de Indexacion. 
+
+Operador de Indexacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em i}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 254 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a0266223ec34d1e7d88ee28e84e057044}{
+\index{cVec4@{cVec4}!operator()@{operator()}}
+\index{operator()@{operator()}!cVec4@{cVec4}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}float \& cVec4::operator() (unsigned {\em i})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a0266223ec34d1e7d88ee28e84e057044}
+
+
+Operador de Indexacion. 
+
+Operador de Indexacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em i}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 249 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a9eb91325bdbc2ffbc2e8c128489eac3e}{
+\index{cVec4@{cVec4}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cVec4@{cVec4}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} \& cVec4::operator$\ast$= (float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a9eb91325bdbc2ffbc2e8c128489eac3e}
+
+
+Multiplica el vector por un escalar. 
+
+Multiplica el vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Vector resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 275 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a3beebee4eda74724ad8e1da6d3b5527e}{
+\index{cVec4@{cVec4}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!cVec4@{cVec4}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} \& cVec4::operator+= (const {\bf cVec4} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a3beebee4eda74724ad8e1da6d3b5527e}
+
+
+Suma dos vectores. 
+
+Suma dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 259 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_af1147a8ee14da17a243d933a7bc72856}{
+\index{cVec4@{cVec4}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!cVec4@{cVec4}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} \& cVec4::operator-\/= (const {\bf cVec4} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_af1147a8ee14da17a243d933a7bc72856}
+
+
+Resta dos vectores. 
+
+Resta dos vectores 
+\begin{DoxyParams}{Parámetros}
+\item[{\em other}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Vector resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 267 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_aae8a7f2348a717019235699aaf525b77}{
+\index{cVec4@{cVec4}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!cVec4@{cVec4}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cVec4} \& cVec4::operator/= (float {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_aae8a7f2348a717019235699aaf525b77}
+
+
+Divide el vector por un escalar. 
+
+Divide el vector por un escalar 
+\begin{DoxyParams}{Parámetros}
+\item[{\em value}]Operando \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Vector resultante 
+\end{DoxyReturn}
+
+
+Definición en la línea 283 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a6849e5e28ab1e91b067f0622af17025f}{
+\index{cVec4@{cVec4}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!cVec4@{cVec4}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const float \& cVec4::operator\mbox{[}$\,$\mbox{]} (unsigned {\em position}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a6849e5e28ab1e91b067f0622af17025f}
+
+
+Operador de Indexacion. 
+
+Operador de Indexacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em position}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 244 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a3b45d235574bd22832392513a4d9520b}{
+\index{cVec4@{cVec4}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!cVec4@{cVec4}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}float \& cVec4::operator\mbox{[}$\,$\mbox{]} (unsigned {\em position})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a3b45d235574bd22832392513a4d9520b}
+
+
+Operador de Indexacion. 
+
+Operador de Indexacion 
+\begin{DoxyParams}{Parámetros}
+\item[{\em position}]indice al que se quiere acceder \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Componente correspondiente al indice 
+\end{DoxyReturn}
+
+
+Definición en la línea 239 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a054c2094fe18138f8cd4e46137cf1b56}{
+\index{cVec4@{cVec4}!Set@{Set}}
+\index{Set@{Set}!cVec4@{cVec4}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void cVec4::Set (float {\em newx}, \/  float {\em newy}, \/  float {\em newz}, \/  float {\em neww})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{structc_vec4_a054c2094fe18138f8cd4e46137cf1b56}
+
+
+Setea las componentes del vector. 
+
+Setea las componentes del vector 
+\begin{DoxyParams}{Parámetros}
+\item[{\em newx}]Operando \item[{\em newy}]Operando \item[{\em newz}]Operando \item[{\em neww}]Operando \end{DoxyParams}
+
+
+Definición en la línea 295 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a3c4834df65cdde74d6ad9540ed26d4da}{
+\index{cVec4@{cVec4}!StoreMax@{StoreMax}}
+\index{StoreMax@{StoreMax}!cVec4@{cVec4}}
+\subsubsection[{StoreMax}]{\setlength{\rightskip}{0pt plus 5cm}void cVec4::StoreMax (const {\bf cVec4} \& {\em p})}}
+\label{structc_vec4_a3c4834df65cdde74d6ad9540ed26d4da}
+
+
+Almacena el valor maximo por componentes. 
+
+Almacena el valor maximo por componentes 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto con el que se va a comparar el valor maximo \end{DoxyParams}
+
+
+Definición en la línea 37 del archivo Vec.cpp.
+
+\hypertarget{structc_vec4_a8fce7abe3a15deb4e0f0097ce1ea5b39}{
+\index{cVec4@{cVec4}!StoreMin@{StoreMin}}
+\index{StoreMin@{StoreMin}!cVec4@{cVec4}}
+\subsubsection[{StoreMin}]{\setlength{\rightskip}{0pt plus 5cm}void cVec4::StoreMin (const {\bf cVec4} \& {\em p})}}
+\label{structc_vec4_a8fce7abe3a15deb4e0f0097ce1ea5b39}
+
+
+Almacena el valor minimo por componentes. 
+
+Almacena el valor minimo por componentes 
+\begin{DoxyParams}{Parámetros}
+\item[{\em p}]Punto con el que se va a comparar el valor minimo \end{DoxyParams}
+
+
+Definición en la línea 43 del archivo Vec.cpp.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{structc_vec4_a112aa396081351bb645cc3c8ed33b9b0}{
+\index{cVec4@{cVec4}!w@{w}}
+\index{w@{w}!cVec4@{cVec4}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cVec4::w}}}
+\label{structc_vec4_a112aa396081351bb645cc3c8ed33b9b0}
+
+
+Definición en la línea 14 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a0708f670925b4c793bc50462c61a8c31}{
+\index{cVec4@{cVec4}!x@{x}}
+\index{x@{x}!cVec4@{cVec4}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cVec4::x}}}
+\label{structc_vec4_a0708f670925b4c793bc50462c61a8c31}
+
+
+Definición en la línea 14 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_a70f3694ce6253d17aab748f6f8bb2703}{
+\index{cVec4@{cVec4}!y@{y}}
+\index{y@{y}!cVec4@{cVec4}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cVec4::y}}}
+\label{structc_vec4_a70f3694ce6253d17aab748f6f8bb2703}
+
+
+Definición en la línea 14 del archivo Vec4.h.
+
+\hypertarget{structc_vec4_abda6e18c19bb9741a754c9052e681351}{
+\index{cVec4@{cVec4}!z@{z}}
+\index{z@{z}!cVec4@{cVec4}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf cVec4::z}}}
+\label{structc_vec4_abda6e18c19bb9741a754c9052e681351}
+
+
+Definición en la línea 14 del archivo Vec4.h.
+
+
+
+La documentación para esta estructura fue generada a partir de los siguientes ficheros:\begin{DoxyCompactItemize}
+\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/\hyperlink{_vec4_8h}{Vec4.h}\item 
+D:/Master Videojuegos ULL 09\_\-10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica -\/ Tema2/PracticaBasica/MathLib/Vec/\hyperlink{_vec_8cpp}{Vec.cpp}\end{DoxyCompactItemize}

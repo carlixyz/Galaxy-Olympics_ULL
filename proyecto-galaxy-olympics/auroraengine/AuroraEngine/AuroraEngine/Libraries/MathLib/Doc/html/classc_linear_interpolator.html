@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>MathLib: Referencia de la Clase cLinearInterpolator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.6.3 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;clases</span></a></li>
+      <li><a href="functions.html"><span>Miembros&nbsp;de&nbsp;las&nbsp;clases</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia de la Clase cLinearInterpolator</h1><!-- doxytag: class="cLinearInterpolator" -->
+<p>Calcula una interpolacion lineal.  
+<a href="#_details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_linear_interpolator_8h_source.html">LinearInterpolator.h</a>&gt;</code></p>
+
+<p><a href="classc_linear_interpolator-members.html">Lista de todos los miembros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_interpolator.html#a7c02893997109a64f054de4805f23f77">Init</a> (float lfX0, float lfY0, float lfX1, float lfY1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1).  <a href="#a7c02893997109a64f054de4805f23f77"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_interpolator.html#aa3fde11ab9970f60e75a531e7a6554ea">Init</a> (const <a class="el" href="structc_vec2.html">cVec2</a> &amp;lP0, const <a class="el" href="structc_vec2.html">cVec2</a> &amp;lP1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inicializa el interpolador pasandole los dos puntos lP0 y lP1.  <a href="#aa3fde11ab9970f60e75a531e7a6554ea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_linear_interpolator.html#a23fed19b6a9261ea8751d875acd69e5a">Eval</a> (float lfX)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Evalua el interpolador o la recta en el punto indicado.  <a href="#a23fed19b6a9261ea8751d875acd69e5a"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descripción detallada</h2>
+<p>Calcula una interpolacion lineal. </p>
+<p>Dado dos puntos, calcula la expresion de la recta que une esos dos puntos.</p>
+<p>f(x) = Ax + B</p>
+<p>Despues permite evaluar los valores para otros puntos que no eran los iniciales </p>
+
+<p>Definición en la línea <a class="el" href="_linear_interpolator_8h_source.html#l00014">14</a> del archivo <a class="el" href="_linear_interpolator_8h_source.html">LinearInterpolator.h</a>.</p>
+<hr/><h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a23fed19b6a9261ea8751d875acd69e5a"></a><!-- doxytag: member="cLinearInterpolator::Eval" ref="a23fed19b6a9261ea8751d875acd69e5a" args="(float lfX)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float cLinearInterpolator::Eval </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfX</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Evalua el interpolador o la recta en el punto indicado. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lfX</em>&nbsp;</td><td>Punto que se quiere evaluar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Valor del interpolador o la recta en ese punto </dd></dl>
+
+<p>Definición en la línea <a class="el" href="_linear_interpolator_8h_source.html#l00044">44</a> del archivo <a class="el" href="_linear_interpolator_8h_source.html">LinearInterpolator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3fde11ab9970f60e75a531e7a6554ea"></a><!-- doxytag: member="cLinearInterpolator::Init" ref="aa3fde11ab9970f60e75a531e7a6554ea" args="(const cVec2 &amp;lP0, const cVec2 &amp;lP1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cLinearInterpolator::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structc_vec2.html">cVec2</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lP0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structc_vec2.html">cVec2</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lP1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Inicializa el interpolador pasandole los dos puntos lP0 y lP1. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lP0</em>&nbsp;</td><td>Primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lP1</em>&nbsp;</td><td>Segundo punto </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_linear_interpolator_8h_source.html#l00035">35</a> del archivo <a class="el" href="_linear_interpolator_8h_source.html">LinearInterpolator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c02893997109a64f054de4805f23f77"></a><!-- doxytag: member="cLinearInterpolator::Init" ref="a7c02893997109a64f054de4805f23f77" args="(float lfX0, float lfY0, float lfX1, float lfY1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cLinearInterpolator::Init </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfX0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfY0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfX1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lfY1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Inicializa el interpolador pasandole los dos puntos (X0,Y0) y (X1,Y1). </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lfX0</em>&nbsp;</td><td>Componente X del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lfY0</em>&nbsp;</td><td>Componente Y del primer punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lfX1</em>&nbsp;</td><td>Componente X del segundo punto </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lfY1</em>&nbsp;</td><td>Componente Y del segundo punto </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="_linear_interpolator_8h_source.html#l00024">24</a> del archivo <a class="el" href="_linear_interpolator_8h_source.html">LinearInterpolator.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li>D:/Master Videojuegos ULL 09_10/Asignaturas/Pr�cticas B�sicas/Practicas Test/PracticaBasica - Tema2/PracticaBasica/MathLib/MathUtils/<a class="el" href="_linear_interpolator_8h_source.html">LinearInterpolator.h</a></li>
+</ul>
+</div>
+<hr class="footer"/><address style="text-align: right;"><small>Generado el Wed Oct 6 00:48:13 2010 para MathLib por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>
